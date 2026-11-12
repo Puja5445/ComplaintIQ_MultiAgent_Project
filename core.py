@@ -122,16 +122,19 @@ def _json_part(raw):
     return raw[raw.find("{"): raw.rfind("}") + 1]
 
 def chat_json(model_id, system, user, schema: type[BaseModel], **kw):
-    # ask for JSON, validate with Pydantic, ONE repair attempt, then fail loudly
+    """Ask for JSON, validate with Pydantic, give the model ONE chance to repair."""
     system = system + "\nReturn ONLY one JSON object. No prose, no markdown."
     raw = chat(model_id, system, user, **kw)
-    try:
-        return schema.model_validate_json(_json_part(raw))
-    except (ValidationError, ValueError) as e:
-        fix = chat(model_id, system,
-                   f"{user}\n\nYour previous answer was invalid: {e}\n"
-                   f"Previous answer: {raw}\nReturn the corrected JSON only.", **kw)
-        return schema.model_validate_json(_json_part(fix))
+    for attempt in range(2):
+        try:
+            blob = raw[raw.index("{"): raw.rindex("}") + 1]
+            return schema.model_validate_json(blob)
+        except (ValueError, ValidationError) as err:
+            if attempt == 1:
+                raise
+            raw = chat(model_id, system, f"{user}\n\nYour last reply was invalid: {err}. "
+                       f"Return valid JSON for this schema: {schema.model_json_schema()}",
+                       use_cache=False, **kw)
 
 # ---------- Part A2: writer model (non-Claude, writes the fake stories) ----------
 WRITER_KEYS = ["nova-lite", "nova-pro", "nova-micro", "llama3-3-70b", "llama3-1-70b", "mistral-large"]

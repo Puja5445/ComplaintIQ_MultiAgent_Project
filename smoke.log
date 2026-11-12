@@ -1,0 +1,11 @@
+nohup: ignoring input
+REG_INDEX built: 1759 chunks
+HIT  | error resolution timeline electronic fund transfer | ['12CFR1005.33-c4', '12CFR1005.11-c2', '12CFR1005.14-c1', '12CFR1005.18-c23', '12CFR1005.33-c5']
+HIT  | billing error notice credit card | ['12CFR1026.13-c0', '12CFR1026.13-c1', '12CFR1026.13-c2', '12CFR1026.28-c1', '12CFR1026.13-c3']
+HIT  | furnisher duties after receiving a direct dispute from a consumer | ['12CFR1022.43-c1', 'exam_manual-p637-c0', 'exam_manual-p636-c0', '12CFR1022.43-c0', 'exam_manual-p638-c0']
+HIT  | limits on how often a debt collector may call a consumer | ['12CFR1006.14-c0', '12CFR1006.100-c0', '12CFR1006.22-c0', '12CFR1006.34-c2', '12CFR1006.6-c3']
+MISS | 12 CFR 1005.11 | ['exam_manual-p687-c1', '12CFR1005.15-c3', '12CFR1005.18-c22', 'exam_manual-p734-c0', '12CFR1005.4-c0']
+CASE_INDEX built: 300 stories
+20546621 | Checking or savings account | Managing an account | 0.032
+19071960 | Checking or savings account | Managing an account | 0.0318
+18554575 | Checking or savings account | Managing an account | 0.0307
