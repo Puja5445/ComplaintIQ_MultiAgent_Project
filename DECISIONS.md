@@ -29,3 +29,8 @@
 
 ## D7 - Bedrock access (open issue)
 - Sonnet call returned AccessDenied (AWS Marketplace subscription) in the new lab. To retry tomorrow.
+
+## D8 - Models changed (supersedes D7)
+- Sonnet 4.6 gives a Marketplace AccessDenied in this lab. The probe found Sonnet 5 and Opus 5.5 working.
+- Worker = Sonnet 5, judge = Opus 5.5 (different and stronger than worker). Writer stays Nova Lite (non-Claude). Embeddings stay Titan v2.
+- Brief names Sonnet 4.6 / Opus 4.8; deviation is due to lab access only.
