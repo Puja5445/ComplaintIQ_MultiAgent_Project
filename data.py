@@ -5,6 +5,7 @@
 # Run: python data.py   then back up with: aws s3 sync
 
 import boto3, pathlib, hashlib, json, datetime as dt, requests
+import re
 
 # ---------- config ----------
 REGION = "us-east-1"
@@ -116,45 +117,66 @@ def build_duckdb():
                          UNION ALL SELECT 'test', COUNT(*) FROM v_test""").df())
     con.close()
 
-# ---------- chunk regulations (XML) + CFPB PDFs ----------
+# ---------- chunking (PDF sections 2.3 - 2.5) ----------
 from lxml import etree
 from pypdf import PdfReader
 
-def split_text(text, size=1500, overlap=200):
-    # cut long text into pieces of about 1500 characters, overlapping by 200
-    pieces, start = [], 0
-    while start < len(text):
-        pieces.append(text[start:start + size])
-        start += size - overlap
-    return pieces
+# [PDF 2.3] Parse regulation XML into sections
+def ecfr_sections(xml_path, part):
+    root = etree.parse(str(xml_path))
+    for div in root.iter("DIV8"):                     # DIV8 = one CFR section
+        sid = div.get("N", "").replace("\u00a7", "").strip()      # e.g. "1005.11"
+        head = " ".join((div.findtext("HEAD") or "").split())
+        body = "\n".join(" ".join(p.itertext()).strip() for p in div.iter("P"))
+        if body:
+            yield {"doc_id": f"12CFR{sid}", "source": f"12 CFR {sid}", "title": head,
+                   "part": part, "page": None, "text": body}
 
+# [PDF 2.4] Parse PDFs page by page (keep page numbers for citations)
+def pdf_pages(path):
+    for i, page in enumerate(PdfReader(str(path)).pages, start=1):
+        txt = page.extract_text() or ""
+        txt = re.sub(r"-\n(\w)", r"\1", txt)          # re-join hyphenated words
+        txt = re.sub(r"[ \t]+", " ", txt).strip()
+        if len(txt) > 200:                             # skip covers / blank pages
+            yield i, txt
+
+# [PDF 2.5] Chunk with provenance
+def chunk(rec, max_chars=3000, overlap=400):
+    """Split on paragraph boundaries; keep provenance so every chunk is citable."""
+    paras, buf, out = rec["text"].split("\n"), "", []
+    for p in paras:
+        if len(buf) + len(p) > max_chars and buf:
+            out.append(buf)
+            buf = buf[-overlap:]                       # carry a tail for context
+        buf += ("\n" if buf else "") + p
+    if buf:
+        out.append(buf)
+    page = f"-p{rec['page']}" if rec.get("page") else ""
+    return [{**rec, "chunk_id": f"{rec['doc_id']}{page}-c{i}", "text": t}
+            for i, t in enumerate(out)]
+
+# [MINE] glue: the PDF runs the 2.3 and 2.4 loops at module level and says "run chunk()
+# over every record" in words only. I put them in one function so nothing runs on import.
 def build_chunks():
-    chunks = []
-    # 1) XML: one law section (DIV8) = one or more chunks
-    regs = {"1005": "Reg E", "1026": "Reg Z", "1022": "Reg V", "1006": "Reg F", "1030": "Reg DD"}
-    for part, reg in regs.items():
-        tree = etree.parse(str(RAW / "ecfr" / f"12cfr{part}.xml"))
-        for sec in tree.iter("DIV8"):
-            sec_id = sec.get("N", "").replace("§", "").strip()      # e.g. 1005.11
-            head = sec.findtext("HEAD", default="").strip()
-            body = " ".join(" ".join(p.itertext()) for p in sec.iter("P"))
-            for i, piece in enumerate(split_text(body)):
-                chunks.append({"chunk_id": f"{sec_id}-{i}", "source": reg,
-                               "section": sec_id, "title": head, "text": piece})
-    # 2) PDFs: each page split into pieces
-    for pdf in sorted((RAW / "pdf").glob("*.pdf")):
-        for page_no, page in enumerate(PdfReader(str(pdf)).pages, start=1):
-            text = " ".join((page.extract_text() or "").split())
-            if len(text) < 100:          # skip empty or cover pages
-                continue
-            for i, piece in enumerate(split_text(text)):
-                chunks.append({"chunk_id": f"{pdf.stem}-p{page_no}-{i}", "source": pdf.stem,
-                               "section": f"page {page_no}", "title": pdf.stem, "text": piece})
-    out = PROC / "reg_chunks.jsonl"
-    with open(out, "w") as f:
-        for c in chunks:
-            f.write(json.dumps(c) + "\n")
-    print(len(chunks), "chunks saved in", out)
+    with open(PROC / "reg_sections.jsonl", "w") as f:                    # PDF 2.3 loop
+        for xml in sorted((RAW / "ecfr").glob("12cfr*.xml")):
+            part = xml.stem.replace("12cfr", "")
+            for rec in ecfr_sections(xml, part):
+                f.write(json.dumps(rec) + "\n")
+    with open(PROC / "pdf_pages.jsonl", "w") as f:                       # PDF 2.4 loop
+        for pdf in sorted((RAW / "pdf").glob("*.pdf")):
+            for page, txt in pdf_pages(pdf):
+                f.write(json.dumps({"doc_id": pdf.stem, "source": pdf.name,
+                                    "page": page, "text": txt}) + "\n")
+    n = 0
+    with open(PROC / "reg_chunks.jsonl", "w") as out:                    # PDF 2.5: chunk everything
+        for name in ("reg_sections.jsonl", "pdf_pages.jsonl"):
+            for line in open(PROC / name):
+                for c in chunk(json.loads(line)):
+                    out.write(json.dumps(c) + "\n")
+                    n += 1
+    print(n, "chunks saved in", PROC / "reg_chunks.jsonl")
 
 if __name__ == "__main__":
     download_all()

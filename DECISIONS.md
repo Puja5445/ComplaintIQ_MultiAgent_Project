@@ -18,3 +18,7 @@
 ## D4 - Writer prompt fix
 - Writer (Nova) sometimes wrote several complaints in one, split by '---'.
 - Fix: prompt rule "exactly ONE complaint". Removed the bad rows and regenerated them. Final check: 360 stories, 0 bad.
+
+## D5 - Chunking and retrieval follow the brief
+- Chunking replaced with brief 2.3-2.5 (paragraph chunks 3000/400, ids like 12CFR1005.11-c0, source/page kept for citations).
+- New lab allows Opus 4.8 (the brief's judge), so D1 no longer applies.
