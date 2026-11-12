@@ -22,3 +22,10 @@
 ## D5 - Chunking and retrieval follow the brief
 - Chunking replaced with brief 2.3-2.5 (paragraph chunks 3000/400, ids like 12CFR1005.11-c0, source/page kept for citations).
 - New lab allows Opus 4.8 (the brief's judge), so D1 no longer applies.
+
+## D6 - Injection regex widened
+- The brief's INJECTION regex allows only one word between "ignore" and "instructions", so "Ignore all previous instructions" was not flagged.
+- Fix: allow several words in between. Brief's own G4 example uses this sentence and expects the flag.
+
+## D7 - Bedrock access (open issue)
+- Sonnet call returned AccessDenied (AWS Marketplace subscription) in the new lab. To retry tomorrow.
