@@ -111,7 +111,7 @@ def chat(model_id, system, user, max_tokens=1500, temperature=0.0, use_cache=Tru
             _no_temperature.add(model_id)
             return chat(model_id, system, user, max_tokens, temperature, use_cache)
         raise
-    text = r["output"]["message"]["content"][0]["text"]
+    text = "".join(b["text"] for b in r["output"]["message"]["content"] if "text" in b)
     u = r["usage"]
     LEDGER.add(model_id, u["inputTokens"], u["outputTokens"], int((time.time() - t0) * 1000))
     _cache.execute("INSERT OR REPLACE INTO c VALUES (?,?)", (key, text))

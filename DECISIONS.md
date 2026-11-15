@@ -34,3 +34,7 @@
 - Sonnet 4.6 gives a Marketplace AccessDenied in this lab. The probe found Sonnet 5 and Opus 5.5 working.
 - Worker = Sonnet 5, judge = Opus 5.5 (different and stronger than worker). Writer stays Nova Lite (non-Claude). Embeddings stay Titan v2.
 - Brief names Sonnet 4.6 / Opus 4.8; deviation is due to lab access only.
+
+## D9 - chat() reads all text blocks
+- Sonnet 5 can return a non-text (reasoning) block first, so the brief's content[0]["text"] raised KeyError.
+- Fix: join every block that has "text". Rest of chat() is unchanged from the brief.
