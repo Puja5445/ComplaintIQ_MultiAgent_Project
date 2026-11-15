@@ -9,9 +9,11 @@ from pydantic import BaseModel, Field
 import duckdb, sqlglot
 from sqlglot import exp
 from core import chat, chat_json, LEDGER, HybridIndex, load_reg_chunks, load_case_docs
-from data import ROOT, DATA, STATE
+from data import ROOT, DATA, STATE, BUCKET, REGION, REPORTS
+import boto3, datetime as dt
+from langchain_core.runnables import RunnableConfig
 
-# [MINE] the PDF's Phase 0 builds MODELS in memory; we saved the same dict in models.json
+# the PDF's Phase 0 builds MODELS in memory; we saved the same dict in models.json
 MODELS = json.loads((ROOT / "models.json").read_text())
 
 # ---------- [PDF 5.1] Shared state ----------
@@ -55,7 +57,7 @@ class RouterOut(BaseModel):
     intent: Intent
     reason: str
 
-# [MINE] only the line breaks: the PDF text runs across pages 16-17
+# only the line breaks: the PDF text runs across pages 16-17
 ROUTER_SYS = """You are the router of a bank complaints-intelligence copilot. Classify the request into exactly one intent:
 - TRIAGE: one customer complaint narrative that needs classifying and a response draft.
 - ANALYTICS: a question answered by counting/aggregating complaint records.
@@ -84,7 +86,7 @@ class TriageResult(BaseModel):
 
 # [PDF 5.5] read-only connection, defence in depth
 ro = duckdb.connect(str(DATA / "complaintiq.duckdb"), read_only=True)
-# [MINE] the PDF's TAXONOMY line uses a name "con"; I point it at the same read-only connection
+# the PDF's TAXONOMY line uses a name "con"; I point it at the same read-only connection
 con = ro
 
 TAXONOMY = con.execute("SELECT DISTINCT product, issue FROM v_complaints").fetchall()
@@ -184,7 +186,7 @@ def drafter_node(state):
             f"\nEVIDENCE:\n{ev}")
     if fix and not fix.get("pass"):              # revision turn: feed the critique back
         user += f"\n\nREVISE. Reviewer feedback: {fix}\nPrevious draft:\n{state['draft']}"
-    draft = chat(MODELS["worker"], DRAFT_SYS[state["intent"]] + COMMON, user, max_tokens=1800)
+    draft = chat(MODELS["worker"], DRAFT_SYS[state["intent"]] + COMMON, user, max_tokens=3000)
     return {"draft": draft, "trace": [{"node": "drafter", "revision": state.get("revisions", 0)}]}
 
 # ---------- [PDF 5.7] Critic: rules first, then a stronger-model judge ----------
@@ -239,3 +241,37 @@ def human_node(state):
 
 def after_human(state):
     return "publish" if state["human_decision"].get("action") in ("approve", "edit") else END
+
+# ---------- refuse and publish nodes ----------
+s3 = boto3.client("s3", region_name=REGION)
+
+def refuse_node(state):
+    msg = ("Sorry, I can't help with that request. ComplaintIQ can triage customer complaints, "
+           "answer data questions about complaints, explain banking regulations, "
+           "and write complaint trend briefs.")
+    return {"draft": msg, "trace": [{"node": "refuse"}]}
+
+def publish_node(state, config: RunnableConfig):
+    tid = config["configurable"]["thread_id"]
+    # 1) report = approved draft + full trace
+    body = (f"# ComplaintIQ report {tid}\n\n{state.get('draft', '')}\n\n"
+            f"## Trace\n```json\n{json.dumps(state.get('trace', []), indent=2, default=str)}\n```\n")
+    (REPORTS / f"{tid}.md").write_text(body)                      # local copy
+    try:                                                          # S3 copy
+        s3.put_object(Bucket=BUCKET, Key=f"complaintiq/reports/{tid}.md", Body=body.encode("utf-8"))
+    except Exception as e:
+        print("S3 upload failed, saved locally only:", type(e).__name__)
+    # 2) one audit line per request (no raw request text, so no personal data)
+    row = {"time_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+           "thread_id": tid,
+           "intent": state.get("intent"),
+           "flags": state.get("flags", []),
+           "models": MODELS,
+           "usage": LEDGER.summary(),
+           "usd": LEDGER.usd(),
+           "critic_verdict": state.get("critique", {}).get("verdict"),
+           "human_action": state.get("human_decision", {}).get("action")}
+    with open(REPORTS / "audit.jsonl", "a") as f:
+        f.write(json.dumps(row, default=str) + "\n")
+    return {"report_uri": f"s3://{BUCKET}/complaintiq/reports/{tid}.md",
+            "trace": [{"node": "publish"}]}
