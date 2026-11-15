@@ -41,7 +41,7 @@ KEYS = ("not available", "no population", "not in the view", "cannot", "can't",
 ref = []
 for q in UNANSWERABLE:
     out = chat_json(MODELS["worker"], ANALYST_SYS, q, SQLOut)
-    ok = any(k in out.explanation.lower() for k in KEYS)
+    ok = out.explanation.upper().startswith("CANNOT ANSWER")
     ref.append(ok)
     print("UNANSWERABLE", "REFUSED" if ok else "NOT REFUSED", "|", q[:45], "|", out.explanation[:200])
 print("correct refusals:", sum(ref), "/", len(ref))

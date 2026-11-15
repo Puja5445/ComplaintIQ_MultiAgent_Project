@@ -56,3 +56,8 @@
 - Fix: put the schema in the system prompt on the first call. Now 60 calls.
 - G1 after fix: product accuracy 1.0, issue macro-F1 0.811. Before: 0.983 / 0.652.
 - Caveat: stories are synthetic and written from the labels, so scores are likely optimistic.
+
+## D14 - Analyst fixes found by G2 (failure analyses 1 and 2)
+- Q4: ILIKE '%monetary relief%' also matches 'non-monetary relief', so shares were inflated (26.22 vs 15.93). Fix: prompt lists exact company_response values and says use =. G2: 0.6 -> 0.8.
+- Q2: model SQL ended with ';' and the brief's LIMIT wrapper put it inside brackets (syntax error). Fix: strip trailing ';' in guard_sql.
+- Unanswerable (per 100k residents): model hardcoded census populations instead of refusing. Fix: prompt rule to start explanation with 'CANNOT ANSWER:'.

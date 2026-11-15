@@ -109,6 +109,7 @@ def triage_node(state):
 ALLOWED_TABLES = {"v_complaints"}
 
 def guard_sql(sql: str) -> str:
+    sql = sql.strip().rstrip(";")
     stmts = sqlglot.parse(sql, read="duckdb")
     if len(stmts) != 1 or not isinstance(stmts[0], exp.Select):
         raise ValueError("Exactly one SELECT statement is allowed")
@@ -129,8 +130,7 @@ class SQLOut(BaseModel):
 SCHEMA_DOC = ro.execute("DESCRIBE v_complaints").df()[["column_name", "column_type"]].to_string()
 ANALYST_SYS = f"""You write DuckDB SQL over ONE view, v_complaints:\n{SCHEMA_DOC}
 Rules: SELECT only; use ILIKE for text matching; dates are DATE; 'timely' holds Yes/No.
-If the question needs data that is not in the view (e.g. population), say so in
-'explanation' and return the closest valid query."""
+company_response holds exactly: 'Closed with explanation', 'Closed with monetary relief', 'Closed with non-monetary relief', 'Untimely response', 'In progress'. Match it with =, never ILIKE '%monetary relief%', which also matches 'non-monetary relief'.Never invent or hardcode data that is not in the view (e.g. populations). If the question needs such data, start 'explanation' with 'CANNOT ANSWER:' and return the closest valid query."""
 
 def analyst_node(state):
     question, error, rows, sql = state["clean_request"], "", [], ""
