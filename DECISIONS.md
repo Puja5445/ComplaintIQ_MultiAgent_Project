@@ -50,3 +50,9 @@
 - Plain-code node between triage and cases. Maps triage to Reg E (10 business days, 45 days) or Reg Z (30 days, 90 days), computes due dates, marks ON_TRACK / AT_RISK / BREACHED, and puts vulnerable customers first.
 - Windows checked against our downloaded regulation chunks (1005.11 and 1026.13).
 - Limits: business days ignore public holidays, and Reg E uses 45 days only (some transactions get 90).
+
+## D13 - JSON schema sent on the first call
+- Brief's chat_json shows the schema only in the repair call, so triage needed 2 calls per story (120 calls for 60 stories).
+- Fix: put the schema in the system prompt on the first call. Now 60 calls.
+- G1 after fix: product accuracy 1.0, issue macro-F1 0.811. Before: 0.983 / 0.652.
+- Caveat: stories are synthetic and written from the labels, so scores are likely optimistic.

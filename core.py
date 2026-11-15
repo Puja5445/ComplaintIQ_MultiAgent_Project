@@ -123,7 +123,8 @@ def _json_part(raw):
 
 def chat_json(model_id, system, user, schema: type[BaseModel], **kw):
     """Ask for JSON, validate with Pydantic, give the model ONE chance to repair."""
-    system = system + "\nReturn ONLY one JSON object. No prose, no markdown."
+    system =(system + "\nReturn ONLY one JSON object. No prose, no markdown."
+              f"\nIt must match this JSON schema: {schema.model_json_schema()}")
     raw = chat(model_id, system, user, **kw)
     for attempt in range(2):
         try:

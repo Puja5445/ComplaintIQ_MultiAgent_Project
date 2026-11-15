@@ -10,3 +10,4 @@ data/*.duckdb
 data.log
 nohup.out
 chunk.log
+g1.log
