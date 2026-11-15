@@ -42,3 +42,11 @@
 ## D10 - Larger token limits for reasoning models
 - Brief uses max_tokens 1800 (drafter) and 800 (critic). Sonnet 5 / Opus 5.5 use part of the limit for reasoning, so replies were cut off or empty.
 - Raised to 3000 for both. Logic unchanged.
+
+## D11 - Critic sees the same evidence length as the drafter
+- Drafter shows 1500 chars per chunk, critic 1200, so the critic rejected valid citations as "truncated". Critic raised to 1500.
+
+## D12 - SLA node (our innovation, not in the brief)
+- Plain-code node between triage and cases. Maps triage to Reg E (10 business days, 45 days) or Reg Z (30 days, 90 days), computes due dates, marks ON_TRACK / AT_RISK / BREACHED, and puts vulnerable customers first.
+- Windows checked against our downloaded regulation chunks (1005.11 and 1026.13).
+- Limits: business days ignore public holidays, and Reg E uses 45 days only (some transactions get 90).

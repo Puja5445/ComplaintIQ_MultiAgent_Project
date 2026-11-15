@@ -35,6 +35,9 @@ class CIQState(TypedDict, total=False):
     human_decision: dict         # {"action": "approve"|"edit"|"reject", "text": ...}
     report_uri: str
     trace: Annotated[list[dict], operator.add]   # reducer: every node APPENDS
+    received_date: str           # optional: date the bank got notice (YYYY-MM-DD)
+    as_of: str                   # optional: "today" for the SLA check
+    sla: dict                    # SLA node output
 
 # ---------- [PDF 5.2] Guard (deterministic) ----------
 PII = [(re.compile(r"\b\d{3}-\d{2}-\d{4}\b"), "[SSN]"),
@@ -276,6 +279,56 @@ def publish_node(state, config: RunnableConfig):
     return {"report_uri": f"s3://{BUCKET}/complaintiq/reports/{tid}.md",
             "trace": [{"node": "publish"}]}
 
+# ---------- [MINE] SLA node: regulatory deadline risk (not in the brief) ----------
+import numpy as np
+
+SLA_RULES = {   # kind: bd = business days, cd = calendar days
+    "REG_E": [("investigate or provisionally credit (12 CFR 1005.11)", "bd", 10),
+              ("complete investigation (12 CFR 1005.11)", "cd", 45)],
+    "REG_Z": [("acknowledge billing error (12 CFR 1026.13)", "cd", 30),
+              ("resolve billing error, max (12 CFR 1026.13)", "cd", 90)],
+}
+
+def _regime(t):
+    text = (" ".join(t.get("regulation_hints", [])) + " " + t["issue"]).lower()
+    if "1005" in text or "regulation e" in text or re.search(r"\beft\b", text):
+        return "REG_E"
+    if "1026" in text or "regulation z" in text or "billing" in text:
+        return "REG_Z"
+    if "checking" in t["product"].lower() and "charging your account" in t["issue"].lower():
+        return "REG_E"
+    if "credit card" in t["product"].lower() and "purchase" in t["issue"].lower():
+        return "REG_Z"
+    return None
+
+def sla_node(state):
+    t = state["triage"]
+    regime = _regime(t)
+    received = dt.date.fromisoformat(state.get("received_date") or dt.date.today().isoformat())
+    today = dt.date.fromisoformat(state.get("as_of") or dt.date.today().isoformat())
+    if regime is None:
+        sla = {"regime": None, "risk": "NO_CLOCK", "priority": "NORMAL", "deadlines": []}
+    else:
+        deadlines = []
+        for name, kind, n in SLA_RULES[regime]:
+            if kind == "bd":
+                due = np.busday_offset(received.isoformat(), n, roll="forward").astype(dt.date)
+            else:
+                due = received + dt.timedelta(days=n)
+            deadlines.append({"step": name, "due": due.isoformat(), "days_left": (due - today).days})
+        left = [d["days_left"] for d in deadlines]
+        if all(x < 0 for x in left):
+            risk = "BREACHED"
+        elif any(x < 0 for x in left) or min(x for x in left if x >= 0) <= 3:
+            risk = "AT_RISK"
+        else:
+            risk = "ON_TRACK"
+        urgent = risk in ("AT_RISK", "BREACHED")
+        priority = ("PRIORITY_1" if t.get("vulnerable_customer") and urgent
+                    else "HIGH" if urgent else "NORMAL")
+        sla = {"regime": regime, "risk": risk, "priority": priority, "deadlines": deadlines}
+    return {"sla": sla, "trace": [{"node": "sla", "regime": sla["regime"], "risk": sla["risk"]}]}
+
 # ---------- [PDF Phase 6] Assemble the graph ----------
 import sqlite3
 from langgraph.graph import StateGraph, START, END
@@ -283,7 +336,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 
 g = StateGraph(CIQState)
 for name, fn in {"guard": guard_node, "router": router_node, "triage": triage_node,
-                 "cases": cases_node, "analyst": analyst_node, "research": research_node,
+                 "sla": sla_node, "cases": cases_node, "analyst": analyst_node, "research": research_node,
                  "drafter": drafter_node, "critic": critic_node, "human": human_node,
                  "publish": publish_node, "refuse": refuse_node}.items():
     g.add_node(name, fn)
@@ -293,7 +346,8 @@ g.add_edge("guard", "router")
 g.add_conditional_edges("router", route_intent, {
     "TRIAGE": "triage", "ANALYTICS": "analyst", "BRIEF": "analyst",
     "REG_QA": "research", "OUT_OF_SCOPE": "refuse"})
-g.add_edge("triage", "cases")
+g.add_edge("triage", "sla")
+g.add_edge("sla", "cases")
 g.add_edge("cases", "research")
 g.add_conditional_edges("analyst", after_analyst, {"research": "research", "drafter": "drafter"})
 g.add_edge("research", "drafter")
