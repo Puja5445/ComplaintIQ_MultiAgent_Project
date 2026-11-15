@@ -38,3 +38,7 @@
 ## D9 - chat() reads all text blocks
 - Sonnet 5 can return a non-text (reasoning) block first, so the brief's content[0]["text"] raised KeyError.
 - Fix: join every block that has "text". Rest of chat() is unchanged from the brief.
+
+## D10 - Larger token limits for reasoning models
+- Brief uses max_tokens 1800 (drafter) and 800 (critic). Sonnet 5 / Opus 5.5 use part of the limit for reasoning, so replies were cut off or empty.
+- Raised to 3000 for both. Logic unchanged.

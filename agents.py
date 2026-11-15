@@ -212,7 +212,7 @@ def critic_node(state):
     ev = "\n\n".join(f"[{e['chunk_id']}] {e['text'][:1200]}" for e in evidence)
     judge = chat_json(MODELS["judge"], CRITIC_SYS,
                       f"EVIDENCE:\n{ev}\n\nDATA:\n{state.get('sql_rows', [])[:30]}"
-                      f"\n\nDRAFT:\n{draft}", CriticOut, max_tokens=800)
+                      f"\n\nDRAFT:\n{draft}", CriticOut, max_tokens=3000)
     passed = not problems and judge.verdict == "PASS"
     return {"critique": {"pass": passed, "problems": problems, **judge.model_dump()},
             "revisions": state.get("revisions", 0) + (0 if passed else 1),
@@ -275,3 +275,34 @@ def publish_node(state, config: RunnableConfig):
         f.write(json.dumps(row, default=str) + "\n")
     return {"report_uri": f"s3://{BUCKET}/complaintiq/reports/{tid}.md",
             "trace": [{"node": "publish"}]}
+
+# ---------- [PDF Phase 6] Assemble the graph ----------
+import sqlite3
+from langgraph.graph import StateGraph, START, END
+from langgraph.checkpoint.sqlite import SqliteSaver
+
+g = StateGraph(CIQState)
+for name, fn in {"guard": guard_node, "router": router_node, "triage": triage_node,
+                 "cases": cases_node, "analyst": analyst_node, "research": research_node,
+                 "drafter": drafter_node, "critic": critic_node, "human": human_node,
+                 "publish": publish_node, "refuse": refuse_node}.items():
+    g.add_node(name, fn)
+
+g.add_edge(START, "guard")
+g.add_edge("guard", "router")
+g.add_conditional_edges("router", route_intent, {
+    "TRIAGE": "triage", "ANALYTICS": "analyst", "BRIEF": "analyst",
+    "REG_QA": "research", "OUT_OF_SCOPE": "refuse"})
+g.add_edge("triage", "cases")
+g.add_edge("cases", "research")
+g.add_conditional_edges("analyst", after_analyst, {"research": "research", "drafter": "drafter"})
+g.add_edge("research", "drafter")
+g.add_edge("drafter", "critic")
+g.add_conditional_edges("critic", after_critic,
+                        {"drafter": "drafter", "human": "human", "publish": "publish"})
+g.add_conditional_edges("human", after_human, {"publish": "publish", END: END})
+g.add_edge("publish", END)
+g.add_edge("refuse", END)
+
+conn = sqlite3.connect(str(STATE / "checkpoints.sqlite"), check_same_thread=False)
+app = g.compile(checkpointer=SqliteSaver(conn))
