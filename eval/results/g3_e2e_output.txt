@@ -1,0 +1,35 @@
+nohup: ignoring input
+0 answerable REG_QA | cites 14 | bad 0 | 50.0 s
+1 answerable REG_QA | cites 13 | bad 0 | 48.3 s
+2 answerable REG_QA | cites 12 | bad 0 | 38.8 s
+3 answerable REG_QA | cites 7 | bad 0 | 26.2 s
+4 answerable REG_QA | cites 5 | bad 0 | 35.1 s
+5 answerable REG_QA | cites 18 | bad 0 | 57.3 s
+6 answerable REG_QA | cites 0 | bad 0 | 18.6 s
+7 answerable REG_QA | cites 21 | bad 0 | 57.7 s
+8 answerable REG_QA | cites 3 | bad 0 | 23.6 s
+9 answerable REG_QA | cites 20 | bad 0 | 61.4 s
+10 answerable REG_QA | cites 18 | bad 0 | 47.1 s
+11 answerable REG_QA | cites 9 | bad 0 | 38.3 s
+12 answerable REG_QA | cites 0 | bad 0 | 38.9 s
+13 answerable REG_QA | cites 14 | bad 0 | 59.6 s
+14 answerable REG_QA | cites 7 | bad 0 | 29.2 s
+15 abstain REG_QA | cites 0 | bad 0 | 8.0 s
+16 abstain REG_QA | cites 10 | bad 0 | 49.2 s
+17 abstain OUT_OF_SCOPE | cites 0 | bad 0 | 2.1 s
+
+answerable run: 15 | routed to REG_QA: 15
+citation validity: 1.0 (target 1.00)
+answers with at least one citation: 13 / 15
+escalated to human after 2 revisions: 8
+latency p50/p95 (s): [38.85 59.87]
+
+ABSTAINED? True | intent REG_QA | What is the bank's policy on cryptocurrency custod 
+   The provided evidence does not contain any information about the bank's policy on cryptocurrency custody. None of the EVIDENCE chunks address cryptocurrency, digital assets, or custody services related to such assets—they cover topics such as TILA/Re
+
+ABSTAINED? False | intent REG_QA | What escrow account rules apply to mortgage servic 
+   Based on the EVIDENCE provided, the following escrow account rules apply to mortgage servicers under RESPA (12 CFR 1024.17):  ## Escrow Account Analysis Before establishing an escrow account, a servicer must conduct an analysis to determine the perio
+
+ABSTAINED? True | intent OUT_OF_SCOPE | What fees does Harbourline Bank charge for interna 
+   Sorry, I can't help with that request. ComplaintIQ can triage customer complaints, answer data questions about complaints, explain banking regulations, and write complaint trend briefs.
+LLM calls: {'calls': 84, 'in_tokens': 334403, 'out_tokens': 69730}

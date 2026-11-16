@@ -1,0 +1,8 @@
+faithfulness (judge, 10 answers): 0.6 (target >= 0.90)
+faithfulness (your labels)      : 0.5
+agreement with your labels: 0.7 (need >= 0.70)
+Cohen kappa: 0.4
+DISAGREE #1: you=FAITHFUL judge=UNFAITHFUL | The substantive claims about the 10-day, 45-day, 20-day and 90-day periods, investigation standards and paragraph (d) are supported. However, the closing 'evidence gaps' note is contradicted by the ev
+DISAGREE #3: you=UNFAITHFUL judge=FAITHFUL | The substantive claims are all supported by the evidence: the categories of disputes a furnisher must investigate, the addresses where disputes must be sent, the required notice contents, notifying CR
+DISAGREE #6: you=UNFAITHFUL judge=FAITHFUL | Every claim in the answer is backed by the cited evidence. This includes the threshold conditions, the required disclosures, the principle that liability turns solely on promptness of notice, the bar 
+LLM calls: {'calls': 10, 'in_tokens': 55096, 'out_tokens': 4514}

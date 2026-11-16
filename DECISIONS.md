@@ -64,3 +64,8 @@
 
 ## D15 - G3 retrieval (15 questions)
 - recall@5: BM25 0.93, dense 1.00, hybrid 1.00. MRR: 0.73 / 0.97 / 0.97. Hybrid ties dense on plain-English questions; BM25 is weaker. Set is 15 questions, not 20.
+
+## D16 - Judge calibration (10 answers)
+- Opus judge vs my labels: agreement 0.70, Cohen kappa 0.4. Judge faithfulness 0.6, my labels 0.5 (target 0.90 not met).
+- Disagreements #1, #3, #6. I saw only cited chunks; the judge saw all 8 retrieved chunks (unconfirmed explanation).
+- Not re-run because of the $5 lab budget.
