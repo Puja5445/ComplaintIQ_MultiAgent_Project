@@ -1,17 +1,12 @@
 import re, numpy as np, pandas as pd
+from g3_gold import GOLD_REG
 from agents import REG_INDEX
 from core import embed, tok
 
-GOLD_REG = [
- {"q": "After a consumer notifies a financial institution of an electronic fund transfer error, what must the institution do and within what time?", "gold": [r"12CFR1005\.11-c"]},
- {"q": "What counts as a billing error for an open-end credit account, and what must the creditor do on receiving notice?", "gold": [r"12CFR1026\.13-c"]},
- {"q": "What are a furnisher's duties after receiving a direct dispute from a consumer?", "gold": [r"12CFR1022\.43-c"]},
- {"q": "What limits apply to how often a debt collector may call a consumer?", "gold": [r"12CFR1006\.14-c"]},
- {"q": "What findings about deposit accounts are reported in the downloaded Supervisory Highlights issues?", "gold": [r"sh_issue\d+-p"]},
-]
-ABSTAIN = ["What is the bank's policy on cryptocurrency custody?"]
-
 def hit(cid, pats): return any(re.match(p, cid) for p in pats)
+missing = [g for it in GOLD_REG for g in it["gold"] if not any(re.match(g, c["chunk_id"]) for c in REG_INDEX.chunks)]
+print("gold patterns with NO matching chunk (fix these):", missing)
+
 def dense(q, k):
     _, I = REG_INDEX.faiss.search(embed([q]), k)
     return [REG_INDEX.chunks[i]["chunk_id"] for i in I[0] if i >= 0]
@@ -30,5 +25,5 @@ for name, fn in {"dense": dense, "bm25": bm25, "hybrid": hybrid}.items():
                      "rr": round(1 / ranks[0], 3) if ranks else 0.0, "top5": ids[:5]})
 df = pd.DataFrame(rows)
 print(df.groupby("mode")[["hit5", "rr"]].mean().rename(columns={"hit5": "recall@5", "rr": "MRR"}))
-print(df[df["mode"] == "hybrid"][["q", "hit5", "top5"]].to_string())
+print(df[(df["mode"] == "hybrid") & (df["hit5"] == 0)][["q", "top5"]].to_string())
 df.to_csv("eval/g3_retrieval_results.csv", index=False)
