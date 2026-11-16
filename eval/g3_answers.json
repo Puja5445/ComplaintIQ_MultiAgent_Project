@@ -1,0 +1,1173 @@
+[
+ {
+  "kind": "answerable",
+  "q": "After a consumer notifies a financial institution of an electronic fund transfer error, what must the institution do and within what time?",
+  "intent": "REG_QA",
+  "answer": "## Financial Institution Obligations Upon Receiving an EFT Error Notice\n\n### Timeliness of Consumer Notice\nIf a notice of error is based on documentation or clarification that the consumer requested under paragraph (a)(1)(vii), the consumer's notice is timely if received by the financial institution no later than **60 days** after the institution sends the requested information [C:12CFR1005.11-c1].\n\n### Investigation and Resolution Timeline\n\n**10-Business-Day Standard Period:**\n- The institution must **investigate promptly** and, except as otherwise provided, determine whether an error occurred within **10 business days** of receiving the notice of error [C:12CFR1005.11-c1].\n- The institution must **report results to the consumer within 3 business days** after completing the investigation [C:12CFR1005.11-c1].\n- If an error is found, the institution must **correct the error within 1 business day** after determining that an error occurred [C:12CFR1005.11-c1].\n\n**45-Day Extended Period:**\n- If the institution is unable to complete its investigation within 10 business days, it may take up to **45 days** from receipt of the notice of error to investigate and determine whether an error occurred, subject to conditions specified in the regulation that are not fully set out in the available evidence [C:12CFR1005.11-c1].\n\n**Extended Time Periods (Special Circumstances):**\nThe time periods above are extended as follows [C:12CFR1005.11-c2]:\n- **20 business days** applies in place of 10 business days if the notice of error involves an electronic fund transfer to or from the account within **30 days after the first deposit** to the account was made.\n- **90 days** applies in place of 45 days for completing the investigation if the notice of error involves an electronic fund transfer that:\n  - Was not initiated within a state;\n  - Resulted from a point-of-sale debit card transaction; or\n  - Occurred within 30 days after the first deposit to the account was made.\n\n### Investigation Standards\nWith the exception of transfers covered by \u00a7 1005.14, a financial institution's review of its own records regarding an alleged error satisfies the requirements of \u00a7 1005.11 if: (i) the alleged error concerns a transfer to or from a third party; and (ii) there is no agreement between the institution and the third party for the type of electronic fund transfer involved [C:12CFR1005.11-c2].\n\n### If No Error (or a Different Error) Is Found\nIn addition to following the procedures specified in paragraph (c), the financial institution must follow the procedures set forth in paragraph (d) if it determines that no error occurred or that an error occurred different from the one alleged [C:12CFR1005.11-c2]. The specific content of paragraph (d)'s procedures is not contained in the available evidence.\n\n---\n\n**Summary of Key Deadlines:**\n\n| Action | Standard Deadline | Extended Deadline (special cases) |\n|---|---|---|\n| Determine if error occurred | 10 business days [C:12CFR1005.11-c1] | 20 business days (transfer within 30 days of first deposit) [C:12CFR1005.11-c2] |\n| Complete investigation (extended period) | Up to 45 days [C:12CFR1005.11-c1] | Up to 90 days (not initiated within a state; point-of-sale debit card transaction; or occurred within 30 days of first deposit) [C:12CFR1005.11-c2] |\n| Report results to consumer | 3 business days after completing investigation [C:12CFR1005.11-c1] | \u2014 |\n| Correct error | 1 business day after determining error occurred [C:12CFR1005.11-c1] | \u2014 |\n\n**Note on evidence gaps:** The evidence does not contain the general 60-day deadline for a consumer's initial notice of error (measured from the periodic statement), nor the specific conditions attached to the 45-day extension (e.g., provisional credit requirements), nor the content of the paragraph (d) procedures for when no error or a different error is found. These items cannot be stated based on the chunks provided.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1005.11-c0",
+    "text": "(a)  Definition of error \u2014(1)  Types of transfers or inquiries covered.  The term \u201cerror\u201d means:\n(i) An unauthorized electronic fund transfer;\n(ii) An incorrect electronic fund transfer to or from the consumer's account;\n(iii) The omission of an electronic fund transfer from a periodic statement;\n(iv) A computational or bookkeeping error made by the financial institution relating to an electronic fund transfer;\n(v) The consumer's receipt of an incorrect amount of money from an electronic terminal;\n(vi) An electronic fund transfer not identified in accordance with \u00a7 1005.9 or \u00a7 1005.10(a); or\n(vii) The consumer's request for documentation required by \u00a7 1005.9 or \u00a7 1005.10(a) or for additional information or clarification concerning an electronic fund transfer, including a request the consum"
+   },
+   {
+    "chunk_id": "12CFR1005.11-c2",
+    "text": "e final).\n(3)  Extension of time periods.  The time periods in paragraphs (c)(1) and (c)(2) of this section are extended as follows:\n(i) The applicable time is 20 business days in place of 10 business days under paragraphs (c)(1) and (2) of this section if the notice of error involves an electronic fund transfer to or from the account within 30 days after the first deposit to the account was made.\n(ii) The applicable time is 90 days in place of 45 days under paragraph (c)(2) of this section, for completing an investigation, if a notice of error involves an electronic fund transfer that:\n(A) Was not initiated within a state;\n(B) Resulted from a point-of-sale debit card transaction; or\n(C) Occurred within 30 days after the first deposit to the account was made.\n(4)  Investigation.  With the "
+   },
+   {
+    "chunk_id": "12CFR1005.6-c0",
+    "text": "(a)  Conditions for liability.  A consumer may be held liable, within the limitations described in paragraph (b) of this section, for an unauthorized electronic fund transfer involving the consumer's account only if the financial institution has provided the disclosures required by \u00a7 1005.7(b)(1), (2), and (3). If the unauthorized transfer involved an access device, it must be an accepted access device and the financial institution must have provided a means to identify the consumer to whom it was issued.\n(b)  Limitations on amount of liability.  A consumer's liability for an unauthorized electronic fund transfer or a series of related unauthorized transfers shall be determined as follows:\n(1)  Timely notice given.  If the consumer notifies the financial institution within two business day"
+   },
+   {
+    "chunk_id": "12CFR1005.11-c1",
+    "text": "sent when the consumer gives the oral notification.\n(3)  Request for documentation or clarifications.  When a notice of error is based on documentation or clarification that the consumer requested under paragraph (a)(1)(vii) of this section, the consumer's notice of error is timely if received by the financial institution no later than 60 days after the institution sends the information requested.\n(c)  Time limits and extent of investigation \u2014(1)  Ten-day period.  A financial institution shall investigate promptly and, except as otherwise provided in this paragraph (c), shall determine whether an error occurred within 10 business days of receiving a notice of error. The institution shall report the results to the consumer within three business days after completing its investigation. The i"
+   },
+   {
+    "chunk_id": "12CFR1005.7-c0",
+    "text": "(a)  Timing of disclosures.  A financial institution shall make the disclosures required by this section at the time a consumer contracts for an electronic fund transfer service or before the first electronic fund transfer is made involving the consumer's account.\n(b)  Content of disclosures.  A financial institution shall provide the following disclosures, as applicable:\n(1)  Liability of consumer.  A summary of the consumer's liability, under \u00a7 1005.6 or under state or other applicable law or agreement, for unauthorized electronic fund transfers.\n(2)  Telephone number and address.  The telephone number and address of the person or office to be notified when the consumer believes that an unauthorized electronic fund transfer has been or may be made.\n(3)  Business days.  The financial inst"
+   },
+   {
+    "chunk_id": "12CFR1005.14-c0",
+    "text": "(a)  Provider of electronic fund transfer service.  A person that provides an electronic fund transfer service to a consumer but that does not hold the consumer's account is subject to all requirements of this part if the person:\n(1) Issues a debit card (or other access device) that the consumer can use to access the consumer's account held by a financial institution; and\n(2) Has no agreement with the account-holding institution regarding such access.\n(b)  Compliance by service provider.  In addition to the requirements generally applicable under this part, the service provider shall comply with the following special rules:\n(1)  Disclosures and documentation.  The service provider shall give the disclosures and documentation required by \u00a7\u00a7 1005.7, 1005.8, and 1005.9 of this part that are w"
+   },
+   {
+    "chunk_id": "exam_manual-p700-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nAn error includes any of the following: \n\u2022 An unauthorized EFT. \n\u2022 An incorrect EFT to or from the consumer\u2019s account. \n\u2022 The omission from a periodic statement of an EFT to or from the consumer\u2019s account that \nshould have been included. \n\u2022 A computational or bookkeeping error made by the financial institution relating to an EFT. \n\u2022 The consumer\u2019s receipt of an incorrect amount of money from an electronic terminal. \n\u2022 An EFT not identified in accordance with the requirements of 12 CFR 1005.9 or 1005.10(a). \n\u2022 A consumer\u2019s request for any documentation required by 12 CFR 1005.9 or 1005.10(a) or for \nadditional information or clarification concerning an EFT (12 CFR 1005.11(a)(1)). \nThe term error does not include: \n\u2022 A routine inquiry about the balan"
+   },
+   {
+    "chunk_id": "12CFR1005.14-c1",
+    "text": "tution.\n(ii) The service provider shall disclose to the consumer the date on which it initiates a transfer to effect a provisional credit in accordance with \u00a7 1005.11(c)(2)(ii).\n(iii) If the service provider determines an error occurred, it shall transfer funds to or from the consumer's account, in the appropriate amount and within the applicable time period, in accordance with \u00a7 1005.11(c)(2)(i).\n(iv) If funds were provisionally credited and the service provider determines no error occurred, it may reverse the credit. The service provider shall notify the account-holding institution of the period during which the account-holding institution must honor debits to the account in accordance with \u00a7 1005.11(d)(2)(ii). If an overdraft results, the service provider shall promptly reimburse the ac"
+   }
+  ],
+  "cited": [
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c2",
+   "12CFR1005.11-c2",
+   "12CFR1005.11-c2",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c2",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c2",
+   "12CFR1005.11-c1",
+   "12CFR1005.11-c1"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": true,
+  "seconds": 50.0,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What counts as a billing error for an open-end credit account, and what must the creditor do on receiving notice?",
+  "intent": "REG_QA",
+  "answer": "## What Counts as a Billing Error\n\nUnder 12 CFR 1026.13(a), a \"billing error\" for an open-end credit account means any of the following:\n\n1. **Unauthorized extension of credit** \u2014 A reflection on or with a periodic statement of an extension of credit that is not made to the consumer or to a person who has actual, implied, or apparent authority to use the consumer's credit card or open-end credit plan [C:12CFR1026.13-c0].\n\n2. **Improperly identified extension of credit** \u2014 A reflection of an extension of credit not identified in accordance with \u00a7\u00a7 1026.7(a)(2) or (b)(2), as applicable, and 1026.8 [C:12CFR1026.13-c0].\n\n3. **Property/services not accepted or not delivered as agreed** \u2014 A reflection of an extension of credit for property or services not accepted by the consumer or the consumer's designee, or not delivered as agreed [C:12CFR1026.13-c0].\n\n4. **Failure to credit payment** \u2014 A reflection of the creditor's failure to properly credit a payment or other credit issued to the consumer's account [C:12CFR1026.13-c0].\n\n5. **Accounting/computational error** \u2014 A reflection of a computational or similar error of an accounting nature made by the creditor [C:12CFR1026.13-c0].\n\n6. **Extension of credit requiring clarification** \u2014 A reflection of an extension of credit for which the consumer requests additional clarification, including documentary evidence [C:12CFR1026.13-c0].\n\n7. **Failure to mail/deliver statement** \u2014 A further category concerns \"the creditor's failure to mail or deliver a periodic statement to the consumer's last known address\" where that address was received by the creditor in writing \u2014 but the evidence provided cuts off mid-sentence at \"if that address was received by the creditor, in writing, at least 20 days before the end of the billing cycle for which the statement was required,\" so the complete, final text of this provision (including confirmation of the \"20 days\" figure) is not fully verifiable from the evidence as quoted [C:12CFR1026.13-c0].\n\n## What the Creditor Must Do Upon Receiving a Billing Error Notice\n\n**Timing requirement:** The creditor must comply with the resolution procedures within **2 complete billing cycles (but in no event later than 90 days)** after receiving a billing error notice [C:12CFR1026.13-c1].\n\n**If the creditor determines a billing error occurred as asserted** (within the above time limits), it must:\n1. Correct the billing error and credit the consumer's account with any disputed amount and related finance or other charges, as applicable; and\n2. Mail or deliver a correction notice to the consumer [C:12CFR1026.13-c2].\n\n**If the creditor determines no billing error occurred, or a different billing error occurred**, after conducting a reasonable investigation, it must (within the same time limits):\n1. Mail or deliver to the consumer an explanation setting forth the reasons for the creditor's belief that the billing error alleged is incorrect in whole or in part;\n2. Furnish copies of documentary evidence of the consumer's indebtedness, if the consumer so requests; and\n3. If a different billing error occurred, correct that billing error and credit the consumer's account with any disputed amount and related finance or other charges, as applicable [C:12CFR1026.13-c2].\n\n**Pending resolution** (until the billing error is resolved under paragraph (e) or (f)):\n\n1. **Consumer may withhold disputed amount:** The consumer need not pay, and the creditor may not try to collect, any portion of a required payment believed to be related to the disputed amount (including related finance or other charges). If the cardholder is enrolled in an automatic payment plan, the card issuer must not deduct any part of the disputed amount if the billing error notice is received up to 3 business days before the scheduled payment date [C:12CFR1026.13-c1].\n\n2. **Adverse credit reports:** The evidence states that \"[t]he creditor or its agent shall not (directly or indirectly) ...\" but the specific prohibited conduct following this clause is cut off in the provided evidence, so the precise scope of this prohibition cannot be fully confirmed from the chunk as given [C:12CFR1026.13-c1].\n\n**After resolution:** The evidence indicates that paragraph (g), titled \"Creditor's rights and duties after resolution,\" applies \"[i]f a creditor, after complying with all of the requirements of this section, determines that a consumer owes all or part of the disputed amount and related finance or other charges\" \u2014 at which point the creditor has certain further obligations. However, the chunk is cut off at \"(1) Shall promptly notify the consumer in writing of the,\" so the full content of what the creditor must notify the consumer about, and any additional requirements under paragraph (g), are not available in the evidence provided [C:12CFR1026.13-c2].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1026.13-c0",
+    "text": "(a)  Definition of billing error.  For purposes of this section, the term billing error means:\n(1) A reflection on or with a periodic statement of an extension of credit that is not made to the consumer or to a person who has actual, implied, or apparent authority to use the consumer's credit card or open-end credit plan.\n(2) A reflection on or with a periodic statement of an extension of credit that is not identified in accordance with the requirements of \u00a7\u00a7 1026.7(a)(2) or (b)(2), as applicable, and 1026.8.\n(3) A reflection on or with a periodic statement of an extension of credit for property or services not accepted by the consumer or the consumer's designee, or not delivered to the consumer or the consumer's designee as agreed.\n(4) A reflection on a periodic statement of the creditor'"
+   },
+   {
+    "chunk_id": "12CFR1026.13-c1",
+    "text": "the 30-day period; and\n(2) The creditor shall comply with the appropriate resolution procedures of paragraphs (e) and (f) of this section, as applicable, within 2 complete billing cycles (but in no event later than 90 days) after receiving a billing error notice.\n(d)  Rules pending resolution.  Until a billing error is resolved under paragraph (e) or (f) of this section, the following rules apply:\n(1)  Consumer's right to withhold disputed amount; collection action prohibited.  The consumer need not pay (and the creditor may not try to collect) any portion of any required payment that the consumer believes is related to the disputed amount (including related finance or other charges). If the cardholder has enrolled in an automatic payment plan offered by the card issuer and has agreed to p"
+   },
+   {
+    "chunk_id": "12CFR1026.6-c8",
+    "text": "ncluding those optional fees. The creditor shall also disclose that the consumer has the right to reject the plan and not be obligated to pay those fees or any other fee or charges until the consumer has used the account or made a payment on the account after receiving a periodic statement. This paragraph does not apply with respect to fees or security deposits that are not debited to the account.\n(xiv)  Web site reference.  For issuers of credit cards that are not charge cards, a reference to the Web site established by the Bureau and a statement that consumers may obtain on the Web site information about shopping for and using credit cards. Until January 1, 2013, issuers may substitute for this reference a reference to the Web site established by the Board of Governors of the Federal Res"
+   },
+   {
+    "chunk_id": "12CFR1026.13-c2",
+    "text": "ion.\n(e)  Procedures if billing error occurred as asserted.  If a creditor determines that a billing error occurred as asserted, it shall within the time limits in paragraph (c)(2) of this section:\n(1) Correct the billing error and credit the consumer's account with any disputed amount and related finance or other charges, as applicable; and\n(2) Mail or deliver a correction notice to the consumer.\n(f)  Procedures if different billing error or no billing error occurred.  If, after conducting a reasonable investigation, a creditor determines that no billing error occurred or that a different billing error occurred from that asserted, the creditor shall within the time limits in paragraph (c)(2) of this section:\n(1) Mail or deliver to the consumer an explanation that sets forth the reasons fo"
+   },
+   {
+    "chunk_id": "12CFR1026.7-c3",
+    "text": " imposed as part of the plan other than charges attributable to periodic interest rates must be grouped together under the heading  Fees,  identified consistent with the feature or type, and itemized, and a total of charges, using the term  Fees,  must be disclosed for the statement period and calendar year to date, using a format substantially similar to Sample G-18(A) in appendix G to this part.\n(7)  Change-in-terms and increased penalty rate summary for open-end (not home-secured) plans.  Creditors that provide a change-in-terms notice required by \u00a7 1026.9(c), or a rate increase notice required by \u00a7 1026.9(g), on or with the periodic statement, must disclose the information in \u00a7 1026.9(c)(2)(iv)(A) and (c)(2)(iv)(B) (if applicable) or \u00a7 1026.9(g)(3)(i) on the periodic statement in accor"
+   },
+   {
+    "chunk_id": "exam_manual-p355-c0",
+    "text": "CFPB Consumer \nLaws and Regulations TILA \nopen-end consumer plans without a grace period, creditors must adopt reasonable policies and \nprocedures designed to ensure that periodic statements are mailed or delivered at least 14 days \nprior to the date on which the required minimum periodic payment is due. Moreover, the creditor \nmust adopt reasonable policies and procedures to ensure that it does not treat as late a required \nminimum periodic payment received by the creditor within 14 days after it has mailed or \ndelivered the periodic statement. \nSubsequent Disclosures (Open-End Credit) \u2013 \nSection 1026.9 \nFor open-end, not home-secured credit, the following applies: \nCreditors are required to provide consumers with 45 days\u2019 advance written notice of rate \nincreases and other significant ch"
+   },
+   {
+    "chunk_id": "12CFR1026.9-c5",
+    "text": "bout the summarized changes, and other changes to the account, in the notice;\n( 6 ) If the creditor is changing a rate on the account, other than a penalty rate, a statement that if a penalty rate currently applies to the consumer's account, the new rate described in the notice will not apply to the consumer's account until the consumer's account balances are no longer subject to the penalty rate;\n( 7 ) If the change in terms being disclosed is an increase in an annual percentage rate, the balances to which the increased rate will be applied. If applicable, a statement identifying the balances to which the current rate will continue to apply as of the effective date of the change in terms; and\n( 8 ) If the change in terms being disclosed is an increase in an annual percentage rate for a cr"
+   },
+   {
+    "chunk_id": "12CFR1026.6-c9",
+    "text": "ded, or the timing or method of billing or payment.\n(E) Charges imposed for terminating a plan.\n(F) Charges for voluntary credit insurance, debt cancellation or debt suspension.\n(iii) Charges that are not imposed as part of the plan include:\n(A) Charges imposed on a cardholder by an institution other than the card issuer for the use of the other institution's ATM in a shared or interchange system.\n(B) A charge for a package of services that includes an open-end credit feature, if the fee is required whether or not the open-end credit feature is included and the non-credit services are not merely incidental to the credit feature.\n(C) Charges under \u00a7 1026.4(e) disclosed as specified.\n(D) With regard to a covered separate credit feature and an asset feature on a prepaid account that are both "
+   }
+  ],
+  "cited": [
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c0",
+   "12CFR1026.13-c1",
+   "12CFR1026.13-c2",
+   "12CFR1026.13-c2",
+   "12CFR1026.13-c1",
+   "12CFR1026.13-c1",
+   "12CFR1026.13-c2"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": false,
+  "seconds": 48.3,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What are a furnisher's duties after receiving a direct dispute from a consumer?",
+  "intent": "REG_QA",
+  "answer": "## Furnisher's Duties After Receiving a Direct Dispute\n\n**1. General Duty to Investigate**\n\nExcept as otherwise provided, a furnisher must conduct a reasonable investigation of a direct dispute if it relates to:\n- The consumer's liability for a credit account or other debt with the furnisher, including disputes relating to identity theft or fraud, individual or joint liability, or authorized user status [C:12CFR1022.43-c0];\n- The terms of a credit account or other debt, such as the type of account, principal balance, scheduled payment amount, or credit limit [C:12CFR1022.43-c0];\n- The consumer's performance or other conduct concerning an account, such as current payment status, high balance, date or amount of a payment made, or date an account was opened or closed [C:12CFR1022.43-c0];\n- Any other information in a consumer report regarding an account or relationship with the furnisher that bears on the consumer's creditworthiness, credit standing, cr[...] [C:12CFR1022.43-c0] (the evidence text is cut off at this point, but the regulation specifies this as a fourth category of covered disputes).\n\n**2. Where the Dispute Must Be Submitted**\n\nThe furnisher is only required to investigate if the dispute notice is submitted to:\n1. The address provided by the furnisher and listed on a consumer report relating to the consumer;\n2. An address clearly and conspicuously specified by the furnisher in writing or electronically (if the consumer agreed to electronic delivery); or\n3. Any business address of the furnisher, if no specific address has been designated [C:12CFR1022.43-c1].\n\n**3. Required Contents of the Dispute Notice**\n\nA valid dispute notice must include:\n1. Sufficient information to identify the account or relationship in dispute (e.g., account number, consumer's name, address, phone number);\n2. The specific information being disputed and an explanation of the basis for the dispute [C:12CFR1022.43-c1].\n\n(The evidence indicates the notice requirements continue beyond this point, but the retrieved chunk is cut off and does not show further required contents.)\n\n**4. If the Investigation Finds Inaccurate Information**\n\nIf the investigation finds that the information reported was inaccurate, the furnisher must promptly notify each consumer reporting agency to which it provided the inaccurate information of the investigation findings, and provide any correction necessary to make the information accurate [C:12CFR1022.43-c2] [C:exam_manual-p638-c0].\n\n**5. Exception \u2013 Frivolous or Irrelevant Disputes**\n\nA furnisher is not required to investigate if it reasonably determines the dispute is frivolous or irrelevant. A dispute qualifies as frivolous or irrelevant if:\n- The consumer did not provide sufficient information to investigate the disputed information as required by the notice-content provisions [C:12CFR1022.43-c2];\n- The dispute is substantially the same as one previously submitted (directly or through a CRA) for which the furnisher already satisfied applicable requirements \u2014 unless the new dispute includes required information not previously provided [C:12CFR1022.43-c2]; or\n- The furnisher is not required to investigate the direct dispute because one or more of the exceptions listed in the section applies [C:12CFR1022.43-c2].\n\n**6. Other Exceptions**\n\nThe direct dispute requirements do not apply if the furnisher reasonably believes the dispute was submitted by, prepared on behalf of, or submitted on a form supplied by a credit repair organization [C:exam_manual-p637-c0].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1022.43-c1",
+    "text": "ization, as defined in 15 U.S.C. 1679a(3), or an entity that would be a credit repair organization, but for 15 U.S.C. 1679a(3)(B)(i).\n(c)  Direct dispute address.  A furnisher is required to investigate a direct dispute only if a consumer submits a dispute notice to the furnisher at:\n(1) The address of a furnisher provided by a furnisher and set forth on a consumer report relating to the consumer;\n(2) An address clearly and conspicuously specified by the furnisher for submitting direct disputes that is provided to the consumer in writing or electronically (if the consumer has agreed to the electronic delivery of information from the furnisher); or\n(3) Any business address of the furnisher if the furnisher has not so specified and provided an address for submitting direct disputes under par"
+   },
+   {
+    "chunk_id": "exam_manual-p637-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FCRA \nThe direct dispute requirements also do not apply if the furnisher has a reasonable belief that the \ndirect dispute is: \n1. submitted by a credit repair organization; \n2. is prepared on behalf of the consumer by a credit repair organization; or \n3. is submitted on a form supplied to the consumer by a credit repair organization. \nDirect Dispute Address. A furnisher is required to investigate a direct dispute only if a consumer \nsubmits a dispute notice to the furnisher at: \n1. the address provided by a furnisher and listed on a consumer report relating to the \nconsumer; \n2. an address clearly and conspicuously specified by the furnisher that is provided to the \nconsumer in writing or electronically (if the consumer has agreed to the electronic \ndeli"
+   },
+   {
+    "chunk_id": "exam_manual-p636-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FCRA \nThe person must complete the required investigations, reviews, and reports within 30 days. The \nperson may extend the time period for 15 days if a consumer reporting agency receives \nadditional relevant information from the consumer. \nDuties upon notice of dispute from a consumer (direct disputes) \u2013 \nSection 623(a)(8); 15 U.S.C. 1681s-2(a)(8); 12 CFR 1022.43 \nGeneral rule. A furnisher must conduct a reasonable investigation of a direct dispute (unless \nexceptions, described later, apply) if the dispute relates to: \n1. the consumer\u2019s liability for a credit account or other debt with the furnisher, such as \ndirect disputes relating to whether there is or has been identity theft or fraud against \nthe consumer, whether there is individual or joint liab"
+   },
+   {
+    "chunk_id": "12CFR1022.43-c0",
+    "text": "(a)  General rule.  Except as otherwise provided in this section, a furnisher must conduct a reasonable investigation of a direct dispute if it relates to:\n(1) The consumer's liability for a credit account or other debt with the furnisher, such as direct disputes relating to whether there is or has been identity theft or fraud against the consumer, whether there is individual or joint liability on an account, or whether the consumer is an authorized user of a credit account;\n(2) The terms of a credit account or other debt with the furnisher, such as direct disputes relating to the type of account, principal balance, scheduled payment amount on an account, or the amount of the credit limit on an open-end account;\n(3) The consumer's performance or other conduct concerning an account or other"
+   },
+   {
+    "chunk_id": "exam_manual-p638-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FCRA \nrequired to complete its action if the consumer had elected to dispute the information \nunder that section; and \n4. if the investigation finds that the information reported was inaccurate, promptly notify \neach consumer reporting agency to which the furnisher provided inaccurate \ninformation of investigation findings and provide to the consumer reporting agency \nany correction to that information that is necessary to make the information provided \nby the furnisher accurate. \nFrivolous or Irrelevant Disputes. A furnisher is not required to investigate a direct dispute if the \nfurnisher has reasonably determined that the dispute is frivolous or irrelevant. A dispute qualifies \nas frivolous or irrelevant if: \n1. the consumer did not provide sufficient"
+   },
+   {
+    "chunk_id": "12CFR1022.43-c2",
+    "text": "and provide to the consumer reporting agency any correction to that information that is necessary to make the information provided by the furnisher accurate.\n(f)  Frivolous or irrelevant disputes.  (1) A furnisher is not required to investigate a direct dispute if the furnisher has reasonably determined that the dispute is frivolous or irrelevant. A dispute qualifies as frivolous or irrelevant if:\n(i) The consumer did not provide sufficient information to investigate the disputed information as required by paragraph (d) of this section;\n(ii) The direct dispute is substantially the same as a dispute previously submitted by or on behalf of the consumer, either directly to the furnisher or through a consumer reporting agency, with respect to which the furnisher has already satisfied the appli"
+   },
+   {
+    "chunk_id": "12CFR1022.41-c0",
+    "text": "For purposes of this subpart and appendix E of this part, the following definitions apply:\n(a)  Accuracy  means that information that a furnisher provides to a consumer reporting agency about an account or other relationship with the consumer correctly:\n(1) Reflects the terms of and liability for the account or other relationship;\n(2) Reflects the consumer's performance and other conduct with respect to the account or other relationship; and\n(3) Identifies the appropriate consumer.\n(b)  Direct dispute  means a dispute submitted directly to a furnisher (including a furnisher that is a debt collector) by a consumer concerning the accuracy of any information contained in a consumer report and pertaining to an account or other relationship that the furnisher has or had with the consumer.\n(c)  "
+   },
+   {
+    "chunk_id": "exam_manual-p77-c0",
+    "text": "CFPB Consumer Reporting\n \nExamination Procedures Larger Participants\n \nii. Identifies any information required to investigate the disputed information (the entity \nmay identify this information by using a standardized form describing the general \nnature of such information). (Section 611(a)(3); 15 U.S.C. 1681i(a)(3)). \n8. Review of All Relevant Information. Determine whether in conducting its reinvestigations \nthe entity reviews and considers all relevant information submitted by the consumer within \n30 days after receiving the dispute from the consumer or reseller. (Section 611(a)(1)(A), \n(a)(4); 15 U.S.C. 1681i(a)(1)(A), (a)(4)). Review how the entity handles and uses \nattachments and other supplementary materials and text provided by the consumer in disputes \nsubmitted by mail, Internet"
+   }
+  ],
+  "cited": [
+   "12CFR1022.43-c0",
+   "12CFR1022.43-c0",
+   "12CFR1022.43-c0",
+   "12CFR1022.43-c0",
+   "12CFR1022.43-c1",
+   "12CFR1022.43-c1",
+   "12CFR1022.43-c2",
+   "exam_manual-p638-c0",
+   "12CFR1022.43-c2",
+   "12CFR1022.43-c2",
+   "12CFR1022.43-c2",
+   "exam_manual-p637-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": false,
+  "seconds": 38.8,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What limits apply to how often a debt collector may call a consumer?",
+  "intent": "REG_QA",
+  "answer": "Based on the evidence, the following limits apply to telephone call frequency by debt collectors:\n\n**General Prohibition**\nA debt collector must not place telephone calls or engage any person in telephone conversation repeatedly or continuously with intent to annoy, abuse, or harass any person at the called number [C:12CFR1006.14-c0].\n\n**Presumption of Compliance (Safe Harbor)**\nSubject to certain exclusions, a debt collector is presumed to **comply** with this rule if telephone calls to a particular person, in connection with the collection of a particular debt, are placed:\n- No more than **seven times within seven consecutive days**; and\n- **Not within seven consecutive days** after having had a telephone conversation with that person about the debt [C:12CFR1006.14-c0].\n\n**Presumption of Violation**\nThe regulation also establishes a presumption that a debt collector **violates** this provision under certain conditions, though the specific triggering details are cut off in the evidence provided [C:12CFR1006.14-c0].\n\n**Related Timing Restrictions**\nSeparately, a debt collector must not communicate or attempt to communicate with a consumer at any unusual time, or at a time the debt collector knows or should know is inconvenient. In the absence of the debt collector's knowledge of circumstances to the contrary, a time before 8:00 a.m. and after 9:00 p.m. local time at the consumer's location is inconvenient [C:12CFR1006.6-c0], [C:exam_manual-p668-c0].\n\n**Note:** The evidence does not fully specify the exact conditions that trigger the \"presumption of violation\" standard, as that portion of [C:12CFR1006.14-c0] is truncated. Additionally, evidence does not address call-frequency limits for third-party contacts beyond the general rule that third parties may not be contacted more than once absent specific exceptions [C:exam_manual-p669-c0].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1006.14-c0",
+    "text": "(a)  In general.  A debt collector must not engage in any conduct the natural consequence of which is to harass, oppress, or abuse any person in connection with the collection of a debt, including, but not limited to, the conduct described in paragraphs (b) through (h) of this section.\n(b)  Repeated or continuous telephone calls or telephone conversations \u2014(1)  In general.  In connection with the collection of a debt, a debt collector must not place telephone calls or engage any person in telephone conversation repeatedly or continuously with intent to annoy, abuse, or harass any person at the called number.\n(2)  Telephone call frequencies; presumptions of compliance and violation.  (i) Subject to the exclusions in paragraph (b)(3) of this section, a debt collector is presumed to comply wi"
+   },
+   {
+    "chunk_id": "12CFR1006.6-c1",
+    "text": " (3) of this section do not apply when a debt collector communicates or attempts to communicate with a consumer in connection with the collection of any debt with:\n(i) The prior consent of the consumer, given directly to the debt collector during a communication that does not violate paragraphs (b)(1) through (3) of this section; or\n(ii) The express permission of a court of competent jurisdiction.\n(c)  Communications with a consumer\u2014after refusal to pay or cease communication notice \u2014(1)  Prohibition.  Except as provided in paragraph (c)(2) of this section, if a consumer notifies a debt collector in writing that the consumer refuses to pay a debt or that the consumer wants the debt collector to cease further communication with the consumer, the debt collector must not communicate or attemp"
+   },
+   {
+    "chunk_id": "exam_manual-p669-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FDCPA \nCommunicating with Third Parties \nThe only third parties that a debt collector may contact when trying to collect a debt are: \n\u2022 The consumer. \n\u2022 The consumer\u2019s attorney. \n\u2022 A consumer reporting agency (if permitted by local law). \n\u2022 The creditor. \n\u2022 The creditor\u2019s attorney. \n\u2022 The debt collector\u2019s attorney. \nThe consumer or a court of competent jurisdiction may, however, give the debt collector specific \npermission to contact other third parties. In addition, a debt collector who is unable to locate a \nconsumer may ask a third party for the consumer\u2019s home address, telephone number and place of \nemployment (location information). The debt collector must give his or her name and state that \nhe or she is confirming or correcting location informatio"
+   },
+   {
+    "chunk_id": "12CFR1006.34-c2",
+    "text": " will consider the end date of the validation period and a statement that, if the consumer notifies the debt collector in writing on or before that date that the debt, or any portion of the debt, is disputed, the debt collector must cease collection of the debt, or the disputed portion of the debt, until the debt collector sends the consumer either verification of the debt or a copy of a judgment.\n(ii) The date that the debt collector will consider the end date of the validation period and a statement that, if the consumer requests in writing on or before that date the name and address of the original creditor, the debt collector must cease collection of the debt until the debt collector sends the consumer the name and address of the original creditor, if different from the current credito"
+   },
+   {
+    "chunk_id": "12CFR1006.6-c0",
+    "text": "(a)  Definition.  For purposes of this section, the term  consumer  includes:\n(1) The consumer's spouse;\n(2) The consumer's parent, if the consumer is a minor;\n(3) The consumer's legal guardian;\n(4) The executor or administrator of the consumer's estate, if the consumer is deceased; and\n(5) A confirmed successor in interest, as defined in Regulation X, 12 CFR 1024.31, or Regulation Z, 12 CFR 1026.2(a)(27)(ii).\n(b)  Communications with a consumer \u2014(1)  Prohibitions regarding unusual or inconvenient times or places.  Except as provided in paragraph (b)(4) of this section, a debt collector must not communicate or attempt to communicate with a consumer in connection with the collection of any debt:\n(i) At any unusual time, or at a time that the debt collector knows or should know is inconvenie"
+   },
+   {
+    "chunk_id": "exam_manual-p668-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FDCPA \n\u2022 Debts incidental to a bona fide fiduciary relationship or escrow arrangement (for \nexample, a debt held in the institution\u2019s trust department or mortgage loan escrow for \ntaxes and insurance). \n\u2022 Debts regularly for other institutions to which it is related by common ownership or \ncorporate control. \nDebt collectors that are not covered also include: \n\u2022 Officers or employees of an institution who collect debts owed to the institution in the \ninstitution\u2019s name. \n\u2022 Legal process servers. \nCommunications Connected with Debt Collection \u2013 \n15 U.S.C. 1692b and c \nFor communications with a consumer or third party with the collection of a debt, the term \n\u201cconsumer\u201d is defined to include the borrower\u2019s spouse, parent (if the borrower is a minor), \nguard"
+   },
+   {
+    "chunk_id": "12CFR1006.30-c1",
+    "text": "d in bankruptcy if the debt is secured by an enforceable lien and the debt collector notifies the transferee that the consumer's personal liability for the debt was discharged in bankruptcy.\n(iii)  Securitizations and pledges of debt.  Paragraph (b)(1) of this section does not prohibit the securitization of a debt or the pledging of a portfolio of debt as collateral in connection with a borrowing.\n(c)  Multiple debts.  If a consumer makes any single payment to a debt collector with respect to multiple debts owed by the consumer to the debt collector, the debt collector:\n(1) Must not apply the payment to any debt that is disputed by the consumer; and\n(2) If applicable, must apply the payment in accordance with the consumer's directions.\n(d)  Legal actions by debt collectors \u2014(1)  Action to "
+   },
+   {
+    "chunk_id": "12CFR1006.2-c1",
+    "text": "s for the creditor in the creditor's name;\n(ii) Any person while acting as a debt collector for another person if:\n(A) The person acting as a debt collector does so only for persons with whom the person acting as a debt collector is related by common ownership or affiliated by corporate control; and\n(B) The principal business of the person acting as a debt collector is not the collection of debts;\n(iii) Any officer or employee of the United States or any State to the extent that collecting or attempting to collect any debt is in the performance of the officer's or employee's official duties;\n(iv) Any person while serving or attempting to serve legal process on any other person in connection with the judicial enforcement of any debt;\n(v) Any nonprofit organization that, at the request of co"
+   }
+  ],
+  "cited": [
+   "12CFR1006.14-c0",
+   "12CFR1006.14-c0",
+   "12CFR1006.14-c0",
+   "12CFR1006.6-c0",
+   "exam_manual-p668-c0",
+   "12CFR1006.14-c0",
+   "exam_manual-p669-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": true,
+  "seconds": 26.2,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What findings about deposit accounts are reported in the downloaded Supervisory Highlights issues?",
+  "intent": "REG_QA",
+  "answer": "Based on the EVIDENCE provided, deposits are listed as a covered examination area in three Supervisory Highlights issues, but a substantive deposit finding is reported in only one of them.\n\n**Issue 18 (Winter 2019):**\nThe report covers examinations in deposits (among other areas: automobile loan servicing, mortgage servicing, and remittances) completed generally between June and November 2018 [C:sh_issue18-p3-c0]. The EVIDENCE does not contain the specific substantive findings on deposits from this issue\u2014only the introductory statement noting deposits as a covered topic area.\n\n**Issue 22 (Summer 2020):**\nThis issue covers examinations in deposits (along with consumer reporting, debt collection, fair lending, and mortgage servicing) completed between September 2019 and December 2019 [C:sh_issue22-p3-c0]. A specific deposit-related finding is reported:\n\n- **Failure to fulfill advertised bonus offer:** Regulation DD requires that advertisements of deposit accounts not mislead, be inaccurate, or misrepresent the financial institution's deposit contract. Examiners found that one or more financial institutions advertised bonuses for consumers who opened an account at the financial institutions and met certain requirements specified in the advertisement, but the institutions failed to provide the promised bonuses in instances where consumers met the requirements. The institutions did not have appropriate quality control and monitoring procedures to ensure all eligible consumers received the bonus, and examiners found this advertisement of the bonus offer was misleading and inaccurate in violation of Regulation DD. In response to the examiners' findings, the financial institutions enhanced their account opening training, as well as monitoring and quality control procedures, to ensure that consumer accounts were correctly coded as bonus-eligible [C:sh_issue22-p11-c0]. (Note: this evidence excerpt is truncated at this point, so the full scope of the institutions' remediation response is not fully captured in the EVIDENCE.)\n\n**Issue 23 (Winter 2021):**\nThis issue references deposits as one of the areas covered by supervisory observations related to \"PAs,\" listed alongside mortgage, auto and student loan servicing, credit card account management, consumer reporting-furnishing, debt collection, prepaid cards, and small business lending [C:sh_issue23-p6-c0]. The EVIDENCE does not define what \"PA\" stands for, nor does it include the specific deposit findings text from this issue.\n\n**Insufficient evidence:** The EVIDENCE does not include the detailed deposit-specific findings sections from Issue 18 or Issue 23. It also does not include any deposit findings from Issue 17, which covers different topic areas (automobile loan servicing, credit cards, debt collection, mortgage servicing, payday lending, and small business lending); deposits are not listed as a covered area in that issue [C:sh_issue17-p3-c0].",
+  "evidence": [
+   {
+    "chunk_id": "sh_issue18-p3-c0",
+    "text": "2 SUPERVISORY HIGHLIGHTS, ISSUE 18 \u2013 WINTER 2019 \n1. Introduction \nThe Consumer Financial Protection Bureau (CFPB or Bureau) is committed to a consumer \nfinancial marketplace that is free, innovative, competitive, and transparent, where the rights of \nall parties are protected by the rule of law, and where consumers are free to choose the products \nand services that best fit their individual needs. To effectively accomplish this, the Bureau \nremains committed to sharing with the public key findings from its supervisory work to help \nindustry limit risks to consumers and comply with Federal consumer financial law. \nThe findings included in this report cover examinations in the areas of automobile loan \nservicing, deposits, mortgage servicing, and remittances that were generally completed be"
+   },
+   {
+    "chunk_id": "sh_issue23-p28-c0",
+    "text": "4. Conclusion \nThe Bureau is committed to being as transparent as possible about its supervisory findings and \nwill continue to publish Supervisory Highlights to aid Bureau-supervised entities in their efforts \nto comply with Federal consumer financial law. While the Bureau\u2019s PA reviews are substantially \ncomplete, in some instances, examiners identified issues that require follow up. The Bureau will \nfollow-up on risks identified during PAs in the course of its regular supervisory work and \nfindings may be shared in future editions of Supervisory Highlights. \nSUPERVISORY HIGHLIGHTS, ISSUE 23 \u2013 WINTER 2021 27"
+   },
+   {
+    "chunk_id": "sh_issue17-p3-c0",
+    "text": "2 SUPERVISORY HIGHLIGHTS, ISSUE 17 \u2013 SUMMER 2018 \n1. Introduction \nThe Bureau of Consumer Financial Protection (Bureau) is committed to a consumer financial \nmarketplace that is free, innovative, competitive, and transparent, where the rights of all parties \nare protected by the rule of law, and where consumers are free to choose the products and \nservices that best fit their individual needs. To effectively accomplish this, the Bureau remains \ncommitted to sharing with the public key findings from its supervisory work to help industry \nlimit risks to consumers and comply with Federal consumer financial law. \nThe findings included in this report cover examinations in the areas of automobile loan \nservicing, credit cards, debt collection, mortgage servicing, payday lending, and small busine"
+   },
+   {
+    "chunk_id": "sh_issue22-p3-c0",
+    "text": "2 SUPERVISORY HIGHLIGHTS, ISSUE 22 - SUMMER 2020 \n1. Introduction \nThe Consumer Financial Protection Bureau (CFPB or Bureau) is committed to a consumer \nfinancial marketplace that is free, innovative, competitive, and transparent, where the rights of \nall parties are protected by the rule of law, and where consumers are free to choose the products \nand services that best fit their individual needs. To effectively accomplish this, the Bureau \nremains committed to sharing with the public key findings from its supervisory work to help \nindustry limit risks to consumers and comply with Federal consumer financial law. \nThe findings included in this report cover examinations in the areas of consumer reporting, debt \ncollection, deposits, fair lending, and mortgage servicing that were completed b"
+   },
+   {
+    "chunk_id": "sh_issue23-p6-c0",
+    "text": "3. Supervisory Observations \nSpecific PA observations are described in this report in the areas of mortgage, auto and student \nloan servicing, credit card account management, consumer reporting-furnishing, debt \ncollection, deposits, prepaid cards, and small business lending.3 \n3.1 Mortgage Servicing \nMarket Response to Consumers & Industry Challenges \nThe CARES Act established certain protections for homeowners. For example, for borrowers \nwith federally backed mortgages, borrowers have the right to request and obtain forbearance for \nup to 180 days and to request and obtain an extension for another 180 days (for a total of 360 \ndays). Since March 2020, millions of borrowers have sought payment relief options and enrolled \nin CARES Act forbearances.4 \nServicers faced a number of significa"
+   },
+   {
+    "chunk_id": "sh_issue22-p11-c0",
+    "text": "10 SUPERVISORY HIGHLIGHTS, ISSUE 22 - SUMMER 2020 \ndocuments that the financial institutions relied on in making its determination, as required by \nRegulation E.31 \n2.3.4 Failure to fulfill advertised bonus offer \nRegulation DD requires that advertisements of deposit accounts not mislead, be inaccurate, or \nmisrepresent the financial institution\u2019s deposit contract.32 \nExaminers found that one or more financial institutions advertised bonuses for consumers who \nopened an account at the financial institutions and met certain requirements that the \nadvertisement specified. These financial institutions failed to provide the promised bonuses in \ninstances where consumers met the requirements. The financial institutions did not have \nappropriate quality control and monitoring procedures to ensur"
+   },
+   {
+    "chunk_id": "sh_issue18-p21-c0",
+    "text": "20 SUPERVISORY HIGHLIGHTS, ISSUE 18 \u2013 WINTER 2019 \n5. Conclusion \nThe Bureau will continue to publish Supervisory Highlights to aid Bureau-supervised entities in \ntheir efforts to comply with Federal consumer financial law. The report shares information \nregarding general supervisory and examination findings (without identifying specific \ninstitutions, except in the case of public enforcement actions), communicates operational \nchanges to the program, and provides a convenient and easily accessible resource for \ninformation on the Bureau\u2019s guidance documents."
+   },
+   {
+    "chunk_id": "sh_issue18-p18-c0",
+    "text": "17 SUPERVISORY HIGHLIGHTS, ISSUE 18 \u2013 WINTER 2019 \n4. Supervision program \ndevelopments \n4.1 Recent Bureau rules and guidance \n4.1.1 Bulletin 2018-01: Changes to types of supervisory \ncommunications \nOn September 25, 2018, the Bureau issued a bulletin14 to announce changes to how it articulates \nsupervisory expectations to institutions in connection with supervisory events. The bulletin \nnotes that the Bureau will continue to communicate findings to institutions in writing by way of \nexamination reports and supervisory letters. However, effective immediately, those reports and \nletters will include two categories of findings that convey supervisory expectations. \nMatters Requiring Attention (MRAs) will continue to be used by the Bureau to communicate to \nan institution\u2019s Board of Directors"
+   }
+  ],
+  "cited": [
+   "sh_issue18-p3-c0",
+   "sh_issue22-p3-c0",
+   "sh_issue22-p11-c0",
+   "sh_issue23-p6-c0",
+   "sh_issue17-p3-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": true,
+  "seconds": 35.1,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "When is a consumer liable for unauthorized electronic fund transfers, and how does timely reporting limit that liability?",
+  "intent": "REG_QA",
+  "answer": "## Consumer Liability for Unauthorized Electronic Fund Transfers\n\n### Threshold Conditions for Liability\n\nA consumer may be held liable for an unauthorized electronic fund transfer **only if** the financial institution has provided the disclosures required by \u00a7 1005.7(b)(1), (2), and (3) [C:12CFR1005.6-c0]. Additionally, if the unauthorized transfer involved an access device, the device must have been an \"accepted access device,\" and the institution must have provided a means to identify the consumer to whom it was issued [C:12CFR1005.6-c0].\n\nThese required disclosures include: (1) a summary of the consumer's liability under \u00a7 1005.6, (2) the telephone number and address for reporting unauthorized transfers, and (3) the institution's business days [C:12CFR1005.7-c0].\n\n### Key Principle: Liability Based Solely on Promptness of Notice\n\nUnder the EFTA, **there is no bright-line time limit** within which consumers must report unauthorized EFTs [C:exam_manual-p697-c0]. Instead, the extent of a consumer's liability is determined **solely by the consumer's promptness in notifying the financial institution** [C:exam_manual-p697-c0]. Regulation E does not permit financial institutions to rely on consumer negligence or on a deposit agreement to impose greater consumer liability for unauthorized EFTs than is permitted under Regulation E [C:exam_manual-p727-c0].\n\n### Tiered Liability Limits Based on Timing of Notice\n\n**1. Notice within two business days of learning of loss/theft of access device:**\nLiability is limited to the **lesser of $50 or the amount of unauthorized transfers** that occur before notice to the institution [C:12CFR1005.6-c0].\n\n**2. Notice given after two business days (\"timely notice not given\"):**\nLiability is limited to the **lesser of $500 or the sum of**:\n- $50 or the amount of unauthorized transfers occurring within the first two business days, whichever is less; **and**\n- The amount of unauthorized transfers occurring after the close of two business days and before notice to the institution [C:exam_manual-p698-c0].\n\n**3. Notice within 60 calendar days of transmittal of the periodic statement showing the first unauthorized transfer:**\nThe financial institution must **not** hold the consumer liable for unauthorized transfers occurring **after** the 60-day period [C:exam_manual-p728-c0].\n\n**4. Notice NOT given within 60 calendar days of that statement transmittal:**\nThe consumer's liability does **not exceed the amount of unauthorized transfers occurring after the close of the 60 days and before notice**, *if* the institution establishes that the transfers would not have occurred had timely notice been given [C:exam_manual-p728-c0].\n\nThe evidence provided does not specify how liability for access-device transfers is calculated when notice is given within these 60-day timeframes beyond what is stated above; the relevant checklist text is truncated [C:exam_manual-p728-c0].\n\n### Summary Chart of Outcomes\n\n| Timing of Notice | Maximum Liability |\n|---|---|\n| Within 2 business days of learning of loss/theft | Lesser of $50 or total unauthorized transfers [C:exam_manual-p698-c0] |\n| More than 2 business days, but within 60 days of statement transmittal | Lesser of $500, or sum of: (a) $50 or transfers in first 2 days (whichever less), plus (b) transfers after 2 days and before notice [C:exam_manual-p698-c0] |\n| More than 60 days after statement transmittal | For transfers within the 60-day period, the evidence indicates a liability formula involving the lesser of $500 or a sum similar to the tier above; the text describing liability for transfers occurring after the 60-day period is cut off in the available evidence, so no conclusion can be drawn on that point [C:exam_manual-p698-c0] |\n\n### Effect on Reporting Incentive\n\nBecause liability escalates the longer a consumer waits to report, **prompt notice directly caps the consumer's exposure**\u2014reporting within two business days keeps liability to the lesser of $50 or actual unauthorized transfers, while reporting within 60 days of the statement prevents liability for transfers after that 60-day window [C:exam_manual-p728-c0]. If a consumer does not notify the institution within 60 calendar days of transmittal of the statement showing the unauthorized transfer, the consumer's liability does not exceed the amount of unauthorized transfers occurring after the close of the 60 days and before notice, but only if the financial institution establishes that the transfers would not have occurred had timely notice been given [C:exam_manual-p728-c0].\n\nA financial institution may impose **less** consumer liability than is provided by 12 CFR 1005.6 based on state law or the deposit agreement [C:exam_manual-p698-c0]. The institution must not rely on consumer negligence or the deposit agreement to impose **greater** consumer liability for unauthorized EFTs than is permitted under Regulation E [C:exam_manual-p727-c0].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1005.6-c0",
+    "text": "(a)  Conditions for liability.  A consumer may be held liable, within the limitations described in paragraph (b) of this section, for an unauthorized electronic fund transfer involving the consumer's account only if the financial institution has provided the disclosures required by \u00a7 1005.7(b)(1), (2), and (3). If the unauthorized transfer involved an access device, it must be an accepted access device and the financial institution must have provided a means to identify the consumer to whom it was issued.\n(b)  Limitations on amount of liability.  A consumer's liability for an unauthorized electronic fund transfer or a series of related unauthorized transfers shall be determined as follows:\n(1)  Timely notice given.  If the consumer notifies the financial institution within two business day"
+   },
+   {
+    "chunk_id": "exam_manual-p697-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \npreexisting agreement between the consumer and a financial institution to extend credit only to \ncover overdrafts (or to maintain a specified minimum balance). The Truth in Lending Act and \nRegulation Z govern the addition of a credit feature to an accepted access device, and except as \ndiscussed above, the issuance of a credit card that is also an access device. For information on \nRegulation E\u2019s relationship to other laws, including Truth in Lending, see 12 CFR 1005.12. \nV. Consumer Liability and Error Resolution \nLiability of Consumers for Unauthorized Transfers \u2013 \n12 CFR 1005.6 \nA consumer may be liable for an unauthorized EFT (defined in 12 CFR 1005.2(m)) depending \non when the consumer notifies the financial institution and whether an access "
+   },
+   {
+    "chunk_id": "exam_manual-p686-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nAddition of EFT Services. A financial institution must make disclosures for any new EFT \nservice added to a consumer\u2019s account if the terms and conditions are different from those \ndescribed in the initial disclosures. ECK transactions may be a new type of transfer requiring \nnew disclosures (See Appendix A-2 and Comment 1005.7(c)-1). \nContent of Disclosures. 12 CFR 1005.7(b) requires a financial institution to provide the \nfollowing disclosures as they apply: \n\u2022 Liability of consumers for unauthorized electronic fund transfers. The financial \ninstitution must include a summary of the consumer\u2019s liability (under 12 CFR 1005.6, state \nlaw, or other applicable law or agreement) for unauthorized transfers (12 CFR 1005.7(b)(1)). \nA financial institutio"
+   },
+   {
+    "chunk_id": "exam_manual-p728-c0",
+    "text": "CFPB \nExamination Checklist EFTA \nYes No NA \n7. If a consumer notifies the financial institution of an unauthorized \nEFT within\n 60 calendar days of transmittal of the periodic \nstatement upon which the unauthorized EFT appears, does the \nfinancial institution not hold the consumer liable for the \nunauthorized transfers that occur after the 60-day period? (12 \nCFR 1005.6(b)(3)) \n8. If a consumer does not notify the financial institution of an \nunauthorized EFT within 60 calendar days of transmittal of the \nperiodic statement upon which the unauthorized EFT appears, \ndoes the financial institution ensure that the consumer\u2019s liability \ndoes not exceed the amount of the unauthorized transfers that \noccur after the close of the 60 days and before notice to the \nfinancial institution, if the fi"
+   },
+   {
+    "chunk_id": "exam_manual-p698-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nthose time limits, are listed in the chart below. The financial institution may impose less \nconsumer liability than is provided by 12 CFR 1005.6 based on state law or the deposit \nagreement (12 CFR 1005.6(b)(6)). \nConsumer Liability for Unauthorized Transfers \nEvent Timing of Consumer \nNotice to Financial Institution \nMaximum liability \nLoss or theft of access \ndevice18 \nWithin two business days after learning \nof loss or theft \nLesser of $50, OR total amount of \nunauthorized transfers. \nLoss or theft of access \ndevice \nMore than two business days after \nlearning of loss or theft up to 60 calendar \ndays after transmittal of statement \nshowing first unauthorized transfer made \nwith access device. \nLesser of $500, OR the sum of: \n(a) $50 or the tota"
+   },
+   {
+    "chunk_id": "exam_manual-p727-c0",
+    "text": "Yes No NA \nCFPB \nExamination Checklist EFTA \n\u2022 Valida\nted only in response to a consumer\u2019s request and after\n \nthe financial institution has verified the consumer\u2019s identity\n \nby reasonable means (e.g., photograph, fingerprint, personal\n \nvisit, signature)? (12 CFR 1005.5(b)(4) and Staff\n \nCommentary)\n \nConsumer Liability for Unauthorized Electronic Fund \nTransfers \u2013 12 CFR 1005.6 \n3. Does the financial institution impose liability on the consumer \nfor unauthorized transfers only if: (12 CFR 1005.6(a)) \n\u2022 Any access device that was used was an accepted access\n \ndevice?\n \n\u2022 The institution has provided a means to identify the\n \nconsumer to whom it was issued?\n \n\u2022 The institution has provided the disclosures required by \n12 CFR 1005.7(b)(l), (2), and (3)?\n \n4. Does the financial institution "
+   },
+   {
+    "chunk_id": "12CFR1005.7-c0",
+    "text": "(a)  Timing of disclosures.  A financial institution shall make the disclosures required by this section at the time a consumer contracts for an electronic fund transfer service or before the first electronic fund transfer is made involving the consumer's account.\n(b)  Content of disclosures.  A financial institution shall provide the following disclosures, as applicable:\n(1)  Liability of consumer.  A summary of the consumer's liability, under \u00a7 1005.6 or under state or other applicable law or agreement, for unauthorized electronic fund transfers.\n(2)  Telephone number and address.  The telephone number and address of the person or office to be notified when the consumer believes that an unauthorized electronic fund transfer has been or may be made.\n(3)  Business days.  The financial inst"
+   },
+   {
+    "chunk_id": "12CFR1005.18-c23",
+    "text": " this part, in place of the notice required by \u00a7 1005.7(b)(10). Alternatively, for prepaid account programs for which the financial institution does not have a consumer identification and verification process, the financial institution must describe its error resolution process and limitations on consumers' liability for unauthorized transfers or, if none, state that there are no such protections.\n(2)  Annual error resolution notice.  The financial institution shall provide an annual notice concerning error resolution that is substantially similar to the notice contained in paragraph (b) of appendix A-7 of this part, in place of the notice required by \u00a7 1005.8(b). Alternatively, a financial institution may include on or with each electronic and written account transaction history provided "
+   }
+  ],
+  "cited": [
+   "12CFR1005.6-c0",
+   "12CFR1005.6-c0",
+   "12CFR1005.7-c0",
+   "exam_manual-p697-c0",
+   "exam_manual-p697-c0",
+   "exam_manual-p727-c0",
+   "12CFR1005.6-c0",
+   "exam_manual-p698-c0",
+   "exam_manual-p728-c0",
+   "exam_manual-p728-c0",
+   "exam_manual-p728-c0",
+   "exam_manual-p698-c0",
+   "exam_manual-p698-c0",
+   "exam_manual-p698-c0",
+   "exam_manual-p728-c0",
+   "exam_manual-p728-c0",
+   "exam_manual-p698-c0",
+   "exam_manual-p727-c0"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": false,
+  "seconds": 57.3,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "How can a consumer stop payment on a preauthorized electronic fund transfer?",
+  "intent": "REG_QA",
+  "answer": "A consumer may stop payment of a preauthorized electronic fund transfer from their account by notifying the financial institution\u2014orally or in writing\u2014at any time up to three business days before the scheduled date of the transfer [exam_manual-p709-c0].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1005.10-c0",
+    "text": "(a)  Preauthorized transfers to consumer's account \u2014(1)  Notice by financial institution.  When a person initiates preauthorized electronic fund transfers to a consumer's account at least once every 60 days, the account-holding financial institution shall provide notice to the consumer by:\n(i)  Positive notice.  Providing oral or written notice of the transfer within two business days after the transfer occurs; or\n(ii)  Negative notice.  Providing oral or written notice, within two business days after the date on which the transfer was scheduled to occur, that the transfer did not occur; or\n(iii)  Readily-available telephone line.  Providing a readily available telephone line that the consumer may call to determine whether the transfer occurred and disclosing the telephone number on the in"
+   },
+   {
+    "chunk_id": "exam_manual-p709-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nThe financial institution that receives a preauthorized transfer must credit the consumer\u2019s \naccount as of the day the funds are received (12 CFR 1005.10(a)(3)). \nPreauthorized transfers from a customer\u2019s account. Preauthorized transfers from \na consumer\u2019s account may only be authorized by the consumer in writing and signed or similarly \nauthenticated by the consumer (12 CFR 1005.10(b)). Signed, written authorizations may be \nprovided electronically, subject to the E-Sign Act (Comment 1005.10(b)-5). In all cases, the \nparty that obtains the authorization from the consumer must provide a copy to the consumer. If a \nthird party payee fails to obtain an authorization in writing or fails to provide a copy to the \nconsumer, the third party payee and not"
+   },
+   {
+    "chunk_id": "12CFR1005.10-c1",
+    "text": "varying in amount \u2014(1)  Notice.  When a preauthorized electronic fund transfer from the consumer's account will vary in amount from the previous transfer under the same authorization or from the preauthorized amount, the designated payee or the financial institution shall send the consumer written notice of the amount and date of the transfer at least 10 days before the scheduled date of transfer.\n(2)  Range.  The designated payee or the institution shall inform the consumer of the right to receive notice of all varying transfers, but may give the consumer the option of receiving notice only when a transfer falls outside a specified range of amounts or only when a transfer differs from the most recent transfer by more than an agreed-upon amount.\n(e)  Compulsory use \u2014(1)  Credit.  No financ"
+   },
+   {
+    "chunk_id": "12CFR1005.2-c2",
+    "text": "r than a person excluded from coverage of this part by section 1029 of the Consumer Financial Protection Act of 2010, title X of the Dodd-Frank Wall Street Reform and Consumer Protection Act, Public Law 111-203, 124 Stat. 1376.\n(j) \u201cPerson\u201d means a natural person or an organization, including a corporation, government agency, estate, trust, partnership, proprietorship, cooperative, or association.\n(k) \u201cPreauthorized electronic fund transfer\u201d means an electronic fund transfer authorized in advance to recur at substantially regular intervals.\n(l) \u201cState\u201d means any state, territory, or possession of the United States; the District of Columbia; the Commonwealth of Puerto Rico; or any political subdivision of the thereof in this paragraph (l).\n(m) \u201cUnauthorized electronic fund transfer\u201d means a"
+   },
+   {
+    "chunk_id": "12CFR1005.3-c1",
+    "text": "e underlying transaction. For point-of-sale transfers, the notice must be posted in a prominent and conspicuous location, and a copy thereof, or a substantially similar notice, must be provided to the consumer at the time of the transaction.\n(iii) A person may provide notices that are substantially similar to those set forth in appendix A-6 to comply with the requirements of this paragraph (b)(2).\n(3)  Collection of returned item fees via electronic fund transfer \u2014(i)  General.  The person initiating an electronic fund transfer to collect a fee for the return of an electronic fund transfer or a check that is unpaid, including due to insufficient or uncollected funds in the consumer's account, must obtain the consumer's authorization for each transfer. A consumer authorizes a one-time elect"
+   },
+   {
+    "chunk_id": "12CFR1005.7-c0",
+    "text": "(a)  Timing of disclosures.  A financial institution shall make the disclosures required by this section at the time a consumer contracts for an electronic fund transfer service or before the first electronic fund transfer is made involving the consumer's account.\n(b)  Content of disclosures.  A financial institution shall provide the following disclosures, as applicable:\n(1)  Liability of consumer.  A summary of the consumer's liability, under \u00a7 1005.6 or under state or other applicable law or agreement, for unauthorized electronic fund transfers.\n(2)  Telephone number and address.  The telephone number and address of the person or office to be notified when the consumer believes that an unauthorized electronic fund transfer has been or may be made.\n(3)  Business days.  The financial inst"
+   },
+   {
+    "chunk_id": "exam_manual-p732-c0",
+    "text": "CFPB \nExamination Checklist EFTA \nYes No NA \n\u2022 Account balances? (12 CFR 1005.9(b)(4)) \n\u2022 Address and telephone number for inquiries? (12 CFR \n1005.9(b)(5)) \n\u2022 Telephone number to ascertain preauthorized transfers, if the \nfinancial institution provides telephone notice under 12 CFR \n1005.10(a)(1)(iii)? (12 CFR 1005.9(b)(6)) \nPreauthorized Transfers \u2013 12 CFR 1005.10 \n25. If a consumer\u2019s account is to be credited by a preauthorized EFT \nfrom the same payor at least once every 60 days (and the payor \ndoes not already provide notice to the consumer that the transfer \nhas been initiated) (12 CFR 1005.10(a)(2)), does the financial \ninstitution do one of the following: \n\u2022 Provide oral or written notice, within two business days, \nafter the transfer occurs? (12 CFR 1005.10(a)(1)(i)) \n\u2022 Provide or"
+   },
+   {
+    "chunk_id": "exam_manual-p687-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \n\u2022 Fees. A financial institution must disclose all fees for EFTs or for the right to make EFTs (12 \nCFR 1005.7(b)(5)). Other fees, for example, minimum-balance fees, stop-payment fees, \naccount overdrafts, or ATM inquiry fees, may, but need not, be disclosed under Regulation E \n(see Regulation DD, 12 CFR Part 1030) (Comment 1005.7(b)(5)-1). A per-item fee for EFTs \nmust be disclosed even if the same fee is imposed on non-electronic transfers. If a per-item \nfee is imposed only under certain conditions, such as when the transactions in the cycle \nexceed a certain number, those conditions must be disclosed. Itemization of the various fees \nmay be on the disclosure statement or on an accompanying document referenced in the \nstatement (Comment 1005.7(b)"
+   }
+  ],
+  "cited": [],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": false,
+  "seconds": 18.6,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What receipts and periodic statements must a bank give for electronic fund transfers?",
+  "intent": "REG_QA",
+  "answer": "# Receipts and Periodic Statements for Electronic Fund Transfers (EFTA/Regulation E)\n\n## Terminal Receipts (12 CFR 1005.9(a))\n\nA financial institution must make a receipt **available to a consumer at the time the consumer initiates an EFT at an electronic terminal**, except as provided in paragraph (e) [C:12CFR1005.9-c0]. Per the exam manual, this exception applies to EFTs of **$15 or less** [C:exam_manual-p703-c0].\n\nThe receipt must set forth the following, as applicable:\n\n1. **Amount** of the transfer (a transaction fee may be included if disclosed on the receipt and displayed on/at the terminal) [C:12CFR1005.9-c0]\n2. **Date** the consumer initiates the transfer [C:12CFR1005.9-c0]\n3. **Type** of transfer and type of account(s) involved (type of account may be omitted if the access device accesses only one account at that terminal) [C:12CFR1005.9-c0]\n4. **Identification**: a number or code identifying the consumer's account or access device (need not exceed four digits/letters) [C:12CFR1005.9-c0]\n5. **Terminal location**: location of the terminal where the transfer is initiated, or an identification such as a code or terminal number [C:12CFR1005.9-c0]. Per the exam manual, except in limited circumstances where all terminals are located in the same city or state, the receipt must include the city and state or foreign country and one of the following: street address of the terminal; a generally accepted name for the location (such as an airport, shopping center, or branch of a financial institution); or the name of the entity (if other than the financial institution providing the statement) at whose place of business the terminal is located, plus city, state, or foreign country [C:exam_manual-p703-c0]\n6. **Third party name**: the name of any third party to or from whom funds were transferred (a code may be used if explained on the receipt); this does not apply if the consumer provided the name in a manner the terminal cannot duplicate (e.g., on a payment stub) [C:exam_manual-p703-c0]\n\n## Periodic Statements (12 CFR 1005.9(b))\n\nPeriodic statements must be sent **for each monthly cycle in which an EFT has occurred**, and per the exam manual, at least quarterly if no EFT has occurred [C:exam_manual-p703-c0].\n\nThe statement must include, as applicable:\n\n1. Transaction details, including the **name of any third party** to or from whom funds were transferred [C:12CFR1005.9-c1]\n2. **Account number** [C:12CFR1005.9-c1]\n3. **Fees** assessed against the account during the statement period for EFTs, the right to make transfers, or account maintenance [C:12CFR1005.9-c1]\n4. **Account balances** at the beginning and close of the statement period [C:12CFR1005.9-c1]\n5. **Address and telephone number for inquiries** or notice of errors, preceded by \"Direct inquiries to\" or similar language (satisfied by the address/telephone number on an error resolution notice under \u00a7 1005.8(b)) [C:12CFR1005.9-c1]\n6. **Telephone number for preauthorized transfers**: a number the consumer may call to ascertain whether preauthorized transfers have occurred, if the institution uses the telephone-notice option under \u00a7 1005.10(a)(1)(iii) [C:12CFR1005.9-c1]\n\n## Exceptions\n\nThe regulation provides exceptions to the periodic statement requirement for certain accounts, including accounts accessed only by preauthorized transfers to the account [C:12CFR1005.9-c1]. The evidence provided is cut off before detailing the specific terms of this exception (e.g., passbook account treatment), so further detail cannot be confirmed from the available evidence.\n\n## Related Disclosure Requirement (Initial Disclosures)\n\nAt account opening (or before the first EFT), financial institutions must provide, as applicable, several disclosures, including a summary of consumer liability for unauthorized transfers, the telephone number and address for reporting unauthorized transfers, the institution's business days, the types of transfers permitted and any limitations, and any fees imposed for EFTs or the right to make transfers [C:12CFR1005.7-c0]. The evidence is insufficient to confirm the full text of item (6) (\"Documentation\") beyond its heading, so the specific cross-references to \u00a7\u00a7 1005.9 and 1005.10(a) and (d) cannot be fully quoted from the available chunk [C:12CFR1005.7-c0].\n\n## Third-Party Service Providers (12 CFR 1005.14)\n\nA person providing an EFT service without holding the consumer's account (e.g., issuing a debit card or other access device with no agreement with the account-holding institution) must give the disclosures and documentation required by \u00a7\u00a7 1005.7, 1005.8, and 1005.9 that are within the purview of its relationship with the consumer [C:12CFR1005.14-c0]. The service provider need not furnish the periodic statement required by \u00a7 1005.9(b) if certain conditions are met, including that the debit card (or other access device) issued to the consumer bears the service provider's name and an address or telephone number for making inquiries or giving notice of error [C:12CFR1005.14-c0]. The evidence is cut off before fully detailing the remaining conditions, so they cannot be confirmed beyond this point.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1005.9-c0",
+    "text": "(a)  Receipts at electronic terminals\u2014General.  Except as provided in paragraph (e) of this section, a financial institution shall make a receipt available to a consumer at the time the consumer initiates an electronic fund transfer at an electronic terminal. The receipt shall set forth the following information, as applicable:\n(1)  Amount.  The amount of the transfer. A transaction fee may be included in this amount, provided the amount of the fee is disclosed on the receipt and displayed on or at the terminal.\n(2)  Date.  The date the consumer initiates the transfer.\n(3)  Type.  The type of transfer and the type of the consumer's account(s) to or from which funds are transferred. The type of account may be omitted if the access device used is able to access only one account at that termi"
+   },
+   {
+    "chunk_id": "12CFR1005.9-c1",
+    "text": "e name of any third party to or from whom funds were transferred.\n(2)  Account number.  The number of the account.\n(3)  Fees.  The amount of any fees assessed against the account during the statement period for electronic fund transfers, the right to make transfers, or account maintenance.\n(4)  Account balances.  The balance in the account at the beginning and at the close of the statement period.\n(5)  Address and telephone number for inquiries.  The address and telephone number to be used for inquiries or notice of errors, preceded by \u201cDirect inquiries to\u201d or similar language. The address and telephone number provided on an error resolution notice under \u00a7 1005.8(b) given on or with the statement satisfies this requirement.\n(6)  Telephone number for preauthorized transfers.  A telephone nu"
+   },
+   {
+    "chunk_id": "12CFR1005.7-c0",
+    "text": "(a)  Timing of disclosures.  A financial institution shall make the disclosures required by this section at the time a consumer contracts for an electronic fund transfer service or before the first electronic fund transfer is made involving the consumer's account.\n(b)  Content of disclosures.  A financial institution shall provide the following disclosures, as applicable:\n(1)  Liability of consumer.  A summary of the consumer's liability, under \u00a7 1005.6 or under state or other applicable law or agreement, for unauthorized electronic fund transfers.\n(2)  Telephone number and address.  The telephone number and address of the person or office to be notified when the consumer believes that an unauthorized electronic fund transfer has been or may be made.\n(3)  Business days.  The financial inst"
+   },
+   {
+    "chunk_id": "12CFR1005.14-c0",
+    "text": "(a)  Provider of electronic fund transfer service.  A person that provides an electronic fund transfer service to a consumer but that does not hold the consumer's account is subject to all requirements of this part if the person:\n(1) Issues a debit card (or other access device) that the consumer can use to access the consumer's account held by a financial institution; and\n(2) Has no agreement with the account-holding institution regarding such access.\n(b)  Compliance by service provider.  In addition to the requirements generally applicable under this part, the service provider shall comply with the following special rules:\n(1)  Disclosures and documentation.  The service provider shall give the disclosures and documentation required by \u00a7\u00a7 1005.7, 1005.8, and 1005.9 of this part that are w"
+   },
+   {
+    "chunk_id": "exam_manual-p731-c0",
+    "text": "Yes No NA \nCFPB \nExamination Checklist EFTA \n20. Does th\ne financial institution provide either the long form error \nresolution notice at least once every calendar year or the short \nform error resolution notice on each periodic statement? (12 \nCFR 1005.8(b)) \nReceipts at Electronic Terminals; \nPeriodic Statements \u2013 12 CFR 1005.9 \n21. Does the financial institution make receipts available to the \nconsumer at the time the consumer initiates an EFT at an \nelectronic terminal? The financial institution is exempt from this \nrequirement for EFTs of $15 or less. (12 CFR 1005.9(a) and (e)) \n22. Do the receipts contain the following information, as applicable: \n\u2022 The amount of the transfer? (12 CFR 1005.9(a)(1)) \n\u2022 The date the transfer was initiated? (12 CFR 1005.9(a)(2)) \n\u2022 The type of transfer "
+   },
+   {
+    "chunk_id": "12CFR1005.3-c0",
+    "text": "(a)  General.  This part applies to any electronic fund transfer that authorizes a financial institution to debit or credit a consumer's account. Generally, this part applies to financial institutions. For purposes of \u00a7\u00a7 1005.3(b)(2) and (3), 1005.10(b), (d), and (e), 1005.13, and 1005.20, this part applies to any person, other than a person excluded from coverage of this part by section 1029 of the Consumer Financial Protection Act of 2010, Title X of the Dodd-Frank Wall Street Reform and Consumer Protection Act, Pub. L. 111-203, 124 Stat. 1376. The requirements of subpart B apply to remittance transfer providers.\n(b)  Electronic fund transfer \u2014(1)  Definition.  The term \u201celectronic fund transfer\u201d means any transfer of funds that is initiated through an electronic terminal, telephone, com"
+   },
+   {
+    "chunk_id": "12CFR1005.10-c0",
+    "text": "(a)  Preauthorized transfers to consumer's account \u2014(1)  Notice by financial institution.  When a person initiates preauthorized electronic fund transfers to a consumer's account at least once every 60 days, the account-holding financial institution shall provide notice to the consumer by:\n(i)  Positive notice.  Providing oral or written notice of the transfer within two business days after the transfer occurs; or\n(ii)  Negative notice.  Providing oral or written notice, within two business days after the date on which the transfer was scheduled to occur, that the transfer did not occur; or\n(iii)  Readily-available telephone line.  Providing a readily available telephone line that the consumer may call to determine whether the transfer occurred and disclosing the telephone number on the in"
+   },
+   {
+    "chunk_id": "exam_manual-p703-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nlimited circumstances where all terminals are located in the same city or state, the receipt \nmust include the city and state or foreign country and one of the following: \n\u25cb Street address of the terminal; \n\u25cb Generally accepted name for the location of the terminal (such as an airport, shopping \ncenter, or branch of a financial institution); or \n\u25cb Name of the entity (if other than the financial institution providing the statement) at \nwhose place of business the terminal is located, such as a store, and the city, state, or \nforeign country (12 CFR 1005.9(a)(5)). \nThird party. Name of any third party to or from whom funds are transferred \u2014 a code may be \nused to identify the party if the code is explained on the receipt. This requirement does not ap"
+   }
+  ],
+  "cited": [
+   "12CFR1005.9-c0",
+   "exam_manual-p703-c0",
+   "12CFR1005.9-c0",
+   "12CFR1005.9-c0",
+   "12CFR1005.9-c0",
+   "12CFR1005.9-c0",
+   "12CFR1005.9-c0",
+   "exam_manual-p703-c0",
+   "exam_manual-p703-c0",
+   "exam_manual-p703-c0",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.9-c1",
+   "12CFR1005.7-c0",
+   "12CFR1005.7-c0",
+   "12CFR1005.14-c0",
+   "12CFR1005.14-c0"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": true,
+  "seconds": 57.7,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What is a cardholder's maximum liability for unauthorized use of a credit card?",
+  "intent": "REG_QA",
+  "answer": "A cardholder's liability for unauthorized use of a credit card \"shall not exceed the lesser of $50 or the amount of money, property, labor, or services obtained by the unauthorized use before notification to the card issuer\" [C:12CFR1026.12-c0].\n\nA cardholder may be held liable for unauthorized use at all only if certain conditions are met, including that the credit card is an accepted credit card and the card issuer has provided adequate notice to the cardholder [C:12CFR1026.12-c0].\n\nAdditionally, if state law or an agreement between the cardholder and card issuer imposes a lesser liability than the $50 cap, that lesser liability governs instead [C:12CFR1026.12-c1].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1026.12-c0",
+    "text": "(a)  Issuance of credit cards.  Regardless of the purpose for which a credit card is to be used, including business, commercial, or agricultural use, no credit card shall be issued to any person except:\n(1) In response to an oral or written request or application for the card; or\n(2) As a renewal of, or substitute for, an accepted credit card.\n(b)  Liability of cardholder for unauthorized use \u2014(1)(i)  Definition of unauthorized use.  For purposes of this section, the term \u201cunauthorized use\u201d means the use of a credit card by a person, other than the cardholder, who does not have actual, implied, or apparent authority for such use, and from which the cardholder receives no benefit.\n(ii)  Limitation on amount.  The liability of a cardholder for unauthorized use of a credit card shall not exce"
+   },
+   {
+    "chunk_id": "12CFR1026.12-c1",
+    "text": "fication in writing is considered given at the time of receipt or, whether or not received, at the expiration of the time ordinarily required for transmission, whichever is earlier.\n(4)  Effect of other applicable law or agreement.  If state law or an agreement between a cardholder and the card issuer imposes lesser liability than that provided in this paragraph, the lesser liability shall govern.\n(5)  Business use of credit cards.  If 10 or more credit cards are issued by one card issuer for use by the employees of an organization, this section does not prohibit the card issuer and the organization from agreeing to liability for unauthorized use without regard to this section. However, liability for unauthorized use may be imposed on an employee of the organization, by either the card iss"
+   },
+   {
+    "chunk_id": "exam_manual-p698-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nthose time limits, are listed in the chart below. The financial institution may impose less \nconsumer liability than is provided by 12 CFR 1005.6 based on state law or the deposit \nagreement (12 CFR 1005.6(b)(6)). \nConsumer Liability for Unauthorized Transfers \nEvent Timing of Consumer \nNotice to Financial Institution \nMaximum liability \nLoss or theft of access \ndevice18 \nWithin two business days after learning \nof loss or theft \nLesser of $50, OR total amount of \nunauthorized transfers. \nLoss or theft of access \ndevice \nMore than two business days after \nlearning of loss or theft up to 60 calendar \ndays after transmittal of statement \nshowing first unauthorized transfer made \nwith access device. \nLesser of $500, OR the sum of: \n(a) $50 or the tota"
+   },
+   {
+    "chunk_id": "exam_manual-p699-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nTiming of Notice. If a consumer\u2019s delay in notifying a financial institution was due to \nextenuating circumstances, such as extended travel or hospitalization, the time periods for \nnotification specified above must be extended to a reasonable time (12 CFR 1005.6(b)(4); \nComment 1005.6(b)(4)-1). \nNotice to the Financial Institution. A consumer gives notice to a financial institution \nabout unauthorized use when the consumer takes reasonable steps to provide the financial \ninstitution with the pertinent information, whether or not a particular employee actually receives \nthe information (12 CFR 1005.6(b)(5)(i)). Even if the consumer is unable to provide the account \nnumber or the card number, the notice effectively limits the consumer\u2019s liability if"
+   },
+   {
+    "chunk_id": "12CFR1026.12-c2",
+    "text": "r directly or indirectly;\n(C) Is under the direct or indirect control of a third person that also directly or indirectly controls the card issuer;\n(D) Controls the card issuer directly or indirectly;\n(E) Is a franchised dealer in the card issuer's products or services; or\n(F) Has obtained the order for the disputed transaction through a mail solicitation made or participated in by the card issuer.\n(d)  Offsets by card issuer prohibited \u2014(1)  General rule.  A card issuer may not take any action, either before or after termination of credit card privileges, to offset a cardholder's indebtedness arising from a consumer credit transaction under the relevant credit card plan against funds of the cardholder held on deposit with the card issuer.\n(2)  Rights of the card issuer.  This paragraph (d)"
+   },
+   {
+    "chunk_id": "12CFR1005.6-c0",
+    "text": "(a)  Conditions for liability.  A consumer may be held liable, within the limitations described in paragraph (b) of this section, for an unauthorized electronic fund transfer involving the consumer's account only if the financial institution has provided the disclosures required by \u00a7 1005.7(b)(1), (2), and (3). If the unauthorized transfer involved an access device, it must be an accepted access device and the financial institution must have provided a means to identify the consumer to whom it was issued.\n(b)  Limitations on amount of liability.  A consumer's liability for an unauthorized electronic fund transfer or a series of related unauthorized transfers shall be determined as follows:\n(1)  Timely notice given.  If the consumer notifies the financial institution within two business day"
+   },
+   {
+    "chunk_id": "exam_manual-p697-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \npreexisting agreement between the consumer and a financial institution to extend credit only to \ncover overdrafts (or to maintain a specified minimum balance). The Truth in Lending Act and \nRegulation Z govern the addition of a credit feature to an accepted access device, and except as \ndiscussed above, the issuance of a credit card that is also an access device. For information on \nRegulation E\u2019s relationship to other laws, including Truth in Lending, see 12 CFR 1005.12. \nV. Consumer Liability and Error Resolution \nLiability of Consumers for Unauthorized Transfers \u2013 \n12 CFR 1005.6 \nA consumer may be liable for an unauthorized EFT (defined in 12 CFR 1005.2(m)) depending \non when the consumer notifies the financial institution and whether an access "
+   },
+   {
+    "chunk_id": "12CFR1026.58-c0",
+    "text": "(a)  Applicability.  The requirements of this section apply to any card issuer that issues credit cards under a credit card account under an open-end (not home-secured) consumer credit plan.\n(b)  Definitions \u2014(1)  Agreement.  For purposes of this section, \u201cagreement\u201d or \u201ccredit card agreement\u201d means the written document or documents evidencing the terms of the legal obligation, or the prospective legal obligation, between a card issuer and a consumer for a credit card account under an open-end (not home-secured) consumer credit plan. \u201cAgreement\u201d or \u201ccredit card agreement\u201d also includes the pricing information, as defined in \u00a7 1026.58(b)(7).\n(2)  Amends.  For purposes of this section, an issuer \u201camends\u201d an agreement if it makes a substantive change (an \u201camendment\u201d) to the agreement. A chang"
+   }
+  ],
+  "cited": [
+   "12CFR1026.12-c0",
+   "12CFR1026.12-c0",
+   "12CFR1026.12-c1"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": false,
+  "seconds": 23.6,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What must a debt collector include in the validation notice sent to a consumer?",
+  "intent": "REG_QA",
+  "answer": "Based on the EVIDENCE, the validation notice sent to a consumer must include the following validation information required under 12 CFR 1006.34(c):\n\n**1. Debt collector communication disclosure**\n- The statement required by \u00a7 1006.18 [C:12CFR1006.34-c1]\n\n**2. Information about the debt** (except as provided in paragraph (c)(5)):\n- Certain information under paragraph (c)(2)(i)\u2013(iii) (the EVIDENCE is truncated here and does not disclose the full text of these items) [C:12CFR1006.34-c1]\n- Certain date information \u2014 specifically, (iv) the transaction date (the date of the transaction that gave rise to the debt), or (v) the judgment date (the date of a final court judgment that determines the amount of the debt owed), along with a reference to \"payment was applied to the debt\" [C:12CFR1006.34-c1]\n\n**3. Consumer-response information**, which includes mailing addresses for the consumer and the debt collector \u2014 i.e., the debt collector's and consumer's names and mailing addresses as disclosed under \u00a7 1006.34(c)(2)(i) and (ii) [C:12CFR1006.34-c3]. The EVIDENCE also references a prompt stating, \"I want you to send me the name and address of the original creditor\" [C:12CFR1006.34-c3], and elsewhere references \"consumer-response information\" prompts under paragraphs (c)(4)(i) and (ii) [C:12CFR1006.34-c6].\n\n**4. Statements regarding the validation period and consumer rights**, including:\n- The date the debt collector considers to be the end of the validation period, and a statement that if the consumer disputes the debt (or any portion) in writing on or before that date, the debt collector must cease collection until it sends verification of the debt or a copy of a judgment [C:12CFR1006.34-c2]\n- The date the debt collector considers to be the end of the validation period, and a statement that if the consumer requests in writing on or before that date the name and address of the original creditor, the debt collector must cease collection until it provides that information (if different from the current creditor) [C:12CFR1006.34-c2]\n- The date the debt collector considers to be the end of the validation period, and a statement that unless the consumer disputes the debt by that date, the debt collector will assume the debt is valid [C:12CFR1006.34-c2]\n- If the debt collector is collecting debt related to a consumer financial product or service, a statement informing the consumer that additional information regarding consumer protections in debt collection is available on the Bureau's website [C:12CFR1006.34-c2]\n- If the debt collector sends the validation notice electronically, a statement (the EVIDENCE is truncated and does not disclose the content of this statement) [C:12CFR1006.34-c2]\n\n**5. Information about electronic communications**, including:\n- The debt collector's website and email address [C:12CFR1006.34-c5]\n- If the validation information is not provided electronically, a statement explaining how the consumer can dispute the debt or request original-creditor information electronically [C:12CFR1006.34-c5]\n\n**6. Spanish-language translation disclosures**, which are either or both of the following regarding a consumer's ability to request a Spanish-language translation of the validation notice: (A) a statement such as \"P\u00f3ngase en contacto con nosotros para solicitar una copia de este formulario en espa\u00f1ol,\" or (B) with the consumer-response information, a statement such as \"Quiero este formulario en espa\u00f1ol\" [C:12CFR1006.34-c5].\n\n**7. Time-barred debt disclosure** (where applicable): the EVIDENCE indicates there is \"on notice below the disclosure required by paragraph (c)(2)(ix) of this section, any time-barred debt disclosure that is specifically required by, or that provides a safe harbor under, applicable law, provided that applicable law specifies the content of the disclosure\" [C:12CFR1006.34-c5]. The EVIDENCE fragment is truncated and does not fully clarify the exact form/placement requirement.\n\n**Special rule for residential mortgage debt:** If a periodic statement is required under Regulation Z (12 CFR 1026.41) at the time the validation notice is provided, the debt collector need not include the validation information required by paragraphs (c)(2)(vi) through (viii) if it instead (i) provides a copy of the most recent Regulation Z periodic statement in the same communication, and (ii) includes a statement on the validation notice referring to that periodic statement [C:12CFR1006.34-c3].\n\n**Form requirement:** The validation information required by paragraph (c) must be \"clear and conspicuous\" [C:12CFR1006.34-c3], which is defined to mean readily understandable; for written and electronic disclosures, the location and type size must also be readily noticeable and legible, although no minimum type size is mandated [C:12CFR1006.34-c0].\n\n**Optional disclosures:** A debt collector may also include optional disclosures, which trigger a safe harbor if Model Form B-1 is otherwise used. The EVIDENCE confirms the Spanish-language translation disclosures described above are among these optional disclosures [C:12CFR1006.34-c4][C:12CFR1006.34-c5]; the EVIDENCE is truncated before listing the other optional disclosure items, so I cannot confirm their specific content from the evidence provided.\n\n**Limitation:** The EVIDENCE does not provide the complete text of all specific sub-items referenced (e.g., the full content of paragraphs (c)(2)(i)\u2013(iii), (vi)\u2013(ix), or the complete list of optional disclosures), so this answer cannot fully enumerate every item without gaps.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1006.34-c0",
+    "text": "(a)  Validation information required \u2014(1)  In general.  Except as provided in paragraph (a)(2) of this section, a debt collector must provide a consumer with the validation information required by paragraph (c) of this section either:\n(i) By sending the consumer a validation notice in the manner required by \u00a7 1006.42:\n(A) In the initial communication, as defined in paragraph (b)(2) of this section; or\n(B) Within five days of that initial communication; or\n(ii) By providing the validation information orally in the initial communication.\n(2)  Exception.  A debt collector who otherwise would be required to send a validation notice pursuant to paragraph (a)(1)(i)(B) of this section is not required to do so if the consumer has paid the debt prior to the time that paragraph (a)(1)(i)(B) of this "
+   },
+   {
+    "chunk_id": "12CFR1006.34-c1",
+    "text": "payment was applied to the debt;\n(iv) The transaction date, which is the date of the transaction that gave rise to the debt; or\n(v) The judgment date, which is the date of a final court judgment that determines the amount of the debt owed by the consumer.\n(4)  Validation notice  means a written or electronic notice that provides the validation information required by paragraph (c) of this section.\n(5)  Validation period  means the period starting on the date that a debt collector provides the validation information required by paragraph (c) of this section and ending 30 days after the consumer receives or is assumed to receive the validation information. For purposes of determining the end of the validation period, the debt collector may assume that a consumer receives the validation infor"
+   },
+   {
+    "chunk_id": "12CFR1006.34-c5",
+    "text": "on notice below the disclosure required by paragraph (c)(2)(ix) of this section, any time-barred debt disclosure that is specifically required by, or that provides a safe harbor under, applicable law, provided that applicable law specifies the content of the disclosure.\n(v)  Information about electronic communications.  The following information:\n(A) The debt collector's website and email address.\n(B) If the validation information is not provided electronically, a statement explaining how a consumer can, as described in paragraphs (c)(4)(i) and (ii) of this section, dispute the debt or request original-creditor information electronically.\n(vi)  Spanish-language translation disclosures.  Either or both of the following disclosures regarding a consumer's ability to request a Spanish-language"
+   },
+   {
+    "chunk_id": "12CFR1006.34-c2",
+    "text": " will consider the end date of the validation period and a statement that, if the consumer notifies the debt collector in writing on or before that date that the debt, or any portion of the debt, is disputed, the debt collector must cease collection of the debt, or the disputed portion of the debt, until the debt collector sends the consumer either verification of the debt or a copy of a judgment.\n(ii) The date that the debt collector will consider the end date of the validation period and a statement that, if the consumer requests in writing on or before that date the name and address of the original creditor, the debt collector must cease collection of the debt until the debt collector sends the consumer the name and address of the original creditor, if different from the current credito"
+   },
+   {
+    "chunk_id": "12CFR1006.34-c6",
+    "text": "or information prompts required by paragraphs (c)(4)(i) and (ii) of this section.\n(e)  Translation into other languages \u2014(1)  In general.  A debt collector may send a consumer a validation notice completely and accurately translated into any language if the debt collector:\n(i) Sends the consumer an English-language validation notice in the same communication as the translated validation notice; or\n(ii) Previously provided the consumer an English-language validation notice, in which case the debt collector need not send the consumer an English-language validation notice in the same communication as the translated validation notice.\n(2)  Spanish-language validation notice\u2014requirement to provide after optional disclosure.  A debt collector who includes in the validation information either or "
+   },
+   {
+    "chunk_id": "12CFR1006.34-c4",
+    "text": ")(2)(viii) or (c)(5) of this section, includes certain disclosures on a separate page in the same communication with the validation notice and, on the notice, the required statement referring to those disclosures, receives a safe harbor for compliance with the information and form requirements of paragraphs (c) and (d)(1) of this section except with respect to the disclosures on the separate page.\n(iii)  Substantially similar form.  A debt collector who uses Model Form B-1 as described in paragraph (d)(2)(i) or (ii) of this section may make changes to the form and retain a safe harbor for compliance with the information and form requirements of paragraphs (c) and (d)(1) of this section provided that the form remains substantially similar to Model Form B-1.\n(3)  Optional disclosures.  A deb"
+   },
+   {
+    "chunk_id": "12CFR1006.38-c0",
+    "text": "(a)  Definitions.  For purposes of this section, the following definitions apply:\n(1)  Duplicative dispute  means a dispute submitted by the consumer in writing within the validation period that:\n(i) Is substantially the same as a dispute previously submitted by the consumer in writing within the validation period for which the debt collector already has satisfied the requirements of paragraph (d)(2)(i) of this section; and\n(ii) Does not include new and material information to support the dispute.\n(2)  Validation period  has the same meaning given to it in \u00a7 1006.34(b)(5).\n(b)  Overshadowing of rights to dispute or request original-creditor information \u2014(1)  Prohibition.  During the validation period, a debt collector must not engage in any collection activities or communications that over"
+   },
+   {
+    "chunk_id": "12CFR1006.34-c3",
+    "text": "tor information prompt.  The statement, \u201cI want you to send me the name and address of the original creditor.\u201d, using that phrase or a substantially similar phrase, next to a prompt.\n(iii)  Mailing addresses.  Mailing addresses for the consumer and the debt collector, which are the debt collector's and the consumer's names and mailing addresses as disclosed pursuant to \u00a7 1006.34(c)(2)(i) and (ii).\n(5)  Special rule for certain residential mortgage debt.  For residential mortgage debt, if a periodic statement is required under Regulation Z, 12 CFR 1026.41, at the time a debt collector provides the validation notice, a debt collector need not provide the validation information required by paragraphs (c)(2)(vi) through (viii) of this section if the debt collector:\n(i) Provides the consumer, i"
+   }
+  ],
+  "cited": [
+   "12CFR1006.34-c1",
+   "12CFR1006.34-c1",
+   "12CFR1006.34-c1",
+   "12CFR1006.34-c3",
+   "12CFR1006.34-c3",
+   "12CFR1006.34-c6",
+   "12CFR1006.34-c2",
+   "12CFR1006.34-c2",
+   "12CFR1006.34-c2",
+   "12CFR1006.34-c2",
+   "12CFR1006.34-c2",
+   "12CFR1006.34-c5",
+   "12CFR1006.34-c5",
+   "12CFR1006.34-c5",
+   "12CFR1006.34-c5",
+   "12CFR1006.34-c3",
+   "12CFR1006.34-c3",
+   "12CFR1006.34-c0",
+   "12CFR1006.34-c4",
+   "12CFR1006.34-c5"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": false,
+  "seconds": 61.4,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What consent is needed before a bank charges overdraft fees on ATM and one-time debit card transactions?",
+  "intent": "REG_QA",
+  "answer": "Before a bank may charge overdraft fees on ATM and one-time debit card transactions, it must obtain the consumer's **affirmative consent (opt-in)**, following these specific steps:\n\n**1. Provide a segregated written notice**\nThe institution must first provide the consumer with a notice in writing, or if the consumer agrees, electronically, that is segregated from all other information and describes the institution's overdraft service [C:exam_manual-p736-c0].\n\n**2. Provide a reasonable opportunity to opt in**\nThe institution must provide a reasonable opportunity for the consumer to affirmatively consent (opt in) to the overdraft service for ATM and one-time debit card transactions [C:exam_manual-p692-c0] [C:exam_manual-p736-c0].\n\n**3. Obtain affirmative consent**\nThe institution must obtain the consumer's affirmative consent, or opt-in, to the institution's payment of ATM or one-time debit card transactions [C:exam_manual-p692-c0] [C:exam_manual-p736-c0]. This is described as an important feature of the opt-in process \u2014 the consumer's affirmative consent is necessary before the institution may charge overdraft fees for paying an ATM or one-time debit card transaction [C:exam_manual-p694-c0].\n\n**Consent must be separate and distinct**\n- The consent must be separate from other consents or acknowledgments (including a consent to receive disclosures electronically) [C:exam_manual-p694-c0].\n- Check boxes are allowed, but the check box and the consumer's signature may only apply to the consumer's consent to opt in [C:exam_manual-p694-c0].\n- Preprinted disclosures about the overdraft service provided with a signature card or contract do **not** constitute affirmative consent [C:exam_manual-p694-c0].\n- Consent may be given via a website (clicking a box and a button to affirm), or in person using a form at a branch [C:exam_manual-p694-c0].\n\n**4. Mail or deliver written confirmation**\nAfter obtaining consent, the institution must mail or deliver written (or, if the consumer agrees, electronic) confirmation of the consent, including a statement informing the consumer of the right to revoke consent [C:exam_manual-p692-c0].\n\n**Timing of fee assessment**\nAn institution complies if it adopts reasonable procedures to ensure that it assesses overdraft fees only for transactions paid *after* mailing or delivering the confirmation to the consumer [C:exam_manual-p692-c0] [C:exam_manual-p736-c0].\n\n**Additional related requirements**\n- **Joint accounts**: Any consumer may consent, or revoke consent, for payment of ATM or one-time debit card transactions from a joint account [C:exam_manual-p695-c0].\n- **Right to revoke**: A consumer may consent to the payment of ATM and one-time debit card overdrafts at any time, and may also revoke consent at any time. The financial institution must implement a revocation as soon as reasonably practicable [C:exam_manual-p695-c0].\n- **Same terms for non-consenting consumers**: The institution must provide consumers who do not affirmatively consent the same account terms, conditions, and features (except the overdraft service itself) that are available to consumers who do affirmatively consent \u2014 including interest rates, fees, type of ATM/debit card, minimum balance requirements, and online bill payment services [C:12CFR1005.17-c1] [C:exam_manual-p695-c0].\n\n**Important clarification on \"lack of consent\"**\nAn institution that has a policy and practice of not paying an ATM or one-time debit card overdraft when it reasonably believes at the time of authorization that the consumer lacks sufficient funds is still prohibited from charging fees for paying an ATM or one-time debit transaction overdraft, even though it does not have to comply with the notice and opt-in requirements in that circumstance [C:exam_manual-p719-c0].",
+  "evidence": [
+   {
+    "chunk_id": "exam_manual-p692-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \n\u2022 The financial institution has provided a reasonable opportunity for the consumer to \naffirmatively consent (opt in) to the overdraft service for ATM and one-time debit card \ntransactions; \n\u2022 The financial institution has obtained the consumer\u2019s affirmative consent (opt in) for ATM \nand one-time debit card transactions; and \n\u2022 The financial institution has mailed or delivered written (or, if the consumer agrees, \nelectronic) confirmation of the consent, including a statement informing the consumer of the \nright to revoke consent. An institution complies if it adopts reasonable procedures to ensure \nthat it assesses overdraft fees only for transactions paid after mailing or delivering the \nconfirmation to the consumer. (12 CFR 1005.17(b)(1); Commen"
+   },
+   {
+    "chunk_id": "12CFR1005.17-c1",
+    "text": "firmatively consenting to the institution's payment of ATM and one-time debit card transactions pursuant to the institution's overdraft service; or\n(ii) Decline to pay checks, ACH transactions, and other types of transactions that overdraw the consumer's account because the consumer has not affirmatively consented to the institution's overdraft service for ATM and one-time debit card transactions.\n(3)  Same account terms, conditions, and features.  A financial institution shall provide to consumers who do not affirmatively consent to the institution's overdraft service for ATM and one-time debit card transactions the same account terms, conditions, and features that it provides to consumers who affirmatively consent, except for the overdraft service for ATM and one-time debit card transact"
+   },
+   {
+    "chunk_id": "exam_manual-p736-c0",
+    "text": "Yes No NA \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nCFPB \nExamination Checklist EFTA \nRequirements for Overdraft Services \u2013 12 CFR 1005.17 \n46. Does the financial institution\u2019s Overdraft Protection Program \nincorporate any guidance issued by its agency, as applicable? \n47. Does the financial institution\u2019s Overdraft Protection Program \nprovide \u201cover\ndraft services,\u201d i.e., charge fees for paying ATM \nand one-time debit overdrafts? (12 CFR 1005.17(a)) If no, do \nnot complete this section. \n48. If the financial institution assesses a fee or charge (NOTE: fees \no\nr charges may generally be assessed only on transactions paid \nafter the confirmation has been mailed or delivered) on the \nconsumer\u2019s account for paying an ATM or one-time debit card \ntransaction pursu"
+   },
+   {
+    "chunk_id": "exam_manual-p737-c0",
+    "text": "CFPB \nExamination Checklist EFTA \nYes No NA \n50. Does the financial institution pay checks, ACH transactions, and \nother ty\npes of transactions that overdraw the consumer\u2019s account \nregardless of whether the consumer has affirmatively consented \nto the institution\u2019s overdraft protection service for ATM and \none-time debit card transactions? (12 CFR 1005.17(b)(2)(ii)) \n51 For consumers who have not opted in, and if an overdraft fee or \ncharge is based on the amount of the outstanding negative \nbalance, does the institution only assess fees where the negative \nbalance is attributable in whole or in part to a check, ACH, or \nother type of transaction not subject to the prohibition on \nassessment of overdraft fees? \n For consumers who have not opted in, does the financial \ninstitution only ass"
+   },
+   {
+    "chunk_id": "exam_manual-p695-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nSame account terms, conditions, and features. In addition, the financial institution must \nprovide to consumers who do not affirmatively consent the same account terms, conditions, and \nfeatures (except the payment of ATM and one-time debit overdrafts) that are available to \nconsumers who do affirmatively consent. (12 CFR 1005.17(b)(3)) That requirement includes, but \nis not limited to: \n\u2022 Interest rates paid; \n\u2022 Fees assessed; \n\u2022 The type of ATM or debit card provided to the depositor;16 \n\u2022 Minimum balance requirements; and \n\u2022 On-line bill payment services. (Comment 1005.17(b)(3)-1) \nJoint Accounts. Any consumer may consent, or revoke consent, for payment of ATM or onetime debit card transactions from a joint account. (12 CFR 1005.17(e)) \nContinui"
+   },
+   {
+    "chunk_id": "exam_manual-p694-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nfinancial institution provides a form that can be accessed and processed at its website, where the \nconsumer may click on a box to consent and click on a button to affirm consent, or in person - if \nthe financial institution provides a form for the consumer to complete and present at a branch or \noffice. (Comment 1005.17(b)-4) The financial institution may provide the opportunity to consent \nand require the consumer to make a choice as a step to opening an account. (Comment \n1005.17(b)-5) \nAffirmative consent is necessary. An important feature of the opt in is that the consumer\u2019s \naffirmative consent is necessary before the institution may charge overdraft fees for paying an \nATM or one-time debit card transaction. (12 CFR 1005.17(b)(iii)) The cons"
+   },
+   {
+    "chunk_id": "exam_manual-p719-c0",
+    "text": "CFPB \nExamination Procedures EFTA \nthe authorization request that the consumer does not have sufficient funds \navailable to cover the transaction. However, it is still prohibited from \ncharging fees for paying an ATM or one-time debit transaction overdraft. (12 \nCFR Part 1005, Supp. I, Comment 1005.17(b)-1(iv)). \nNOTE: This section became mandatory on July 1, 2010. However, for \naccounts opened before July 1, the section became mandatory on August \n15, 2010. (12 CFR 1005.17(c)). \n[Click&type] \n13A. Determine that in assessing overdraft fees for consumers who have not \nopted in, the institution charges fees only for negative balances, daily, or \nsustained overdraft, or similar fees, when the negative balance is \nattributable in whole or in part to checks, ACH or other transactions not \nsubj"
+   },
+   {
+    "chunk_id": "12CFR1005.17-c0",
+    "text": "(a)  Definition.  For purposes of this section, the term \u201coverdraft service\u201d means a service under which a financial institution assesses a fee or charge on a consumer's account held by the institution for paying a transaction (including a check or other item) when the consumer has insufficient or unavailable funds in the account. The term \u201coverdraft service\u201d does not include any payment of overdrafts pursuant to:\n(1) A line of credit subject to Regulation Z (12 CFR part 1026), including transfers from a credit card account, home equity line of credit, or overdraft line of credit;\n(2) A service that transfers funds from another account held individually or jointly by a consumer, such as a savings account;\n(3) A line of credit or other transaction exempt from Regulation Z (12 CFR part 1026)"
+   }
+  ],
+  "cited": [
+   "exam_manual-p736-c0",
+   "exam_manual-p692-c0",
+   "exam_manual-p736-c0",
+   "exam_manual-p692-c0",
+   "exam_manual-p736-c0",
+   "exam_manual-p694-c0",
+   "exam_manual-p694-c0",
+   "exam_manual-p694-c0",
+   "exam_manual-p694-c0",
+   "exam_manual-p694-c0",
+   "exam_manual-p692-c0",
+   "exam_manual-p692-c0",
+   "exam_manual-p736-c0",
+   "exam_manual-p695-c0",
+   "exam_manual-p695-c0",
+   "12CFR1005.17-c1",
+   "exam_manual-p695-c0",
+   "exam_manual-p719-c0"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": false,
+  "seconds": 47.1,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What account-opening disclosures must a depository institution give under Truth in Savings?",
+  "intent": "REG_QA",
+  "answer": "## Account-Opening Disclosures Under Truth in Savings (Regulation DD)\n\n**Timing of Delivery**\n\nA depository institution must provide account disclosures to a consumer before an account is opened or a service is provided, whichever is earlier [C:12CFR1030.4-c0]. An institution is deemed to have provided a service when a fee required to be disclosed is assessed [C:12CFR1030.4-c0].\n\n- If the consumer is **not present** at the institution when the account is opened or service provided, and has not already received disclosures, the institution must mail or deliver disclosures **no later than 10 business days** after the account is opened or service provided, whichever is earlier [C:12CFR1030.4-c0].\n- If a consumer who is not present uses **electronic means** (e.g., a website) to open an account or request a service, disclosures must be provided **before** the account is opened or the service is provided [C:12CFR1030.4-c0] [C:exam_manual-p754-c0].\n\n**Disclosures Upon Request**\n\nA depository institution must also provide account disclosures to a consumer upon request [C:12CFR1030.4-c0]:\n- If the consumer is present, disclosures must be provided at that time [C:exam_manual-p754-c0].\n- A response to an **oral inquiry** (by phone or in person) about rates, yields, or fees does **not** trigger the duty to provide written account disclosures; however, when a consumer asks for **written information** about an account, the institution must provide disclosures, unless the account is no longer offered to the public [C:exam_manual-p754-c0].\n\n**General Form Requirements**\n\nSeparately, disclosures under related consumer protection rules (e.g., Regulation E) must be clear and readily understandable, in writing, and in a form the consumer may keep, and may be combined with disclosures required by other laws such as the Truth in Savings Act [C:12CFR1005.4-c0].\n\n---\n\n**Note on Insufficient Evidence:**\n\n- The EVIDENCE is cut off regarding the timing standard for mailing or delivering disclosures upon request when the consumer is **not present**. The 12CFR1030.4-c0 chunk ends at \"makes a reque[st]\" and exam_manual-p754-c0 ends at \"the institution must mail or deliver the,\" before specifying a \"reasonable time\" or any numeric standard (such as 10 business days) for this scenario. No citable evidence supports a specific timeframe for this situation.\n- The EVIDENCE also does not include the full text of 12 CFR 1030.4(b), which would specify the actual **content** of account-opening disclosures (e.g., rate information, fees, minimum balance requirements, etc.). The evidence addresses only the **timing and delivery** requirements for account-opening disclosures, not an itemized list of what must be disclosed. If you need the specific content requirements, additional evidence citing 12 CFR 1030.4(b) would be necessary.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1030.4-c0",
+    "text": "(a)  Delivery of account disclosures \u2014(1)  Account opening \u2014(i)  General.  A depository institution shall provide account disclosures to a consumer before an account is opened or a service is provided, whichever is earlier. An institution is deemed to have provided a service when a fee required to be disclosed is assessed. Except as provided in paragraph (a)(1)(ii) of this section, if the consumer is not present at the institution when the account is opened or the service is provided and has not already received the disclosures, the institution shall mail or deliver the disclosures no later than 10 business days after the account is opened or the service is provided, whichever is earlier.\n(ii)  Timing of electronic disclosures.  If a consumer who is not present at the institution uses elec"
+   },
+   {
+    "chunk_id": "12CFR1005.4-c0",
+    "text": "(a)(1)  Form of disclosures.  Disclosures required under this part shall be clear and readily understandable, in writing, and in a form the consumer may keep, except as otherwise provided in this part. The disclosures required by this part may be provided to the consumer in electronic form, subject to compliance with the consumer-consent and other applicable provisions of the Electronic Signatures in Global and National Commerce Act (E-Sign Act) (15 U.S.C. 7001  et seq. ). A financial institution may use commonly accepted or readily understandable abbreviations in complying with the disclosure requirements of this part.\n(2)  Foreign language disclosures.  Disclosures required under this part may be made in a language other than English, provided that the disclosures are made available in E"
+   },
+   {
+    "chunk_id": "exam_manual-p746-c0",
+    "text": "CFPB Consumer \nLaws and Regulations TISA \nTruth in Savings Act1 \nRegulation DD (12 CFR Part 1030), which implements the Truth in Savings Act (TISA), became \neffective in June 1993. An official staff commentary interprets the requirements of Regulation \nDD (12 CFR 1030 (Supplement I)). Since then, several amendments have been made to \nRegulation DD and the Staff Commentary, including changes effective January 1, 2010, \nconcerning disclosures of aggregate overdraft and returned item fees on periodic statements and \nbalance disclosures provided to consumers through automated systems. In addition, effective \nJuly 6, 2010, clarifications were made to the provisions related to overdraft services (NOTE: The \neffective date for the clarification to 12 CFR 1030.11(a)(1)(i), requiring the term \u201cTota"
+   },
+   {
+    "chunk_id": "12CFR1026.5-c2",
+    "text": "st be given in accordance with the requirements of \u00a7 1026.7(b)(12).\n(vi) Certain disclosures accompanying checks that access a credit card account must be provided in a tabular format in accordance with the requirements of \u00a7 1026.9(b)(3).\n(vii) Certain disclosures provided in a change-in-terms notice must be provided in a tabular format in accordance with the requirements of \u00a7 1026.9(c)(2)(iv)(D).\n(viii) Certain disclosures provided when a rate is increased due to delinquency, default or as a penalty must be provided in a tabular format in accordance with the requirements of \u00a7 1026.9(g)(3)(ii).\n(b)  Time of disclosures \u2014(1)  Account-opening disclosures \u2014(i)  General rule.  The creditor shall furnish account-opening disclosures required by \u00a7 1026.6 before the first transaction is made under"
+   },
+   {
+    "chunk_id": "exam_manual-p754-c0",
+    "text": "CFPB Consumer \nLaws and Regulations TISA \nIf a consumer who is not present at the institution uses electronic means (for example, an Internet \nwebsite) to apply to open an account or to request a service, the institutions must provide the \ndisclosures before opening the account or providing the service. \nDisclosures Upon Request \u2013 12 CFR 1030.4(a)(2) \nA depository institution must provide full account disclosures, including complete fee schedules, \nto a consumer upon request. Institutions must comply with all requests for this information, \nwhether or not the requester is an existing customer or a prospective customer. A response to an \noral inquiry (by telephone or in person) about rates and yields or fees does not trigger the duty to \nprovide account disclosures. However, when consumers "
+   },
+   {
+    "chunk_id": "12CFR1030.1-c0",
+    "text": "(a)  Authority.  This part, known as Regulation DD, is issued by the Bureau of Consumer Financial Protection to implement the Truth in Savings Act of 1991 (the act), contained in the Federal Deposit Insurance Corporation Improvement Act of 1991 (12 U.S.C. 3201  et seq.,  Public Law 102-242, 105 Stat. 2236), as amended by title X, section 1100B of the Dodd-Frank Wall Street Reform and Consumer Protection Act (Pub. L. 111-203, 124 Stat. 1376). Information-collection requirements contained in this part have been approved by the Office of Management and Budget under the provisions of 44 U.S.C. 3501  et seq.  and have been assigned OMB No. 3170-0004.\n(b)  Purpose.  The purpose of this part is to enable consumers to make informed decisions about accounts at depository institutions. This part req"
+   },
+   {
+    "chunk_id": "exam_manual-p796-c0",
+    "text": "CFPB \nExamination Checklist TISA \nTruth in Savings Act1 \nGeneral Disclosure Requirements \u2013 \n12 CFR 1030.32 \nExam Date: [Click&type] \nPrepared By: [Click&type] \nReviewer: [Click&type] \nDocket #: [Click&type] \nEntity Name: [Click&type] \nYes No NA \n1. Does the institution make the required disclosures clearly and \nconspicuously in writing and in a form the consumer may keep (12 CFR\n \n1030.3(a))?\n \n2. If the dis closures are combined with other account disclosures, is it\n \nclear which disclosures are applicable to the consumer\u2019s account (12 \nCFR 1030.3(a))?\n \n3. Do the disc losures reflect the terms of the legal obligation of the\n \naccount agreement between the consumer and the institution (12 CFR\n \n1030.3(b))?\n \n4. If the dis closures are provided in a language other than English, are\n \ndiscl"
+   },
+   {
+    "chunk_id": "12CFR1030.5-c0",
+    "text": "(a)  Change in terms \u2014(1)  Advance notice required.  A depository institution shall give advance notice to affected consumers of any change in a term required to be disclosed under \u00a7 1030.4(b) of this part if the change may reduce the annual percentage yield or adversely affect the consumer. The notice shall include the effective date of the change. The notice shall be mailed or delivered at least 30 calendar days before the effective date of the change.\n(2)  No notice required.  No notice under this section is required for:\n(i)  Variable-rate changes.  Changes in the interest rate and corresponding changes in the annual percentage yield in variable-rate accounts.\n(ii)  Check printing fees.  Changes in fees assessed for check printing.\n(iii)  Short-term time accounts.  Changes in any term "
+   }
+  ],
+  "cited": [
+   "12CFR1030.4-c0",
+   "12CFR1030.4-c0",
+   "12CFR1030.4-c0",
+   "12CFR1030.4-c0",
+   "exam_manual-p754-c0",
+   "12CFR1030.4-c0",
+   "exam_manual-p754-c0",
+   "exam_manual-p754-c0",
+   "12CFR1005.4-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": true,
+  "seconds": 38.3,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "With whom may a debt collector communicate about a consumer's debt?",
+  "intent": "REG_QA",
+  "answer": "A debt collector may communicate about a consumer's debt with:\n\n**The consumer** \u2014 which, for purposes of these communications, is defined to include:\n- The consumer's spouse [12CFR1006.6-c0]\n- The consumer's parent, if the consumer is a minor [12CFR1006.6-c0]\n- The consumer's legal guardian [12CFR1006.6-c0]\n- The executor or administrator of the consumer's estate, if the consumer is deceased [12CFR1006.6-c0]\n- A confirmed successor in interest, as defined in Regulation X (12 CFR 1024.31) or Regulation Z (12 CFR 1026.2(a)(27)(ii)) [12CFR1006.6-c0]\n\n**Third parties** \u2014 the only third parties a debt collector may contact when trying to collect a debt are:\n- The consumer\n- The consumer's attorney\n- A consumer reporting agency (if permitted by local law)\n- The creditor\n- The creditor's attorney\n- The debt collector's attorney\n[exam_manual-p669-c0]\n\nAdditionally, the consumer or a court of competent jurisdiction may give the debt collector specific permission to contact other third parties [exam_manual-p669-c0; see also 12CFR1006.6-c1, which states that certain restrictions \"do not apply when a debt collector communicates or attempts to communicate with a consumer in connection with the collection of any debt with: ... (i) The prior consent of the consumer, given directly to the debt collector during a communication that does not violate paragraphs (b)(1) through (3) of this section; or (ii) The express permission of a court of competent jurisdiction\"].\n\nA debt collector who is unable to locate a consumer may also ask a third party for the consumer's location information (home address, telephone number, and place of employment). In doing so, the debt collector must give his or her name and state that he or she is confirming or correcting location information about the consumer, and unless specifically asked, may not name the collection firm or reveal that the consumer owes any debt [exam_manual-p669-c0].\n\nNo third party may be contacted more than once, unless the collector believes that the information from the first contact was wrong or incomplete and that the third party has since received better information, or unless the third party specifically requests additional contact [exam_manual-p669-c0].",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1006.6-c1",
+    "text": " (3) of this section do not apply when a debt collector communicates or attempts to communicate with a consumer in connection with the collection of any debt with:\n(i) The prior consent of the consumer, given directly to the debt collector during a communication that does not violate paragraphs (b)(1) through (3) of this section; or\n(ii) The express permission of a court of competent jurisdiction.\n(c)  Communications with a consumer\u2014after refusal to pay or cease communication notice \u2014(1)  Prohibition.  Except as provided in paragraph (c)(2) of this section, if a consumer notifies a debt collector in writing that the consumer refuses to pay a debt or that the consumer wants the debt collector to cease further communication with the consumer, the debt collector must not communicate or attemp"
+   },
+   {
+    "chunk_id": "12CFR1006.6-c3",
+    "text": " the consumer has not opted out; and\n(E) The email address has a domain name that is available for use by the general public, unless the debt collector knows the address is provided by the consumer's employer.\n(iii)  Procedures based on communication by the prior debt collector.  (A) Any prior debt collector obtained the email address in accordance with paragraph (d)(4)(i) or (ii) of this section;\n(B) The immediately prior debt collector used the email address to communicate with the consumer about the debt; and\n(C) The consumer did not opt out of such communications.\n(5)  Procedures for telephone numbers for text messages.  For purposes of paragraph (d)(3)(i) of this section, a debt collector may send a text message to a telephone number if:\n(i) The consumer used the telephone number to c"
+   },
+   {
+    "chunk_id": "12CFR1006.6-c2",
+    "text": "ext message communication that would result in a violation of paragraph (d)(1) of this section if those procedures include steps to reasonably confirm and document that:\n(i) The debt collector communicated with the consumer by sending an email to an email address described in paragraph (d)(4) of this section or a text message to a telephone number described in paragraph (d)(5) of this section; and\n(ii) The debt collector did not communicate with the consumer by sending an email to an email address or a text message to a telephone number that the debt collector knows has led to a disclosure prohibited by paragraph (d)(1) of this section.\n(4)  Procedures for email addresses.  For purposes of paragraph (d)(3)(i) of this section, a debt collector may send an email to an email address if:\n(i)  "
+   },
+   {
+    "chunk_id": "12CFR1006.6-c0",
+    "text": "(a)  Definition.  For purposes of this section, the term  consumer  includes:\n(1) The consumer's spouse;\n(2) The consumer's parent, if the consumer is a minor;\n(3) The consumer's legal guardian;\n(4) The executor or administrator of the consumer's estate, if the consumer is deceased; and\n(5) A confirmed successor in interest, as defined in Regulation X, 12 CFR 1024.31, or Regulation Z, 12 CFR 1026.2(a)(27)(ii).\n(b)  Communications with a consumer \u2014(1)  Prohibitions regarding unusual or inconvenient times or places.  Except as provided in paragraph (b)(4) of this section, a debt collector must not communicate or attempt to communicate with a consumer in connection with the collection of any debt:\n(i) At any unusual time, or at a time that the debt collector knows or should know is inconvenie"
+   },
+   {
+    "chunk_id": "exam_manual-p668-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FDCPA \n\u2022 Debts incidental to a bona fide fiduciary relationship or escrow arrangement (for \nexample, a debt held in the institution\u2019s trust department or mortgage loan escrow for \ntaxes and insurance). \n\u2022 Debts regularly for other institutions to which it is related by common ownership or \ncorporate control. \nDebt collectors that are not covered also include: \n\u2022 Officers or employees of an institution who collect debts owed to the institution in the \ninstitution\u2019s name. \n\u2022 Legal process servers. \nCommunications Connected with Debt Collection \u2013 \n15 U.S.C. 1692b and c \nFor communications with a consumer or third party with the collection of a debt, the term \n\u201cconsumer\u201d is defined to include the borrower\u2019s spouse, parent (if the borrower is a minor), \nguard"
+   },
+   {
+    "chunk_id": "12CFR1006.6-c4",
+    "text": "or either:\n(A) Obtained the prior consent described in paragraph (d)(5)(ii) of this section or renewed consent from the consumer; or\n(B) Confirmed, using a complete and accurate database, that the telephone number has not been reassigned from the consumer to another user since the date of the consumer's most recent consent to use that telephone number to communicate about the debt by text message.\n(e)  Opt-out notice for electronic communications or attempts to communicate.  A debt collector who communicates or attempts to communicate with a consumer electronically in connection with the collection of a debt using a specific email address, telephone number for text messages, or other electronic-medium address must include in such communication or attempt to communicate a clear and conspicu"
+   },
+   {
+    "chunk_id": "exam_manual-p669-c0",
+    "text": "CFPB Consumer \nLaws and Regulations FDCPA \nCommunicating with Third Parties \nThe only third parties that a debt collector may contact when trying to collect a debt are: \n\u2022 The consumer. \n\u2022 The consumer\u2019s attorney. \n\u2022 A consumer reporting agency (if permitted by local law). \n\u2022 The creditor. \n\u2022 The creditor\u2019s attorney. \n\u2022 The debt collector\u2019s attorney. \nThe consumer or a court of competent jurisdiction may, however, give the debt collector specific \npermission to contact other third parties. In addition, a debt collector who is unable to locate a \nconsumer may ask a third party for the consumer\u2019s home address, telephone number and place of \nemployment (location information). The debt collector must give his or her name and state that \nhe or she is confirming or correcting location informatio"
+   },
+   {
+    "chunk_id": "12CFR1006.18-c1",
+    "text": "ssion about its source, authorization, or approval.\n(4) Use any business, company, or organization name other than the true name of the debt collector's business, company, or organization.\n(d)  False representations or deceptive means.  A debt collector must not use any false representation or deceptive means to collect or attempt to collect any debt or to obtain information concerning a consumer.\n(e)  Disclosures required \u2014(1)  Initial communications.  A debt collector must disclose in its initial communication with a consumer that the debt collector is attempting to collect a debt and that any information obtained will be used for that purpose. If the debt collector's initial communication with the consumer is oral, the debt collector must make the disclosure required by this paragraph a"
+   }
+  ],
+  "cited": [],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": true,
+  "seconds": 38.9,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What information must a credit card periodic statement contain?",
+  "intent": "REG_QA",
+  "answer": "Based on the EVIDENCE provided, here is what must be included on a credit card periodic statement:\n\n## Repayment Disclosures (\u00a71026.7(b)(12))\n\nFor credit card accounts under an open-end (not home-secured) consumer credit plan, except as provided in certain exceptions, each periodic statement must generally include:\n\n1. **Minimum Payment Warning** \u2014 a bolded heading statement beginning: \"Minimum Payment Warning: If you make only the minimum payment each period, you will pay more in interest and it will take you...\" (the evidence is truncated at this point, so the full wording cannot be confirmed) [C:12CFR1026.7-c4]\n\n2. A **warning statement** reading: \"Even if you make no more charges using this card, if you make only the minimum payment each month we estimate you will never pay off the balance shown on this statement because your payment will be less than the interest charged each month\" [C:12CFR1026.7-c6]\n\n3. A statement that: \"If you make more than the minimum payment each period, you will pay less in interest and pay off your balance sooner\" [C:12CFR1026.7-c6]\n\n4. The **estimated monthly payment for repayment in 36 months**, as described in appendix M1, rounded either to the nearest whole dollar or nearest cent at the issuer's option [C:12CFR1026.7-c6]\n\n5. A statement that the card issuer estimates the consumer will repay the outstanding balance shown on the statement in 3 years if the consumer pays the estimated monthly payment each month for 3 years [C:12CFR1026.7-c6]\n\n6. A **toll-free telephone number** where the consumer may obtain information about credit counseling services [C:12CFR1026.7-c6]\n\n*Exceptions:* These repayment disclosures do not apply to (a) periodic statements provided solely for charge card accounts, other than covered separate credit features that are charge card accounts accessible by hybrid prepaid-credit cards, or (b) periodic statements for a charged-off account where payment of the entire account balance is due immediately [C:12CFR1026.7-c4].\n\nThe evidence does not specify the format requirements referenced for these disclosures beyond stating that format requirements and sample forms apply [C:12CFR1026.7-c6] \u2014 but the evidence is truncated before naming the specific samples, so I cannot confirm which samples are referenced.\n\n## Fees Disclosure\n\nCharges imposed as part of the plan other than periodic-interest-rate charges must be:\n- Grouped together under the heading **\"Fees\"**\n- Identified consistent with the feature or type\n- Itemized\n- Totaled for both the statement period and calendar year to date\n- Presented in a format substantially similar to Sample G-18(A) in appendix G [C:12CFR1026.7-c3]\n\n## Change-in-Terms / Rate Increase Summary (\u00a71026.7(b)(7))\n\nIf a creditor provides a change-in-terms notice (\u00a71026.9(c)) or a rate-increase notice (\u00a71026.9(g)) on or with the periodic statement, the statement must disclose the required change/increase information in accordance with the format requirements in \u00a71026.9(c)(2)(iv)(D) and \u00a71026.9(g)(3)(ii), per Forms G-18(F) and G-18(G) in appendix G [C:12CFR1026.7-c3].\n\n## Grace Period Disclosure (\u00a71026.7(b)(8))\n\nThe statement must disclose the date by which, or time period within which, the new balance or any portion of it must be paid to avoid additional finance charges. If such a time period is provided, a creditor may, at its option and without disclosure, impose no finance charge if payment is received after the time period's expiration [C:12CFR1026.7-c3].\n\n## Rate Information Where a Rate May Increase for Multiple Features/Balances\n\nIf the rate may increase for more than one feature or balance, the issuer may state the range of rates or the highest rate that could apply, with an optional indication that the rate imposed could be lower [C:12CFR1026.7-c4].\n\n## Related Procedural Requirement \u2014 Timing of Mailing/Delivery\n\nFor credit card accounts under an open-end (not home-secured) consumer credit plan, a card issuer must adopt reasonable procedures designed to ensure periodic statements are mailed or delivered at least 21 days prior to the payment due date disclosed on the statement, and that the issuer does not treat as late a required minimum periodic payment received within 21 days after mailing or delivery [C:12CFR1026.5-c4]. This is consistent with examination guidance stating periodic statement disclosures under \u00a71026.7 are required if, at the end of a billing cycle, the account has a debit or credit balance of $1 or more, or if a finance charge has been imposed, and that statements must be mailed or delivered at least 21 days prior to the payment due date and the date on which any grace period expires [C:exam_manual-p451-c0].\n\n---\n\n**Note on completeness:** The EVIDENCE provided is a partial excerpt of \u00a71026.7(b), which (per examination guidance and the general structure referenced) covers numerous periodic-statement disclosure requirements. The chunks above cover only portions of items (6) through (12) of that subsection plus related procedural rules. The chunks are also truncated in several places (noted above), limiting what can be confirmed. The full content of \u00a71026.7(b)(1)\u2013(5), (9), (11) in full, and (13), as well as complete text of the truncated provisions, is **not included in the EVIDENCE**, so I cannot confirm additional required items or complete wording from this record set.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1026.7-c4",
+    "text": "highest fee and an indication that the fee imposed could be lower. If the rate may be increased for more than one feature or balance, the card issuer may state the range of rates or the highest rate that could apply and at the issuer's option an indication that the rate imposed could be lower.\n(ii)  Exception.  The requirements of paragraph (b)(11)(i) of this section do not apply to the following:\n(A) Periodic statements provided solely for charge card accounts, other than covered separate credit features that are charge card accounts accessible by hybrid prepaid-credit cards as defined in \u00a7 1026.61; and\n(B) Periodic statements provided for a charged-off account where payment of the entire account balance is due immediately.\n(12)  Repayment disclosures \u2014(i)  In general.  Except as provided"
+   },
+   {
+    "chunk_id": "12CFR1026.5-c4",
+    "text": " Credit card accounts under an open-end (not home-secured) consumer credit plan.  For credit card accounts under an open-end (not home-secured) consumer credit plan, a card issuer must adopt reasonable procedures designed to ensure that:\n( 1 ) Periodic statements are mailed or delivered at least 21 days prior to the payment due date disclosed on the statement pursuant to \u00a7 1026.7(b)(11)(i)(A); and\n( 2 ) The card issuer does not treat as late for any purpose a required minimum periodic payment received by the card issuer within 21 days after mailing or delivery of the periodic statement disclosing the due date for that payment.\n(B)  Open-end consumer credit plans.  For accounts under an open-end consumer credit plan, a creditor must adopt reasonable procedures designed to ensure that:\n( 1 )"
+   },
+   {
+    "chunk_id": "12CFR1026.7-c6",
+    "text": " Warning: Even if you make no more charges using this card, if you make only the minimum payment each month we estimate you will never pay off the balance shown on this statement because your payment will be less than the interest charged each month\u201d;\n(B) The following statement: \u201cIf you make more than the minimum payment each period, you will pay less in interest and pay off your balance sooner\u201d;\n(C) The estimated monthly payment for repayment in 36 months, as described in appendix M1 to this part. The estimated monthly payment for repayment in 36 months must be rounded either to the nearest whole dollar or to the nearest cent, at the issuer's option;\n(D) A statement that the card issuer estimates that the consumer will repay the outstanding balance shown on the periodic statement in 3 ye"
+   },
+   {
+    "chunk_id": "12CFR1026.9-c10",
+    "text": "t 45 days prior to imposing the over-the-limit fee or penalty rate and shall state that the credit limit on the account has been or will be decreased.\n(d)  Finance charge imposed at time of transaction.  (1) Any person, other than the card issuer, who imposes a finance charge at the time of honoring a consumer's credit card, shall disclose the amount of that finance charge prior to its imposition.\n(2) The card issuer, other than the person honoring the consumer's credit card, shall have no responsibility for the disclosure required by paragraph (d)(1) of this section, and shall not consider any such charge for the purposes of \u00a7\u00a7 1026.60, 1026.6 and 1026.7.\n(e)  Disclosures upon renewal of credit or charge card \u2014(1)  Notice prior to renewal.  A card issuer that imposes any annual or other p"
+   },
+   {
+    "chunk_id": "12CFR1026.7-c3",
+    "text": " imposed as part of the plan other than charges attributable to periodic interest rates must be grouped together under the heading  Fees,  identified consistent with the feature or type, and itemized, and a total of charges, using the term  Fees,  must be disclosed for the statement period and calendar year to date, using a format substantially similar to Sample G-18(A) in appendix G to this part.\n(7)  Change-in-terms and increased penalty rate summary for open-end (not home-secured) plans.  Creditors that provide a change-in-terms notice required by \u00a7 1026.9(c), or a rate increase notice required by \u00a7 1026.9(g), on or with the periodic statement, must disclose the information in \u00a7 1026.9(c)(2)(iv)(A) and (c)(2)(iv)(B) (if applicable) or \u00a7 1026.9(g)(3)(i) on the periodic statement in accor"
+   },
+   {
+    "chunk_id": "exam_manual-p451-c0",
+    "text": "CFPB \nExamination Procedures TILA \nd. Card Holder Agreement \u2013 Verify that the card issuer sends to the cardholder or \notherwise make available to the cardholder a copy of the cardholder\u2019s agreement in \nelectronic or paper form no later than 30 days after the issuer receives the \ncardholder\u2019s request (\u00a71026.58(e)(1)(ii)). Determine that the issuer has adequate \nprocedures for ensuring that this requirement is met. \ne. Periodic statement disclosures for open-end credit under section 1026.7 \u2013 Required if \nat the end of a billing cycle, the account has a debit or credit balance of $1 or more or \nif a finance charge has been imposed (\u00a71026.5(b)(2)(i)). Also, the creditor must adopt \nreasonable procedures designed to ensure that periodic statements for credit card \naccounts are mailed or deliver"
+   },
+   {
+    "chunk_id": "12CFR1026.9-c5",
+    "text": "bout the summarized changes, and other changes to the account, in the notice;\n( 6 ) If the creditor is changing a rate on the account, other than a penalty rate, a statement that if a penalty rate currently applies to the consumer's account, the new rate described in the notice will not apply to the consumer's account until the consumer's account balances are no longer subject to the penalty rate;\n( 7 ) If the change in terms being disclosed is an increase in an annual percentage rate, the balances to which the increased rate will be applied. If applicable, a statement identifying the balances to which the current rate will continue to apply as of the effective date of the change in terms; and\n( 8 ) If the change in terms being disclosed is an increase in an annual percentage rate for a cr"
+   },
+   {
+    "chunk_id": "12CFR1026.60-c0",
+    "text": "(a)  General rules.  The card issuer shall provide the disclosures required under this section on or with a solicitation or an application to open a credit or charge card account.\n(1)  Definition of solicitation.  For purposes of this section, the term  solicitation  means an offer by the card issuer to open a credit or charge card account that does not require the consumer to complete an application. A \u201cfirm offer of credit\u201d as defined in section 603(l) of the Fair Credit Reporting Act (15 U.S.C. 1681a(l)) for a credit or charge card is a solicitation for purposes of this section.\n(2)  Form of disclosures; tabular format.  (i) The disclosures in paragraphs (b)(1) through (5) (except for (b)(1)(iv)(B)) and (b)(7) through (15) of this section made pursuant to paragraph (c), (d)(2), (e)(1) o"
+   }
+  ],
+  "cited": [
+   "12CFR1026.7-c4",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c4",
+   "12CFR1026.7-c6",
+   "12CFR1026.7-c3",
+   "12CFR1026.7-c3",
+   "12CFR1026.7-c3",
+   "12CFR1026.7-c4",
+   "12CFR1026.5-c4",
+   "exam_manual-p451-c0"
+  ],
+  "bad_cites": [],
+  "paused": true,
+  "critic_pass": false,
+  "revisions": 2,
+  "abstained": false,
+  "seconds": 59.6,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "__interrupt__"
+  ]
+ },
+ {
+  "kind": "answerable",
+  "q": "What notice must a depository institution give before changing the terms of a deposit account?",
+  "intent": "REG_QA",
+  "answer": "Based on the evidence, for **deposit accounts**, the controlling notice requirement is found in 12 CFR 1030.5 (Regulation DD):\n\n**Advance notice required:** A depository institution must give advance notice to affected consumers of any change in a term required to be disclosed under \u00a7 1030.4(b) if the change may reduce the annual percentage yield or adversely affect the consumer. The notice must include the effective date of the change and must be mailed or delivered **at least 30 calendar days before the effective date of the change** [C:12CFR1030.5-c0].\n\n**Exceptions \u2014 no notice required for:**\n- Variable-rate changes (changes in interest rate and corresponding APY changes in variable-rate accounts) [C:12CFR1030.5-c0]\n- Changes in check printing fees [C:12CFR1030.5-c0]\n- Changes in any term for time accounts with maturities of one month or less [C:12CFR1030.5-c0]\n\n**Separate requirement for automatically renewing time accounts:** For time accounts with a maturity longer than one month that renew automatically at maturity, institutions must provide the required disclosures before maturity, mailed or delivered at least 30 calendar days before maturity [C:12CFR1030.5-c0].\n\n---\n\nNote: If your question instead concerns electronic fund transfer account terms (rather than deposit account terms under Regulation DD), a different rule applies under 12 CFR 1005.8: a financial institution must mail or deliver written notice at least 21 days before the effective date of any change in a term required to be disclosed under \u00a7 1005.7(b) if the change would increase fees, increase consumer liability, reduce the types of available EFTs, or impose stricter limitations on frequency or dollar amount of transfers, subject to a security exception [C:12CFR1005.8-c0][C:exam_manual-p688-c0]. This rule is distinct from the deposit-account notice described above.",
+  "evidence": [
+   {
+    "chunk_id": "12CFR1030.5-c0",
+    "text": "(a)  Change in terms \u2014(1)  Advance notice required.  A depository institution shall give advance notice to affected consumers of any change in a term required to be disclosed under \u00a7 1030.4(b) of this part if the change may reduce the annual percentage yield or adversely affect the consumer. The notice shall include the effective date of the change. The notice shall be mailed or delivered at least 30 calendar days before the effective date of the change.\n(2)  No notice required.  No notice under this section is required for:\n(i)  Variable-rate changes.  Changes in the interest rate and corresponding changes in the annual percentage yield in variable-rate accounts.\n(ii)  Check printing fees.  Changes in fees assessed for check printing.\n(iii)  Short-term time accounts.  Changes in any term "
+   },
+   {
+    "chunk_id": "12CFR1005.8-c0",
+    "text": "(a)  Change in terms notice \u2014(1)  Prior notice required.  A financial institution shall mail or deliver a written notice to the consumer, at least 21 days before the effective date, of any change in a term or condition required to be disclosed under \u00a7 1005.7(b) of this part if the change would result in:\n(i) Increased fees for the consumer;\n(ii) Increased liability for the consumer;\n(iii) Fewer types of available electronic fund transfers; or\n(iv) Stricter limitations on the frequency or dollar amount of transfers.\n(2)  Prior notice exception.  A financial institution need not give prior notice if an immediate change in terms or conditions is necessary to maintain or restore the security of an account or an electronic fund transfer system. If the institution makes such a change permanent a"
+   },
+   {
+    "chunk_id": "12CFR1026.9-c4",
+    "text": " might imply acceptance of its terms under state law); the consumer's acceptance of a unilateral term change that is not particular to that consumer, but rather is of general applicability to consumers with that type of account; and the consumer's request to reopen a closed account or to upgrade an existing account to another account offered by the creditor with different credit or other features.\n(ii)  Significant changes in account terms.  For purposes of this section, a \u201csignificant change in account terms\u201d means a change to a term required to be disclosed under \u00a7 1026.6(b)(1) and (b)(2), an increase in the required minimum periodic payment, a change to a term required to be disclosed under \u00a7 1026.6(b)(4), or the acquisition of a security interest.\n(iii)  Charges not covered by \u00a7 1026.6"
+   },
+   {
+    "chunk_id": "12CFR1030.2-c0",
+    "text": "For purposes of this part, the following definitions apply:\n(a)  Account  means a deposit account at a depository institution that is held by or offered to a consumer. It includes time, demand, savings, and negotiable order of withdrawal accounts. For purposes of the advertising requirements in \u00a7 1030.8 of this part, the term also includes an account at a depository institution that is held by or on behalf of a deposit broker, if any interest in the account is held by or offered to a consumer.\n(b)  Advertisement  means a commercial message, appearing in any medium, that promotes directly or indirectly:\n(1) The availability or terms of, or a deposit in, a new account; and\n(2) For purposes of \u00a7\u00a7 1030.8(a) and 1030.11 of this part, the terms of, or a deposit in, a new or existing account.\n(c)"
+   },
+   {
+    "chunk_id": "12CFR1030.4-c0",
+    "text": "(a)  Delivery of account disclosures \u2014(1)  Account opening \u2014(i)  General.  A depository institution shall provide account disclosures to a consumer before an account is opened or a service is provided, whichever is earlier. An institution is deemed to have provided a service when a fee required to be disclosed is assessed. Except as provided in paragraph (a)(1)(ii) of this section, if the consumer is not present at the institution when the account is opened or the service is provided and has not already received the disclosures, the institution shall mail or deliver the disclosures no later than 10 business days after the account is opened or the service is provided, whichever is earlier.\n(ii)  Timing of electronic disclosures.  If a consumer who is not present at the institution uses elec"
+   },
+   {
+    "chunk_id": "exam_manual-p688-c0",
+    "text": "CFPB Consumer \nLaws and Regulations EFTA \nChange in Terms; Error Resolution Notice \u2013 12 CFR 1005.8 \nIf a financial institution contemplates a change in terms, it must mail or deliver a written or \nelectronic notice to the consumer at least 21 days before the effective date of any change in a \nterm or condition required to be disclosed under 12 CFR 1005.7(b) if the change would result in \nany of the following: \n\u2022 Increased fees or charges; \n\u2022 Increased liability for the consumer; \n\u2022 Fewer types of available EFTs; or \n\u2022 Stricter limitations on the frequency or dollar amounts of transfers. (12 CFR 1005.8(a)(1)). \nIf an immediate change in terms or conditions is necessary to maintain or restore the security of an \nEFT system or account, the financial institution does not need to give prior not"
+   },
+   {
+    "chunk_id": "12CFR1030.4-c2",
+    "text": "ot a grace period will be provided and, if so, the length of that period must be stated. If the account will not renew automatically, a statement of whether interest will be paid after maturity if the consumer does not renew the account must be stated.\n(7)  Bonuses.  The amount or type of any bonus, when the bonus will be provided, and any minimum balance and time requirements to obtain the bonus.\n(c)  Notice to existing account holders \u2014(1)  Notice of availability of disclosures.  Depository institutions shall provide a notice to consumers who receive periodic statements and who hold existing accounts of the type offered by the institution on June 21, 1993. The notice shall be included on or with the first periodic statement sent on or after June 21, 1993 (or on or with the first periodic"
+   },
+   {
+    "chunk_id": "12CFR1026.9-c5",
+    "text": "bout the summarized changes, and other changes to the account, in the notice;\n( 6 ) If the creditor is changing a rate on the account, other than a penalty rate, a statement that if a penalty rate currently applies to the consumer's account, the new rate described in the notice will not apply to the consumer's account until the consumer's account balances are no longer subject to the penalty rate;\n( 7 ) If the change in terms being disclosed is an increase in an annual percentage rate, the balances to which the increased rate will be applied. If applicable, a statement identifying the balances to which the current rate will continue to apply as of the effective date of the change in terms; and\n( 8 ) If the change in terms being disclosed is an increase in an annual percentage rate for a cr"
+   }
+  ],
+  "cited": [
+   "12CFR1030.5-c0",
+   "12CFR1030.5-c0",
+   "12CFR1030.5-c0",
+   "12CFR1030.5-c0",
+   "12CFR1030.5-c0",
+   "12CFR1005.8-c0",
+   "exam_manual-p688-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": false,
+  "seconds": 29.2,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "abstain",
+  "q": "What is the bank's policy on cryptocurrency custody?",
+  "intent": "REG_QA",
+  "answer": "The provided evidence does not contain any information about the bank's policy on cryptocurrency custody. None of the EVIDENCE chunks address cryptocurrency, digital assets, or custody services related to such assets\u2014they cover topics such as TILA/Regulation Z enforcement actions, fair lending examination procedures, HMDA applicability, and mortgage servicing disclosures.\n\n**I cannot answer this question based on the available evidence.**",
+  "evidence": [
+   {
+    "chunk_id": "sh_issue17-p15-c0",
+    "text": "14 SUPERVISORY HIGHLIGHTS, ISSUE 17 \u2013 SUMMER 2018 \n3. Remedial actions \n3.1 Public enforcement actions \nThe Bureau\u2019s supervisory activities resulted in or supported the following public enforcement \nactions. \n3.1.1 Citibank N.A \nOn June 29, 2018, the Bureau announced an enforcement action against Citibank, N.A., \n(Citibank or Bank). The Bureau found Citibank violated the Truth in Lending Act (TILA) and its \nimplementing regulation, Regulation Z, by failing to properly periodically re-evaluate and \nreduce the Annual Percentage Rates (rates) applicable to credit card accounts that had been \nsubject to certain rate increases between 2011 and 2017 and by failing to have in place \nreasonable written policies and procedures to do so. \nIn 2016, Citibank initiated a significant compliance review p"
+   },
+   {
+    "chunk_id": "12CFR1026.39-c2",
+    "text": "ed person.\n(2) The date of transfer.\n(3) The name, address and telephone number of an agent or party authorized to receive notice of the right to rescind and resolve issues concerning the consumer's payments on the loan. However, no information is required to be provided under this paragraph if the consumer can use the information provided under paragraph (d)(1) of this section for these purposes.\n(4) Where transfer of ownership of the debt to the covered person is or may be recorded in public records, or, alternatively, that the transfer of ownership has not been recorded in public records at the time the disclosure is provided.\n(5)  Partial payment policy.  Under the subheading \u201cPartial Payment\u201d:\n(i) If periodic payments that are less than the full amount due are accepted, a statement th"
+   },
+   {
+    "chunk_id": "sh_issue22-p31-c0",
+    "text": "30 SUPERVISORY HIGHLIGHTS, ISSUE 22 - SUMMER 2020 \ntime information from entities that operate in markets posing elevated risk of consumer harm \ndue to pandemic-related issues. In July of 2020, the Bureau released Prioritized Assessments \nFAQs.87 \n3.1.16 Statement on supervisory and enforcement practices \nregarding electronic credit card disclosures in light of \nCOVID-19 pandemic \nOn June 3, 2020, the Bureau issued a statement88 indicating that it will take a flexible \nsupervisory and enforcement approach during the pandemic regarding card issuers\u2019 electronic \nprovision of disclosures required to be in writing for account-opening disclosures and temporary \nrate or fee reduction disclosures mandated under the provisions governing non-home secured, \nopen-end credit in Regulation Z. Specifica"
+   },
+   {
+    "chunk_id": "exam_manual-p239-c0",
+    "text": "Interagency Fair Lending Examination Procedures \nINTRODUCTION \nOverview of Fair Lending Laws and Regulations \nThis overview provides a basic and abbreviated discussion of federal fair lending laws and \nregulations. It is adapted from the Interagency Policy Statement on Fair Lending issued in \nMarch 1994. \n1. Lending Discrimination Statutes and Regulations \nThe Equal Credit Opportunity Act (ECOA) prohibits discrimination in any aspect of a credit \ntransaction. It applies to any extension of credit, including extensions of credit to small \nbusinesses, corporations, partnerships, and trusts. \nThe ECOA prohibits discrimination based on: \n\u2022 Race or color; \n\u2022 Religion; \n\u2022 National origin; \n\u2022 Sex; \n\u2022 Marital status; \n\u2022 Age (provided the applicant has the capacity to contract); \n\u2022 The applicant\u2019s "
+   },
+   {
+    "chunk_id": "sh_issue22-p38-c0",
+    "text": "37 SUPERVISORY HIGHLIGHTS, ISSUE 22 - SUMMER 2020 \n4. Remedial actions \n4.1 Public enforcement actions \n \nThe Bureau\u2019s supervisory activities resulted in or supported the following public enforcement \nactions. \n4.1.1 Citizens Bank, N.A. \nOn January 30, 2020, the Bureau filed suit against Citizens Bank, N.A. (Citizens), a national \nbanking association headquartered in Providence, Rhode Island. The Bureau\u2019s complaint97 \nalleges violations of TILA and TILA\u2019s implementing Regulation Z, including violations of \namendments to TILA contained in the Fair Credit Billing Act (FCBA) and the Credit Card \nAccountability Responsibility and Disclosure Act (CARD Act). \nAs described in the complaint, the Bureau alleges that for several years Citizens violated TILA, \nas amended by the FCBA, and Regulation Z"
+   },
+   {
+    "chunk_id": "exam_manual-p307-c0",
+    "text": "Interagency Fair Lending Procedures\n \nVII. Special Analyses \nThese procedures are intended to assist examiners who encounter disproportionate adverse \nimpact violations, discriminatory pre-application screening and possible discriminatory \nmarketing. \nA. Disproportionate Adverse Impact Violations \nWhen all five conditions below exist, consult within your agency to determine whether to \npresent the situation to the institution and solicit the institution\u2019s response. Note that condition 5 \ncan be satisfied by either of two alternatives. \nThe contacts between examiners and institutions described in this section are informationgathering contacts within the context of the examination and are not intended to serve as the \nformal notices and opportunities for response that an agency\u2019s enforcement"
+   },
+   {
+    "chunk_id": "exam_manual-p332-c0",
+    "text": "Yes No \n \n \n \n \n \n \n \nCFPB \nExamination Checklist HMDA \nHome Mortgage \nDisclosure Act1\n \nApplicability \nExam Date: [Click&type] \nPrepared By: [Click&type] \nReviewer: [Click&type] \nDocket #: [Click&type] \nEntity Name: [Click&type] \nDepository Institutions \n1. Is the de\npository institution a bank or credit union that originated in the\n \npreceding calendar year at least one home purchase loan (or refinancing of a\n \nhome purchase loan) secured by a first lien on a one-to-four family dwelling?\n \n(12 CFR 1003.2)\n \n2. Does the depository institution meet at least one of the criteria below? \na. The depository institution is a federally insured or regulated institution \n(12 CFR 1003.2);\n \nb. The depository institution originated a mortgage loan (reference checklist\n \nquestion #1) that was insured,"
+   },
+   {
+    "chunk_id": "exam_manual-p309-c0",
+    "text": "Interagency Fair Lending Procedures\n \nObtaining the institution\u2019s response \nIf the first four conditions plus either 5a or 5b appear to exist, consult with agency supervisory \nstaff about whether and how to inform the institution of the situation and solicit the institution\u2019s \nbusiness justification. The communication with the institution may include the following: \n\u2022 The specific neutral policy or criterion that appears to cause a disproportionate adverse \nimpact. \n\u2022 How the examiners learned about the policy. \n\u2022 How widely the examiners understand it to be implemented. \n\u2022 How strictly they understand it to be applied. \n\u2022 The prohibited basis on which the impact occurs. \n\u2022 The magnitude of the impact. \n\u2022 The nature of the injury to individuals. \n\u2022 The data from which the impact was comput"
+   }
+  ],
+  "cited": [],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 0,
+  "abstained": true,
+  "seconds": 8.0,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "abstain",
+  "q": "What escrow account rules apply to mortgage servicers under RESPA?",
+  "intent": "REG_QA",
+  "answer": "Based on the EVIDENCE provided, the following escrow account rules apply to mortgage servicers under RESPA (12 CFR 1024.17):\n\n## Escrow Account Analysis\nBefore establishing an escrow account, a servicer must conduct an analysis to determine the periodic payments and the amount to be deposited. The servicer shall use an escrow disbursement date that is on or before the deadline to avoid a penalty and may make annual lump sum payments to take advantage of a discount [C:exam_manual-p513-c0].\n\n## Transfer of Servicing\nIf the new servicer changes either the monthly payment amount or the accounting method used by the old servicer, it must provide the borrower with an initial escrow account statement within 60 days of the date of transfer. The new servicer shall use the effective date of the transfer of servicing to establish the new escrow account computation year. If the new servicer retains the monthly payments and accounting method used by the old servicer, it may continue to use the same computation year established by the old servicer or choose a different one using a short year statement [C:exam_manual-p513-c0].\n\n## Shortages, Surpluses, and Deficiencies\n- If a **shortage** exists, the servicer may require the borrower to repay the shortage in equal monthly payments over at least a 12-month period [C:exam_manual-p514-c0].\n- If a **deficiency** exists, the servicer may require additional monthly deposits to eliminate it:\n  - If the deficiency is less than one month's escrow payment, the servicer may: allow it to exist and do nothing; require repayment within 30 days; or require repayment in two or more equal monthly payments.\n  - If the deficiency is greater than or equal to one month's escrow payment, the servicer may allow it to exist and do nothing, or require repayment in two or more equal monthly payments.\n  - These provisions apply as long as the borrower's mortgage payment is current at the time of the escrow account analysis [C:exam_manual-p514-c0].\n- A servicer must notify the borrower at least once during the escrow account computation year if a shortage or deficiency exists [C:exam_manual-p514-c0].\n\n(The evidence does not include substantive text on the required handling of surplus amounts or on the content of the initial escrow account statement \u2014 those portions of the source chunks consist only of section headings, so no specific requirements can be cited from the provided EVIDENCE.)\n\n## Short-Year Statements (12 CFR 1024.17(i)(4))\nShort-year statements can be issued to end the escrow account computation year and establish the beginning date of the new computation year. They may be provided upon transfer of servicing and are required upon loan payoff. The statement is due to the borrower within 60 days after receiving the pay-off funds [C:exam_manual-p515-c0].\n\n## Timely Payments (12 CFR 1024.17(k))\nThe servicer shall pay escrow disbursements by the disbursement date, using a date on or before the deadline to avoid a penalty, and may make annual lump sum payments to take advantage of a discount [C:exam_manual-p515-c0].\n\n## Recordkeeping (12 CFR 1024.17(l))\nEach servicer shall keep records that are easily retrievable, reflecting the servicer's handling of each borrower's escrow account. The servicer shall maintain records for each escrow account for at least five years after the servicer last serviced the account [C:exam_manual-p515-c0].\n\n## Related Transfer Disclosures\nExaminers assess whether servicers notify consumers of changes in escrow account requirements resulting from a transfer of servicing, reviewing samples of transferred loans with escrow accounts, consumer disclosures, and evidence of delivery [C:exam_manual-p133-c0].\n\n## Broader Statutory Context\nRESPA (12 U.S.C. 2601 et seq.) requires lenders, mortgage brokers, or servicers to provide borrowers with disclosures regarding settlement costs and \"places limitations upon the use of escrow accounts.\" The National Affordable Housing Act of 1990 amended RESPA to require disclosures for mortgage escrow accounts at closing and annually thereafter, itemizing charges paid by the borrower and amounts paid out of the account by the servicer [C:exam_manual-p496-c0].",
+  "evidence": [
+   {
+    "chunk_id": "exam_manual-p513-c0",
+    "text": "CFPB Consumer \nLaws and Regulations RESPA \nEscrow Account Analysis \u2013 12 CFR 1024.17(c)(2) and (3) \nand 12 CFR 1024.17(k) \nBefore establishing an escrow account, a servicer must conduct an analysis to determine the \nperiodic payments and the amount to be deposited. The servicer shall use an escrow \ndisbursement date that is on or before the deadline to avoid a penalty and may make annual \nlump sum payments to take advantage of a discount. \nTransfer of Servicing \u2013 12 CFR 1024.17(e) \nIf the new servicer changes either the monthly payment amount or the accounting method \nused by the old servicer, then it must provide the borrower with an initial escrow account \nstatement within 60 days of the date of transfer. When the new servicer provides an initial \nescrow account statement, it shall use th"
+   },
+   {
+    "chunk_id": "exam_manual-p496-c0",
+    "text": "CFPB Consumer \nLaws and Regulations RESPA \nReal Estate Settlement Procedures Act1 \nThe Real Estate Settlement Procedures Act of 1974 (RESPA) (12 U.S.C. 2601 et seq.) (the \n\u201cAct\u201d) became effective on June 20, 1975. The Act requires lenders, mortgage brokers, or \nservicers of home loans to provide borrowers with pertinent and timely disclosures regarding \nthe nature and costs of the real estate settlement process. The Act also protects borrowers \nagainst certain abusive practices, such as kickbacks, and places limitations upon the use of \nescrow accounts. The Department of Housing and Urban Development (HUD) originally \npromulgated Regulation X which implements RESPA. The CFPB has now restated \nRegulation X (12 CFR Part 1024). The National Affordable Housing Act of 1990 amended \nRESPA to req"
+   },
+   {
+    "chunk_id": "exam_manual-p133-c0",
+    "text": "CFPB Mortgage \nExamination Procedures Servicing\n \nEscrow Transfers \nRESPA \nTo assess whether the servicer is complying with obligations under Regulation X to notify \nconsumers of changes in the escrow account requirements resulting from a transfer of servicing, \nexaminers should sample from the list of loans transferred within the previous year that included \nescrow accounts. For the loans in the sample, examiners should review copies of consumer \ndisclosures regarding the escrow accounts and evidence of delivery. \n7. Assess compliance with RESPA, Escrow Transfer Provisions. Please refer to the \nexamination procedures regarding RESPA, 12 CFR 1024.17, for more information. \n[Click&type] \nCFPB Manual V.2 (October 2012) Procedures 7"
+   },
+   {
+    "chunk_id": "exam_manual-p515-c0",
+    "text": "CFPB Consumer \nLaws and Regulations RESPA \nsurplus, shortage, or deficiency is being handled; and, if applicable, the reasons why the \nestimated low monthly balance was not reached. \nShort-Year Statements \u2013 12 CFR 1024.17(i)(4) \nShort-year statements can be issued to end the escrow account computation year and \nestablish the beginning date of the new computation year. Short-year statements may be \nprovided upon the transfer of servicing and are required upon loan payoff. The statement is \ndue to the borrower within 60 days after receiving the pay-off funds. \nTimely Payments \u2013 12 CFR 1024.17(k) \nThe servicer shall pay escrow disbursements by the disbursement date. In calculating the \ndisbursement date, the servicer must use a date on or before the deadline to avoid a penalty \nand may make a"
+   },
+   {
+    "chunk_id": "exam_manual-p514-c0",
+    "text": "CFPB Consumer \nLaws and Regulations RESPA \n\u2022 The servicer may require the borrower to repay the shortage in equal monthly payments over \nat least a 12-month period. \nIf the escrow account analysis discloses a deficiency, then the servicer may require the \nborrower to pay additional monthly deposits to the account to eliminate the deficiency. \nIf the deficiency is less than one month\u2019s escrow account payment, then the servicer; \n\u2022 May allow the deficiency to exist and do nothing to change it; \n\u2022 May require the borrower to repay the deficiency within 30 days; or \n\u2022 May require the borrower to repay the deficiency in two or more equal monthly payments. \nIf the deficiency is greater than or equal to one month\u2019s escrow payment, the servicer may \nallow the deficiency to exist and do nothing to "
+   },
+   {
+    "chunk_id": "exam_manual-p128-c0",
+    "text": "CFPB Mortgage \nExamination Procedures Servicing\n \nBackground \nA servicer may service loans on behalf of itself or an affiliate. It may service as a contractor of \nthe trustee where a mortgage is included in a mortgage-backed security, or it may service whole \nloans for an outside third-party investor.1 A servicer may sell the rights to service the loan \nseparately from any ownership transfers. This is because some entities have expertise in payment \nprocessing and other servicing responsibilities, while others seek to invest in the underlying \nmortgages. These procedures apply whether the servicer obtained the servicing rights from \nanother entity or the servicing responsibility is transferred within a company from the origination \nplatform to the servicing platform. \nServicers must comply"
+   },
+   {
+    "chunk_id": "sh_issue17-p17-c0",
+    "text": "16 SUPERVISORY HIGHLIGHTS, ISSUE 17 \u2013 SUMMER 2018 \n4. Supervision program \ndevelopments \n4.1 Recent Bureau rules and guidance \n4.1.1 Mortgage servicing final rule \nOn March 8, 2018, the Bureau issued a final rule to help mortgage servicers communicate with \ncertain borrowers facing bankruptcy. The final rule gives mortgage servicers a clearer and more \nstraightforward standard for providing periodic statements to consumers entering or exiting \nbankruptcy by amending the Bureau\u2019s 2016 mortgage servicing rule. Specifically, the final rule \nprovides a clear single-statement exemption for servicers to make the transition, superseding \nthe single-billing-cycle exemption included in the 2016 rule. The effective date for the rule was \nApril 19, 2018.17 \n4.1.2 2017\u20132018 amendments of the TILA-RESP"
+   },
+   {
+    "chunk_id": "exam_manual-p512-c0",
+    "text": "CFPB Consumer \nLaws and Regulations RESPA \n\u2022 The nature of the relationship (explaining the ownership and financial interest) between \nthe provider and the loan originator; and \n\u2022 The estimated charge or range of charges generally made by such provider. \nThis disclosure must be provided on a separate piece of paper either at the time of loan \napplication, or with the GFE, or at the time of the referral. \nThe loan originator may not require the use of such a provider, with the following exceptions: \nthe institution may require a buyer, borrower, or seller to pay for the services of an attorney, credit \nreporting agency, or real estate appraiser chosen by the institution to represent its interest. The \nloan originator may only receive a return on ownership or franchise interest or payment \no"
+   }
+  ],
+  "cited": [
+   "exam_manual-p513-c0",
+   "exam_manual-p513-c0",
+   "exam_manual-p514-c0",
+   "exam_manual-p514-c0",
+   "exam_manual-p514-c0",
+   "exam_manual-p515-c0",
+   "exam_manual-p515-c0",
+   "exam_manual-p515-c0",
+   "exam_manual-p133-c0",
+   "exam_manual-p496-c0"
+  ],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": true,
+  "revisions": 1,
+  "abstained": false,
+  "seconds": 49.2,
+  "nodes": [
+   "guard",
+   "router",
+   "research",
+   "drafter",
+   "critic",
+   "drafter",
+   "critic",
+   "publish"
+  ]
+ },
+ {
+  "kind": "abstain",
+  "q": "What fees does Harbourline Bank charge for international wire transfers?",
+  "intent": "OUT_OF_SCOPE",
+  "answer": "Sorry, I can't help with that request. ComplaintIQ can triage customer complaints, answer data questions about complaints, explain banking regulations, and write complaint trend briefs.",
+  "evidence": [],
+  "cited": [],
+  "bad_cites": [],
+  "paused": false,
+  "critic_pass": null,
+  "revisions": 0,
+  "abstained": true,
+  "seconds": 2.1,
+  "nodes": [
+   "guard",
+   "router",
+   "refuse"
+  ]
+ }
+]
