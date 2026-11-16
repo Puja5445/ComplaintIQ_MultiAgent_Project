@@ -61,3 +61,6 @@
 - Q4: ILIKE '%monetary relief%' also matches 'non-monetary relief', so shares were inflated (26.22 vs 15.93). Fix: prompt lists exact company_response values and says use =. G2: 0.6 -> 0.8.
 - Q2: model SQL ended with ';' and the brief's LIMIT wrapper put it inside brackets (syntax error). Fix: strip trailing ';' in guard_sql.
 - Unanswerable (per 100k residents): model hardcoded census populations instead of refusing. Fix: prompt rule to start explanation with 'CANNOT ANSWER:'.
+
+## D15 - G3 retrieval (15 questions)
+- recall@5: BM25 0.93, dense 1.00, hybrid 1.00. MRR: 0.73 / 0.97 / 0.97. Hybrid ties dense on plain-English questions; BM25 is weaker. Set is 15 questions, not 20.
