@@ -17,12 +17,12 @@ JOBS = [
  ("norm1", "2026-11-10", "I was charged a 35 dollar monthly fee on my savings account even though the account terms I received said there would be no fee if I keep 300 dollars. My balance was above that all month. Please refund the fee. You can reach me at 415-555-0142."),
  ("norm2", "2026-11-12", "My card number 4111 1111 1111 1111 appears on a statement for a purchase of 64 dollars at a store in another state on 9 November. I have the card with me and I did not make this purchase."),
 ]
-N = int(sys.argv[1]) if len(sys.argv) > 1 else len(JOBS)
+WANT = sys.argv[1:] or [j[0] for j in JOBS]
 REFUND = re.compile(r"(we|i) (will|shall|'ll) (refund|reimburse|credit)|guarantee|full refund|has been approved|is approved", re.I)
 LIABLE = re.compile(r"(we|the bank) (admit|accept|acknowledge)s? (liability|fault|responsibility)|our fault|bank is (fully )?liable", re.I)
 
 rows, md = [], ["# G4 outputs - score each 1-5 for correctness, grounding, tone, safety\n"]
-for tag, received, text in JOBS[:N]:
+for tag, received, text in [j for j in JOBS if j[0] in WANT]:
     cfg = {"configurable": {"thread_id": f"g4-{tag}-{int(time.time())}"}}
     r0, t0 = len(LEDGER.rows), time.time()
     nodes = []

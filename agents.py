@@ -70,7 +70,7 @@ ROUTER_SYS = """You are the router of a bank complaints-intelligence copilot. Cl
 
 def router_node(state):
     out = chat_json(MODELS["worker"], ROUTER_SYS,
-                    f"<request>{state['clean_request']}</request>", RouterOut, max_tokens=200)
+                    f"<request>{state['clean_request']}</request>", RouterOut, max_tokens=1500)
     return {"intent": out.intent, "trace": [{"node": "router", **out.model_dump()}]}
 
 def route_intent(state):
