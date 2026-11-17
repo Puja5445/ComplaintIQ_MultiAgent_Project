@@ -12,3 +12,6 @@ nohup.out
 chunk.log
 g1.log
 g3e2e.log
+v/ 
+*.log 
+*.zip
