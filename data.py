@@ -9,7 +9,10 @@ import re
 
 # ---------- config ----------
 REGION = "us-east-1"
-ACCOUNT = boto3.client("sts", region_name=REGION).get_caller_identity()["Account"]
+try:
+    ACCOUNT = boto3.client("sts", region_name=REGION).get_caller_identity()["Account"]
+except Exception:
+    ACCOUNT = "no-aws-login"
 BUCKET = f"sagemaker-complaintiq-{ACCOUNT}"
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "data"
