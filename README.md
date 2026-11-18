@@ -12,13 +12,13 @@ Turns bank-complaint text into triaged cases, SQL answers, cited regulatory answ
 
 **Graph (12 nodes):** guard > router > triage > **sla** > cases > research / analyst > drafter > critic (max 2 revisions) > human `interrupt()` > publish; refuse for out-of-scope.
 5 nodes call Claude (router, triage, analyst, drafter, critic); the rest are plain code, retrieval or the human step.
-`sla` is our own addition (regulatory deadline risk, not in the brief). See `docs/agent_graph.png`, `docs/architecture.png`, `docs/graph.mmd`.
+`sla` is my own addition (regulatory deadline risk, not in the brief). See `docs/agent_graph.png`, `docs/architecture.png`, `docs/graph.mmd`.
 
 ## Prerequisites
 - AWS **SageMaker Studio JupyterLab**, region **us-east-1**, Python 3.12 (as used in Studio).
-- **Bedrock access** in your account to: a Claude Sonnet model (worker), a Claude Opus model (judge) and
+- **Bedrock access** in my account to: a Claude Sonnet model (worker), a Claude Opus model (judge) and
   Titan Text Embeddings v2. A non-Claude writer model (Amazon Nova Lite) is needed only to regenerate the fake stories.
-  `models.json` lists the ids used in our lab; step 7 below re-probes them for your account.
+  `models.json` lists the ids used in my lab; step 7 below re-probes them for my account.
 - AWS credentials come from the Studio role. **No keys are stored in this repo.**
   `data.py` asks AWS (STS) for the account id, so run it inside the lab or with a configured AWS CLI profile.
 - Cost: the Bedrock calls are billable (details under "Evaluation"). The LLM and embedding caches live in `state/` and `index/`,
