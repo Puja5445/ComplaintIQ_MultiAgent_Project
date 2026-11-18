@@ -4,10 +4,11 @@
 - Brief asks for Opus 4.8 as judge.
 - Probe result: Opus 4.8 gives AccessDenied in the lab account.
 - Decision: probe picked Opus 5.5 automatically. Still a different, stronger model than the worker (Sonnet 4.6), so the judge stays independent.
+- Superseded by D8: judge is Opus 5.5.
 
 ## D2 - No narrative column
 - CFPB API/CSV returns only 15 columns; "Consumer complaint narrative" is missing.
-- Impact: triage, cases agent, G1. Waiting for trainer's decision.
+- Impact: triage, cases agent, G1. Resolved: see D3.
 
 ## D3 - Synthetic narratives (trainer approved)
 - CFPB no longer publishes the narrative column.
@@ -22,6 +23,7 @@
 ## D5 - Chunking and retrieval follow the brief
 - Chunking replaced with brief 2.3-2.5 (paragraph chunks 3000/400, ids like 12CFR1005.11-c0, source/page kept for citations).
 - New lab allows Opus 4.8 (the brief's judge), so D1 no longer applies.
+- superseded by D8
 
 ## D6 - Injection regex widened
 - The brief's INJECTION regex allows only one word between "ignore" and "instructions", so "Ignore all previous instructions" was not flagged.
@@ -75,3 +77,7 @@
 - Critic rejected both drafts twice and escalated to human. inj1 took 78 s (target 60 s).
 - Router max_tokens raised 200 -> 1500 after a 'substring not found' crash (cause unconfirmed).
 - Estimated cost of this run: $0.17 at list price. 2 of 10 G4 complaints run because of the $5 lab budget; B0, B1 and A1 not run.
+
+## D18 - Budget exceeded, evaluation trimmed
+Lab budget $5; the usage page showed $8.17 (its 24-48 h lag hid the overrun). The lab was suspended, then re-enabled until 20-11-2026.
+B0, B1 and A1 not run; G2, G3 and G4 are smaller than the brief. Stated in the report, sections 5 and 7.
